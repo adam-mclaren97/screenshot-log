@@ -69,9 +69,7 @@ var CAPTURES = [
             "63K views. A DoorDash delivery timer was counting down at the top " +
             "of the screen.",
 
-    remark: "The story is not about the trial. It is about a facial expression " +
-            "at the trial, reported by one outlet about a journalist at another. " +
-            "Three removes from the event itself, and it still travels."
+    remark: "Three children are dead and a jury is deciding whether their mother knew what she was doing. What left the courtroom and reached my phone was four seconds of a reporter's face, and then a second story about the magazine that fired her for it. Each version is easier to have an opinion about than the one before it. That may be why each one travels further.",
   }
 
   /* Add the next capture below, after a comma:

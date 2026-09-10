@@ -30,10 +30,10 @@ var CAPTURES = [
     preview: "I captured the complaint first. The replies underneath turned it " +
              "into an argument about who to blame.",
 
-    pins: [
-      { x: 50, y: 22, label: "Foreground",   text: "A grievance stated as a feeling, not a claim" },
-      { x: 50, y: 40, label: "Measurement",  text: "1.3M views, 35K likes, 102 replies" },
-      { x: 50, y: 84, label: "Surroundings", text: "Each reply supplies a different culprit" }
+        pins: [
+      { x: 43.3, y: 22.6, label: "FOREGROUND", text: "Anger with no object named" },
+      { x: 42.7, y: 41.2, label: "MEASUREMENT", text: "1.3M views, 102 replies" },
+      { x: 38.9, y: 74.2, label: "RESPONSE", text: "Each reply supplies a different culprit" }
     ],
 
     record: "At 11:18 a.m. I opened a post from 8/25 with 1.3M views. The quoted " +

@@ -3,67 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Screenshot Log</title>
-  <style>
-    body {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-      font-family: system-ui, sans-serif;
-      line-height: 1.6;
-      color: #1a1a1a;
-    }
-    h1 { margin-bottom: 40px; }
-
-    figure {
-      display: flex;
-      gap: 36px;
-      align-items: flex-start;
-      margin: 0 0 72px;
-    }
-    figure > a {
-      width: 400px;
-      flex-shrink: 0;
-    }
-    figure img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border: 1px solid #ddd;
-      border-radius: 14px;
-      cursor: zoom-in;
-    }
-    figcaption h2 {
-      font-size: 19px;
-      margin: 0 0 10px;
-    }
-    figcaption p { margin: 0 0 12px; }
-    .zoom-hint {
-      font-size: 13px;
-      color: #888;
-    }
-
-    @media (max-width: 760px) {
-      figure { flex-direction: column; gap: 18px; }
-      figure > a { width: 100%; }
-    }
-  </style>
+  <title>The Capture Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Screenshot Log</h1>
+  <header class="masthead">
+    <a class="wordmark" href="#"></a>
+    <span class="masthead-sub"></span>
+    <nav class="masthead-nav">
+      <a href="#">Archive</a>
+    </nav>
+    <span class="masthead-tagline"></span>
+  </header>
 
-  <figure>
-    <a href="images/week-01-anger-looking-for-target.png" target="_blank">
-      <img src="images/week-01-anger-looking-for-target.png"
-           alt="An X post reading 'They fucked my generation over so hard bruh', quoting a statistic comparing 1990 income to 2026 purchasing power, with replies blaming different causes.">
-    </a>
-    <figcaption>
-      <h2>Week 1 — Anger looking for a target</h2>
-      <p>Replace this with your annotation.</p>
-      <p class="zoom-hint">Click the screenshot to view it full size.</p>
-    </figcaption>
-  </figure>
+  <main id="view"></main>
 
+  <footer class="site-footer">
+    <span class="footer-left"></span>
+    <span class="footer-right"></span>
+  </footer>
+
+  <script src="entries.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

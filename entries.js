@@ -43,6 +43,30 @@ var CAPTURES = [
             "supplied three: generational passivity, bad timing, and immigration. " +
             "The feed does not resolve the disagreement; it stacks the answers and " +
             "keeps scrolling."
+  },
+     {
+    id:    "002",
+    week:  1,
+    date:  "2026-08-26",
+    time:  "12:37",
+    title: "A Countdown and a Trial",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-002.png",
+    alt:   "A Fox News US post reporting that Vanity Fair cut ties with journalist Brittany Romano over a viral video from the Lindsay Clancy murder trial, with a photo of Romano outside the courthouse.",
+    tags:  ["media", "framing", "attention", "solo"],
+
+    preview: "A delivery countdown runs in the status bar above a story about " +
+             "a murder trial.",
+
+    pins: [],
+
+    record: "At 4:52 p.m. on 8/26 I opened a Fox News US post from 12:37 with " +
+            "63K views. A DoorDash delivery timer was counting down at the top " +
+            "of the screen.",
+
+    remark: "The story is not about the trial. It is about a facial expression " +
+            "at the trial, reported by one outlet about a journalist at another. " +
+            "Three removes from the event itself, and it still travels."
   }
 
   /* Add the next capture below, after a comma:

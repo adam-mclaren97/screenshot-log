@@ -23,7 +23,7 @@ var CAPTURES = [
     time:  "17:29",
     title: "Anger Looking for a Target",
     dek:   "A single scroll. A larger story.",
-    image: "images/week-01-anger-looking-for-target.png",
+    image: "images/week-01-anger-looking-for-a-target.PNG",
     alt:   "An X post reading 'They fucked my generation over so hard bruh', quoting a statistic about 1990 income versus 2026 purchasing power, followed by replies assigning blame to different causes.",
     tags:  ["polarization", "framing", "attention"],
 

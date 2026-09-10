@@ -51,7 +51,7 @@ var CAPTURES = [
     time:  "12:37",
     title: "A Countdown and a Trial",
     dek:   "A single scroll. A larger story.",
-    image: "images/capture-002.png",
+    image: "images/capture-002.PNG",
     alt:   "A Fox News US post reporting that Vanity Fair cut ties with journalist Brittany Romano over a viral video from the Lindsay Clancy murder trial, with a photo of Romano outside the courthouse.",
     tags:  ["media", "framing", "attention", "solo"],
 

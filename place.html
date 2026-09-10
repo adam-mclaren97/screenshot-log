@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pin Placer — The Capture Project</title>
+<style>
+  :root {
+    --bg: #f7f4ee; --card: #fffdf9; --ink: #17150f;
+    --muted: #6a6459; --rule: #ddd6c8; --accent: #bf352a;
+    --ui: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 28px 32px 60px;
+    background: var(--bg); color: var(--ink);
+    font-family: var(--ui); font-size: 15px; line-height: 1.6;
+  }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .lede { margin: 0 0 22px; color: var(--muted); max-width: 640px; }
+  .bar { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+  select, button {
+    font: inherit; padding: 8px 12px;
+    border: 1px solid var(--rule); border-radius: 4px;
+    background: var(--card); color: var(--ink); cursor: pointer;
+  }
+  button.primary { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .wrap { display: grid; grid-template-columns: 400px 1fr; gap: 40px; align-items: start; }
+  .stage {
+    position: relative; border: 7px solid #14141a; border-radius: 26px;
+    overflow: hidden; background: #000; line-height: 0; cursor: crosshair;
+    user-select: none;
+  }
+  .stage img { width: 100%; height: auto; display: block; pointer-events: none; }
+  .pin {
+    position: absolute; transform: translate(-50%, -50%);
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--accent); border: 2px solid #fff; color: #fff;
+    font-size: 13px; font-weight: 600; line-height: 24px; text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,.5); cursor: grab;
+  }
+  .pin:active { cursor: grabbing; }
+  .hint { margin-top: 10px; font-size: 13px; color: var(--muted); line-height: 1.5; }
+  table { border-collapse: collapse; width: 100%; }
+  th {
+    text-align: left; font-size: 10px; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--muted);
+    padding: 0 8px 8px 0; font-weight: 600;
+  }
+  td { padding: 0 8px 8px 0; vertical-align: top; }
+  td input {
+    font: inherit; width: 100%; padding: 7px 9px;
+    border: 1px solid var(--rule); border-radius: 4px; background: var(--card);
+  }
+  .num { font-weight: 600; color: var(--accent); padding-top: 8px; }
+  .kill {
+    border: 0; background: none; color: var(--muted);
+    font-size: 18px; line-height: 1; padding: 6px;
+  }
+  .kill:hover { color: var(--accent); }
+  .empty { color: var(--muted); font-style: italic; }
+  h2 { font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+       color: var(--muted); margin: 30px 0 10px; }
+  textarea {
+    width: 100%; height: 190px; font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 12.5px; line-height: 1.55; padding: 14px;
+    border: 1px solid var(--rule); border-radius: 4px; background: var(--card);
+    color: var(--ink); resize: vertical;
+  }
+  @media (max-width: 900px) {
+    .wrap { grid-template-columns: 1fr; }
+    .stage { max-width: 400px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Pin placer</h1>
+<p class="lede">Pick a capture, click the screenshot wherever you want a numbered dot,
+type the label and note, then copy the generated block into <code>entries.js</code>.
+Drag a dot to nudge it. Nothing here changes your site — it only writes code for you to paste.</p>
+
+<div class="bar">
+  <select id="pick"></select>
+  <button id="load">Load this capture's existing pins</button>
+  <button id="clear">Start over</button>
+</div>
+
+<div class="wrap">
+  <div>
+    <div class="stage" id="stage"></div>
+    <p class="hint">Click to add &middot; drag to move &middot; the × in the table removes one.</p>
+  </div>
+
+  <div>
+    <table>
+      <thead>
+        <tr><th style="width:30px">#</th><th style="width:34%">Label</th><th>Note</th><th style="width:30px"></th></tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <p id="empty" class="empty">No pins yet — click the screenshot.</p>
+
+    <h2>Paste this into entries.js</h2>
+    <textarea id="out" readonly></textarea>
+    <div class="bar" style="margin-top:12px">
+      <button class="primary" id="copy">Copy to clipboard</button>
+      <span id="said" style="color:var(--muted)"></span>
+    </div>
+  </div>
+</div>
+
+<script src="entries.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  var pick  = document.getElementById("pick");
+  var stage = document.getElementById("stage");
+  var rows  = document.getElementById("rows");
+  var out   = document.getElementById("out");
+  var empty = document.getElementById("empty");
+  var said  = document.getElementById("said");
+
+  var pins = [];
+  var dragging = null;
+
+  CAPTURES.forEach(function (c) {
+    var o = document.createElement("option");
+    o.value = c.id;
+    o.textContent = "Capture " + c.id + " — " + (c.title || "untitled");
+    pick.appendChild(o);
+  });
+
+  function current() {
+    return CAPTURES.filter(function (c) { return String(c.id) === pick.value; })[0];
+  }
+
+  function round(n) { return Math.round(n * 10) / 10; }
+
+  function showImage() {
+    var c = current();
+    stage.innerHTML = '<img src="' + c.image + '" alt="">';
+    draw();
+  }
+
+  function draw() {
+    Array.prototype.slice.call(stage.querySelectorAll(".pin")).forEach(function (el) {
+      el.remove();
+    });
+
+    pins.forEach(function (p, i) {
+      var d = document.createElement("span");
+      d.className = "pin";
+      d.textContent = i + 1;
+      d.style.left = p.x + "%";
+      d.style.top  = p.y + "%";
+      d.addEventListener("mousedown", function (e) {
+        e.stopPropagation();
+        dragging = i;
+      });
+      stage.appendChild(d);
+    });
+
+    drawRows();
+    drawCode();
+  }
+
+  function drawRows() {
+    rows.innerHTML = "";
+    empty.style.display = pins.length ? "none" : "block";
+
+    pins.forEach(function (p, i) {
+      var tr = document.createElement("tr");
+
+      var td0 = document.createElement("td");
+      td0.className = "num";
+      td0.textContent = (i + 1 < 10 ? "0" : "") + (i + 1);
+
+      var td1 = document.createElement("td");
+      var l = document.createElement("input");
+      l.value = p.label || "";
+      l.placeholder = "Foreground";
+      l.addEventListener("input", function () { p.label = l.value; drawCode(); });
+      td1.appendChild(l);
+
+      var td2 = document.createElement("td");
+      var t = document.createElement("input");
+      t.value = p.text || "";
+      t.placeholder = "What this points at";
+      t.addEventListener("input", function () { p.text = t.value; drawCode(); });
+      td2.appendChild(t);
+
+      var td3 = document.createElement("td");
+      var x = document.createElement("button");
+      x.className = "kill";
+      x.textContent = "×";
+      x.title = "Remove";
+      x.addEventListener("click", function () { pins.splice(i, 1); draw(); });
+      td3.appendChild(x);
+
+      tr.appendChild(td0); tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(td3);
+      rows.appendChild(tr);
+    });
+  }
+
+  function q(s) { return String(s || "").replace(/\\/g, "\\\\").replace(/"/g, '\\"'); }
+
+  function drawCode() {
+    if (!pins.length) { out.value = "pins: [],"; return; }
+    var lines = pins.map(function (p) {
+      return '      { x: ' + p.x + ', y: ' + p.y +
+             ', label: "' + q(p.label) + '", text: "' + q(p.text) + '" }';
+    });
+    out.value = "    pins: [\n" + lines.join(",\n") + "\n    ],";
+  }
+
+  stage.addEventListener("click", function (e) {
+    if (dragging !== null) return;
+    var img = stage.querySelector("img");
+    if (!img) return;
+    var r = img.getBoundingClientRect();
+    pins.push({
+      x: round(((e.clientX - r.left) / r.width) * 100),
+      y: round(((e.clientY - r.top) / r.height) * 100),
+      label: "",
+      text: ""
+    });
+    draw();
+  });
+
+  document.addEventListener("mousemove", function (e) {
+    if (dragging === null) return;
+    var img = stage.querySelector("img");
+    var r = img.getBoundingClientRect();
+    var p = pins[dragging];
+    p.x = round(Math.min(100, Math.max(0, ((e.clientX - r.left) / r.width) * 100)));
+    p.y = round(Math.min(100, Math.max(0, ((e.clientY - r.top) / r.height) * 100)));
+    var dot = stage.querySelectorAll(".pin")[dragging];
+    if (dot) { dot.style.left = p.x + "%"; dot.style.top = p.y + "%"; }
+    drawCode();
+  });
+
+  document.addEventListener("mouseup", function () {
+    if (dragging !== null) { dragging = null; }
+  });
+
+  pick.addEventListener("change", function () { pins = []; showImage(); });
+
+  document.getElementById("load").addEventListener("click", function () {
+    var c = current();
+    pins = (c.pins || []).map(function (p) {
+      return { x: p.x, y: p.y, label: p.label, text: p.text };
+    });
+    draw();
+  });
+
+  document.getElementById("clear").addEventListener("click", function () {
+    pins = [];
+    draw();
+  });
+
+  document.getElementById("copy").addEventListener("click", function () {
+    out.select();
+    navigator.clipboard.writeText(out.value).then(function () {
+      said.textContent = "Copied.";
+      setTimeout(function () { said.textContent = ""; }, 1800);
+    }, function () {
+      said.textContent = "Press Cmd+C.";
+    });
+  });
+
+  showImage();
+})();
+</script>
+</body>
+</html>

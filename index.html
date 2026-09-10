@@ -1,40 +1,69 @@
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>Screenshot Log</title>
-     <style>
-       body {
-         max-width: 800px;
-         margin: 40px auto;
-         padding: 0 20px;
-         font-family: system-ui, sans-serif;
-         line-height: 1.6;
-       }
-       img {
-         max-width: 100%;
-         height: auto;
-         display: block;
-         border: 1px solid #ddd;
-         border-radius: 6px;
-       }
-       figure { margin: 0 0 48px; }
-       figcaption { margin-top: 12px; color: #444; }
-     </style>
-   </head>
-   <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Screenshot Log</title>
+  <style>
+    body {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+    }
+    h1 { margin-bottom: 40px; }
 
-     <h1>Screenshot Log</h1>
+    figure {
+      display: flex;
+      gap: 36px;
+      align-items: flex-start;
+      margin: 0 0 72px;
+    }
+    figure > a {
+      width: 400px;
+      flex-shrink: 0;
+    }
+    figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 1px solid #ddd;
+      border-radius: 14px;
+      cursor: zoom-in;
+    }
+    figcaption h2 {
+      font-size: 19px;
+      margin: 0 0 10px;
+    }
+    figcaption p { margin: 0 0 12px; }
+    .zoom-hint {
+      font-size: 13px;
+      color: #888;
+    }
 
-     <figure>
-       <img src="images/week-01-anger-looking-for-target.png"
-            alt="Replace this with a description of what the screenshot shows">
-       <figcaption>
-         <strong>Week 1 — Anger looking for a target.</strong>
-         Replace this sentence with your annotation.
-       </figcaption>
-     </figure>
+    @media (max-width: 760px) {
+      figure { flex-direction: column; gap: 18px; }
+      figure > a { width: 100%; }
+    }
+  </style>
+</head>
+<body>
 
-   </body>
-   </html>
+  <h1>Screenshot Log</h1>
+
+  <figure>
+    <a href="images/week-01-anger-looking-for-target.png" target="_blank">
+      <img src="images/week-01-anger-looking-for-target.png"
+           alt="An X post reading 'They fucked my generation over so hard bruh', quoting a statistic comparing 1990 income to 2026 purchasing power, with replies blaming different causes.">
+    </a>
+    <figcaption>
+      <h2>Week 1 — Anger looking for a target</h2>
+      <p>Replace this with your annotation.</p>
+      <p class="zoom-hint">Click the screenshot to view it full size.</p>
+    </figcaption>
+  </figure>
+
+</body>
+</html>

@@ -7,9 +7,7 @@ var SITE = {
   name:        "The Whole Frame",
   sub:         "A media archive for a more attentive internet",
   tagline:     "Same feeds. Bigger questions.",
-  blurb:       "A growing collection of screenshots taken from my own feeds, " +
-               "annotated one at a time. Each capture asks what else was on the " +
-               "screen, and what the arrangement was doing.",
+  blurb:       "Once a day, without scrolling to find something better, I photograph the first thing X puts in my feed — the whole screen, not just the post.",
   footerLeft:  "Documenting the feed",
   footerRight: "Still scrolling. Still a story."
 };

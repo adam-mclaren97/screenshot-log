@@ -410,3 +410,88 @@ a { color: inherit; }
     border-top: 1px solid var(--rule);
   }
 }
+
+
+/* ============================================================
+   ADDED: demand filter, gap entries, disclosure notes
+   ============================================================ */
+
+.masthead-filter { margin-left: 26px; }
+
+.masthead-filter select {
+  font-family: var(--ui);
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+
+.masthead-filter select:hover { border-color: var(--accent); }
+
+.filter-note {
+  margin: 0 0 32px;
+  font-size: 13px;
+  letter-spacing: .04em;
+  color: var(--muted);
+}
+
+.filter-note strong {
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: 11px;
+  color: var(--accent);
+}
+
+.filter-note a { color: var(--muted); }
+
+.empty-state { color: var(--muted); font-style: italic; }
+
+.meta .demand { color: var(--accent); }
+
+.facts {
+  margin: 14px 0 0;
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.facts .demand-link {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.facts .demand-link:hover { border-bottom-color: var(--accent); }
+
+.card-gap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 260px;
+  background: transparent;
+  border-style: dashed;
+  text-align: center;
+  cursor: default;
+}
+
+.card-gap h2 { color: var(--muted); }
+.card-gap .preview { margin-top: 12px; }
+
+.obscured {
+  margin: 10px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (max-width: 760px) {
+  .masthead-filter { margin-left: 0; width: 100%; }
+  .masthead-filter select { width: 100%; }
+}

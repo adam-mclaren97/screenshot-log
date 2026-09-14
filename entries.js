@@ -4,7 +4,7 @@
    ============================================================ */
 
 var SITE = {
-  name:        "The Capture Project",
+  name:        "The Whole Frame",
   sub:         "A media archive for a more attentive internet",
   tagline:     "Same feeds. Bigger questions.",
   blurb:       "A growing collection of screenshots taken from my own feeds, " +
@@ -13,7 +13,15 @@ var SITE = {
   footerLeft:  "Documenting the feed",
   footerRight: "Still scrolling. Still a story."
 };
-
+/* The five demands. Every capture gets exactly one.
+   Change a label here and it changes everywhere on the site. */
+var DEMANDS = [
+  { key: "provoke",  label: "Provoke"  },
+  { key: "alarm",    label: "Alarm"    },
+  { key: "amuse",    label: "Amuse"    },
+  { key: "distract", label: "Distract" },
+  { key: "sell",     label: "Sell"     }
+];
 var CAPTURES = [
 
   {
@@ -26,7 +34,10 @@ var CAPTURES = [
     image: "images/week-01-anger-looking-for-a-target.PNG",
     alt:   "An X post reading 'They fucked my generation over so hard bruh', quoting a statistic about 1990 income versus 2026 purchasing power, followed by replies assigning blame to different causes.",
     tags:  ["polarization", "framing", "attention"],
-
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
     preview: "I captured the complaint first. The replies underneath turned it " +
              "into an argument about who to blame.",
 
@@ -54,7 +65,10 @@ var CAPTURES = [
     image: "images/capture-002.PNG",
     alt:   "A Fox News US post reporting that Vanity Fair cut ties with journalist Brittany Romano over a viral video from the Lindsay Clancy murder trial, with a photo of Romano outside the courthouse.",
     tags:  ["media", "framing", "attention", "solo"],
-
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
     preview: "A delivery countdown runs in the status bar above a story about " +
              "a murder trial.",
 

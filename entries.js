@@ -103,17 +103,17 @@ var CAPTURES = [
 
     preview: "I captured the accusation before noticing that the replies were diagnosing the post itself as bait. The screenshot preserves both the provocation and the warning I had not yet read.",
 
-    pins: [],
+    pins: [
+      { x: 75.1, y: 20.4, label: "FRAMING", text: "Correction escalates irony into criminal severity" },
+      { x: 65.5, y: 33, label: "ABSENCE", text: "Expertise is invoked but never shown" },
+      { x: 66.1, y: 40.5, label: "MEASUREMENT", text: "Likes outnumber replies by over a thousand to one" },
+      { x: 43, y: 58.9, label: "RESPONSE", text: "Replies shift attention from trial to bait" }
+    ],
 
     record: "At 12:15 p.m. I was in my room at home, scrolling through X. I do not follow any of the visible accounts. I opened this post deliberately because it matched my original focus on rage bait, so it was selected rather than served — one of the captures I took before settling on the first-item rule. I read only the post and the quoted post before taking the screenshot; I noticed the replies afterward.",
 
     remark: "It appears to be about gendered expertise in a postpartum mental-health murder trial. The interaction is actually organized around a claim's capacity to travel: one account compresses the issue into an accusation, another intensifies it, and the replies reclassify the exchange as bait. Because I captured it before reading those replies, the feed secured my attention through moral conflict before presenting doubts about provenance. My own selection is part of the record because, at this stage, I was actively looking for content that fit my existing idea of rage bait."
-  }
-
-    record: "REPLACE — Thursday, 12:15 p.m., [where]. I opened X, refreshed once, and this was the first item. A quote-post from 09:55 with 126K views, 8.2K likes and 7 replies.",
-
-    remark: "REPLACE — your own argument here."
-  }
+  },
 
   /* Add the next capture below, after a comma:
 

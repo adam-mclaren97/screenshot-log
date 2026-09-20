@@ -85,6 +85,29 @@ var CAPTURES = [
             "of the screen.",
 
     remark: "Three children are dead and a jury is deciding whether their mother knew what she was doing. What left the courtroom and reached my phone was four seconds of a reporter's face, and then a second story about the magazine that fired her for it. Each version is easier to have an opinion about than the one before it. That may be why each one travels further.",
+  },
+     {
+    id:    "003",
+    week:  1,
+    date:  "2026-08-27",
+    time:  "09:55",
+    title: "The Correction Travels",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-003.png",
+    alt:   "A quote-post reading 'so close but it's actually a murder trial', correcting a post about male experts in a postpartum mental health trial, with replies dismissing the original account as engagement bait.",
+    tags:  ["clancy-trial", "framing", "attention", "thread"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "A post that exists only to correct another post. The replies argue about the account rather than the claim.",
+
+    pins: [],
+
+    record: "REPLACE — Thursday, 12:15 p.m., [where]. I opened X, refreshed once, and this was the first item. A quote-post from 09:55 with 126K views, 8.2K likes and 7 replies.",
+
+    remark: "REPLACE — your own argument here."
   }
 
   /* Add the next capture below, after a comma:

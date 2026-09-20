@@ -114,6 +114,29 @@ var CAPTURES = [
 
     remark: "It appears to be about gendered expertise in a postpartum mental-health murder trial. The interaction is actually organized around a claim's capacity to travel: one account compresses the issue into an accusation, another intensifies it, and the replies reclassify the exchange as bait. Because I captured it before reading those replies, the feed secured my attention through moral conflict before presenting doubts about provenance. My own selection is part of the record because, at this stage, I was actively looking for content that fit my existing idea of rage bait."
   },
+     {
+    id:    "004",
+    week:  1,
+    date:  "2026-08-28",
+    time:  "09:16",
+    title: "Morning Paper, Instant Verdict",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-004.png",
+    alt:   "An X post angrily responds to a New York Post report about the Lindsay Clancy trial, accompanied by family photographs and a courtroom portrait.",
+    tags:  ["clancy-trial", "motherhood", "tabloid-framing", "solo", "pre-rule"],
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "My morning paper offered a verdict before I had left bed. I stayed for the replies, not the article.",
+
+    pins: [],
+
+    record: "At 9:16 a.m. I had just woken up and was in bed, mindlessly scrolling through X, which I sometimes call reading the morning paper. The post is from 8/27 at 14:18 with 335K views, 28K likes and 45 replies. I do not follow either account, and I captured it because it fit my earlier rule of collecting rage bait rather than because it came first. I stayed with it long enough to read many replies. I did not open the linked article, and the New York Post is a publication I already did not particularly like.",
+
+    remark: "It appears to be about whether describing an accused woman as a good mother can coexist with the deaths of her children. It is actually organized around removing a defense lawyer's phrase from its courtroom function and presenting it as a new moral offense. The family photographs make the stakes intimate, while the quote-post format supplies a verdict before readers reach the article. I joined that structure by reading the replies without opening the source, and my existing dislike of the New York Post meant I did not arrive as a neutral reader. The article became optional while judgment continued."
+  }
 
   /* Add the next capture below, after a comma:
 

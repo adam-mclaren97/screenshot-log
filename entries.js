@@ -103,7 +103,12 @@ var CAPTURES = [
 
     preview: "A post that exists only to correct another post. The replies argue about the account rather than the claim.",
 
-    pins: [],
+    pins: [
+      { x: 75.6, y: 20.4, label: "FOREGROUND", text: "A post that exists to correct another post" },
+      { x: 59.8, y: 32.4, label: "FRAMING", text: "The original claim is about who counts as an expert" },
+      { x: 66.1, y: 40.8, label: "MEASUREMENT", text: "8.2K likes, 7 replies - endorsement outruns argument" },
+      { x: 42.5, y: 57.9, label: "RESPONSE", text: "The claim is dismissed by attacking its source" }
+    ],
 
     record: "REPLACE — Thursday, 12:15 p.m., [where]. I opened X, refreshed once, and this was the first item. A quote-post from 09:55 with 126K views, 8.2K likes and 7 replies.",
 

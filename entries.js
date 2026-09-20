@@ -15,7 +15,8 @@ var SITE = {
    Change a label here and it changes everywhere on the site. */
 var DEMANDS = [
   { key: "provoke",  label: "Provoke"  },
-  { key: "alarm",    label: "Alarm"    },
+  { key: "alarm",    label: "Alarm",
+    note: "Every capture in this group arrived as urgent. Read together, almost none of them required anything of me. Urgency here is a tone, not a call to act." },
   { key: "amuse",    label: "Amuse"    },
   { key: "distract", label: "Distract" },
   { key: "sell",     label: "Sell"     }
@@ -74,9 +75,12 @@ var CAPTURES = [
       { x: 44.8, y: 14.3, label: "SOURCE", text: "One outlet reporting on another's staffing" },
       { x: 76.4, y: 31.7, label: "FRAMING", text: "The subject is a facial expression" },
       { x: 66.1, y: 58.3, label: "EVIDENCE", text: "A still frame used to prove a state of mind" },
-      { x: 49.5, y: 82.6, label: "MEASUREMENT", text: "63K views, no replies shown" }
+      { x: 49.5, y: 82.6, label: "ABSENCE", text: "The frame ends before the engagement does" }
     ],
-
+    detail: {
+      image: "images/capture-002-detail.png",
+      caption: "The status bar, enlarged. A delivery countdown runs above the trial."
+    },
     record: "At 4:52 p.m. on 8/26 I opened a Fox News US post from 12:37 with " +
             "63K views. A DoorDash delivery timer was counting down at the top " +
             "of the screen.",

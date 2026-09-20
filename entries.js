@@ -131,7 +131,12 @@ var CAPTURES = [
 
     preview: "My morning paper offered a verdict before I had left bed. I stayed for the replies, not the article.",
 
-    pins: [],
+    pins: [
+      { x: 46.6, y: 20.7, label: "FRAMING", text: "Praise is removed from its legal context" },
+      { x: 69.2, y: 36.3, label: "SOURCE", text: "Tabloid headline becomes the evidence" },
+      { x: 50, y: 59.9, label: "EVIDENCE", text: "Family photos precede facts from the trial" },
+      { x: 65, y: 81.5, label: "MEASUREMENT", text: "Likes outnumber replies by more than six hundred to one" }
+    ],
 
     record: "At 9:16 a.m. I had just woken up and was in bed, mindlessly scrolling through X, which I sometimes call reading the morning paper. The post is from 8/27 at 14:18 with 335K views, 28K likes and 45 replies. I do not follow either account, and I captured it because it fit my earlier rule of collecting rage bait rather than because it came first. I stayed with it long enough to read many replies. I did not open the linked article, and the New York Post is a publication I already did not particularly like.",
 

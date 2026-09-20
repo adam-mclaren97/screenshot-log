@@ -495,3 +495,56 @@ a { color: inherit; }
   .masthead-filter { margin-left: 0; width: 100%; }
   .masthead-filter select { width: 100%; }
 }
+
+/* ---------- crop and enlarge: a magnified detail ---------- */
+
+.detail {
+  margin: 30px 0 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+}
+
+.detail a { display: block; line-height: 0; }
+
+.detail img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #14141a;
+  border-radius: 3px;
+  cursor: zoom-in;
+}
+
+.detail figcaption {
+  margin-top: 10px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.detail-label {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 10px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* ---------- one caption for a whole set ---------- */
+
+.set-note {
+  max-width: 680px;
+  margin: 0 0 40px;
+  padding-left: 18px;
+  border-left: 2px solid var(--accent);
+}
+
+.set-note .filter-note { margin-bottom: 12px; }
+
+.set-text {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink);
+}

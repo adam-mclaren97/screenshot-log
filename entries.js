@@ -86,29 +86,29 @@ var CAPTURES = [
 
     remark: "Three children are dead and a jury is deciding whether their mother knew what she was doing. What left the courtroom and reached my phone was four seconds of a reporter's face, and then a second story about the magazine that fired her for it. Each version is easier to have an opinion about than the one before it. That may be why each one travels further.",
   },
-     {
+      {
     id:    "003",
     week:  1,
     date:  "2026-08-27",
     time:  "09:55",
-    title: "The Correction Travels",
+    title: "Diagnosis Below the Fold",
     dek:   "A single scroll. A larger story.",
     image: "images/capture-003.png",
-    alt:   "A quote-post reading 'so close but it's actually a murder trial', correcting a post about male experts in a postpartum mental health trial, with replies dismissing the original account as engagement bait.",
-    tags:  ["clancy-trial", "framing", "attention", "thread"],
-    demand:   "amuse",
+    alt:   "An X post quoting criticism of male experts in a postpartum mental-health murder trial appears above several replies calling the exchange engagement bait.",
+    tags:  ["clancy-trial", "postpartum-mental-health", "engagement-bait", "thread", "pre-rule"],
+    demand:   "provoke",
     followed: false,
     obscured: false,
     cutOff:   false,
 
-    preview: "A post that exists only to correct another post. The replies argue about the account rather than the claim.",
+    preview: "I captured the accusation before noticing that the replies were diagnosing the post itself as bait. The screenshot preserves both the provocation and the warning I had not yet read.",
 
-    pins: [
-      { x: 75.6, y: 20.4, label: "FOREGROUND", text: "A post that exists to correct another post" },
-      { x: 59.8, y: 32.4, label: "FRAMING", text: "The original claim is about who counts as an expert" },
-      { x: 66.1, y: 40.8, label: "MEASUREMENT", text: "8.2K likes, 7 replies - endorsement outruns argument" },
-      { x: 42.5, y: 57.9, label: "RESPONSE", text: "The claim is dismissed by attacking its source" }
-    ],
+    pins: [],
+
+    record: "At 12:15 p.m. I was in my room at home, scrolling through X. I do not follow any of the visible accounts. I opened this post deliberately because it matched my original focus on rage bait, so it was selected rather than served — one of the captures I took before settling on the first-item rule. I read only the post and the quoted post before taking the screenshot; I noticed the replies afterward.",
+
+    remark: "It appears to be about gendered expertise in a postpartum mental-health murder trial. The interaction is actually organized around a claim's capacity to travel: one account compresses the issue into an accusation, another intensifies it, and the replies reclassify the exchange as bait. Because I captured it before reading those replies, the feed secured my attention through moral conflict before presenting doubts about provenance. My own selection is part of the record because, at this stage, I was actively looking for content that fit my existing idea of rage bait."
+  }
 
     record: "REPLACE — Thursday, 12:15 p.m., [where]. I opened X, refreshed once, and this was the first item. A quote-post from 09:55 with 126K views, 8.2K likes and 7 replies.",
 

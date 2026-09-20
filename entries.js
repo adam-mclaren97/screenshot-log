@@ -15,8 +15,7 @@ var SITE = {
    Change a label here and it changes everywhere on the site. */
 var DEMANDS = [
   { key: "provoke",  label: "Provoke"  },
-  { key: "alarm",    label: "Alarm",
-    note: "Every capture in this group arrived as urgent. Read together, almost none of them required anything of me. Urgency here is a tone, not a call to act." },
+  { key: "alarm",    label: "Alarm", note: "Every capture in this group arrived as urgent. Read together, almost none of them required anything of me. Urgency here is a tone, not a call to act." },
   { key: "amuse",    label: "Amuse"    },
   { key: "distract", label: "Distract" },
   { key: "sell",     label: "Sell"     }
@@ -42,7 +41,7 @@ var CAPTURES = [
 
         pins: [
       { x: 43.3, y: 22.6, label: "FOREGROUND", text: "Anger with no object named" },
-      { x: 42.7, y: 41.2, label: "MEASUREMENT", text: "1.3M views, 102 replies" },
+      { x: 42.7, y: 41.2, label: "MEASUREMENT", text: "1.3M views, 102 replies - one reply per 12,000 views" },
       { x: 38.9, y: 74.2, label: "RESPONSE", text: "Each reply supplies a different culprit" }
     ],
 

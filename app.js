@@ -129,10 +129,18 @@
 
     var heading = "";
     if (demand) {
-      heading = '<p class="filter-note">Showing <strong>' +
-                esc(demandLabel(demand)) + "</strong> &mdash; " + list.length +
-                " of " + realCount() +
-                ' captures. <a href="#">Show all</a></p>';
+      var note = "";
+      for (var d = 0; d < DEMANDS.length; d++) {
+        if (DEMANDS[d].key === demand && DEMANDS[d].note) note = DEMANDS[d].note;
+      }
+      heading =
+        '<div class="set-note">' +
+          '<p class="filter-note">Showing <strong>' +
+            esc(demandLabel(demand)) + "</strong> &mdash; " + list.length +
+            " of " + realCount() +
+            ' captures. <a href="#">Show all</a></p>' +
+          (note ? '<p class="set-text">' + esc(note) + "</p>" : "") +
+        "</div>";
     }
 
     view.innerHTML =
@@ -171,7 +179,18 @@
         "</div>";
     }
 
-    var facts = [];
+        var detailFig = "";
+    if (c.detail && c.detail.image) {
+      detailFig = '<figure class="detail">' +
+                    '<a href="' + esc(c.detail.image) + '" target="_blank">' +
+                      '<img loading="lazy" src="' + esc(c.detail.image) +
+                      '" alt="' + esc(c.detail.caption || "Enlarged detail") + '">' +
+                    "</a>" +
+                    '<figcaption><span class="detail-label">Detail</span>' +
+                      esc(c.detail.caption || "") + "</figcaption>" +
+                  "</figure>";
+    }
+     var facts = [];
     if (c.demand) {
       facts.push('<a class="demand-link" href="#demand-' + esc(c.demand) + '">' +
                  esc(demandLabel(c.demand)) + "</a>");
@@ -198,6 +217,7 @@
           (facts.length ? '<p class="facts">' + facts.join(" &middot; ") + "</p>" : "") +
           tagList(c.tags) +
           notes +
+       detailFig +
           cols +
           '<nav class="prevnext">' +
             (older ? '<a href="#capture-' + esc(older.id) + '">&larr; ' + esc(older.title) + "</a>"

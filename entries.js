@@ -159,7 +159,12 @@ var CAPTURES = [
 
     preview: "I had gone looking for rage bait. This post asked me to treat a glance as evidence, and I stopped there.",
 
-    pins: [],
+    pins: [
+      { x: 94, y: 19.1, label: "EVIDENCE", text: "A small correction lends authority to a leap" },
+      { x: 56.7, y: 33.2, label: "FRAMING", text: "An imagined moment replaces observed behavior" },
+      { x: 56.2, y: 38.4, label: "ABSENCE", text: "No testimony appears alongside the verdict" },
+      { x: 65.8, y: 44.1, label: "SOURCE", text: "Two accounts reinforce the same reading" }
+    ],
 
     record: "At 8:52 a.m. I was in bed, having just woken up. I was scrolling X's For You feed looking for an example of rage bait; I do not follow either account. The quoted post is 13 hours old, and the outer post's engagement counts are below the bottom of the frame. I stayed with the post for a while and noticed its definitive language and the invitation to imagine a scene involving her children. I took the screenshot without reading the replies.",
 

@@ -217,7 +217,8 @@ var CAPTURES = [
       { x: 49.2, y: 17.9, label: "FRAMING", text: "An unnamed group becomes the opposing side" },
       { x: 60.9, y: 29.2, label: "ABSENCE", text: "The people being criticized never speak here" },
       { x: 68.7, y: 38.8, label: "SOURCE", text: "A court update becomes a prompt for an argument" },
-      { x: 45.3, y: 57.1, label: "EVIDENCE", text: "The video remains unwatched at time of capture" }
+      { x: 45.3, y: 57.1, label: "EVIDENCE", text: "The video remains unwatched at time of capture" },
+      { x: 65.8, y: 77.6, label: "MEASUREMENT", text: "The most argued capture yet" }
     ],
     record: "On August 31 at 11:31 a.m. I was in my kitchen drinking coffee and waiting for my toast. This was the first post on my For You feed. The post is from 8/30 at 21:43 with 774K views, 33K likes and 428 replies. I do not follow either account. I read both posts before taking the screenshot but did not watch the video.",
 

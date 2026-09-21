@@ -141,7 +141,30 @@ var CAPTURES = [
     record: "At 9:16 a.m. I had just woken up and was in bed, mindlessly scrolling through X, which I sometimes call reading the morning paper. The post is from 8/27 at 14:18 with 335K views, 28K likes and 45 replies. I do not follow either account, and I captured it because it fit my earlier rule of collecting rage bait rather than because it came first. I stayed with it long enough to read many replies. I did not open the linked article, and the New York Post is a publication I already did not particularly like.",
 
     remark: "It appears to be about whether describing an accused woman as a good mother can coexist with the deaths of her children. It is actually organized around removing a defense lawyer's phrase from its courtroom function and presenting it as a new moral offense. The family photographs make the stakes intimate, while the quote-post format supplies a verdict before readers reach the article. I joined that structure by reading the replies without opening the source, and my existing dislike of the New York Post meant I did not arrive as a neutral reader. The article became optional while judgment continued."
-  }
+  },
+     {
+    id:    "005",
+    week:  1,
+    date:  "2026-08-29",
+    time:  "08:52",
+    title: "A Verdict in a Glance",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-005.png",
+    alt:   "An X quote post judges a woman shown in a courtroom video still and repeats another account's claims about her expression.",
+    tags:  ["clancy-trial", "courtroom-image", "visual-judgment", "solo", "pre-rule"],
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   true,
+
+    preview: "I had gone looking for rage bait. This post asked me to treat a glance as evidence, and I stopped there.",
+
+    pins: [],
+
+    record: "At 8:52 a.m. I was in bed, having just woken up. I was scrolling X's For You feed looking for an example of rage bait; I do not follow either account. The quoted post is 13 hours old, and the outer post's engagement counts are below the bottom of the frame. I stayed with the post for a while and noticed its definitive language and the invitation to imagine a scene involving her children. I took the screenshot without reading the replies.",
+
+    remark: "The post appears to concern a woman's expression in a courtroom image. In my feed, that expression becomes the basis for a judgment about her character, while the imagined scene involving her children supplies an emotional force the image cannot verify. I had been searching for rage bait, so my decision to save this particular post is part of the story the archive tells. Placed beside my other captures of the trial, it shows how the same case can repeatedly become a prompt for immediate judgment."
+  },
 
   /* Add the next capture below, after a comma:
 

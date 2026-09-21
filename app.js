@@ -30,10 +30,6 @@
 
   function isGap(c) { return c.kind === "gap"; }
 
-  function realCount() {
-    return CAPTURES.filter(function (c) { return !isGap(c); }).length;
-  }
-
   function demandLabel(key) {
     for (var i = 0; i < DEMANDS.length; i++) {
       if (DEMANDS[i].key === key) return DEMANDS[i].label;
@@ -45,14 +41,6 @@
     return CAPTURES.slice().sort(function (a, b) {
       return String(b.id).localeCompare(String(a.id));
     });
-  }
-
-  function countFor(key) {
-    var n = 0;
-    for (var i = 0; i < CAPTURES.length; i++) {
-      if (CAPTURES[i].demand === key) n++;
-    }
-    return n;
   }
 
   function tagList(tags) {
@@ -74,26 +62,65 @@
            '" alt="' + esc(c.alt || c.title) + '">' + pins + "</div>";
   }
 
-  /* ---------- the filter menu ---------- */
+  /* ---------- the filter menus ---------- */
 
-  function buildFilter(active) {
-    var sel = document.getElementById("filter");
-    if (!sel) return;
+  function realList() {
+    return CAPTURES.filter(function (c) { return !isGap(c); });
+  }
 
-    var opts = ['<option value="">All captures (' + realCount() + ')</option>'];
-    DEMANDS.forEach(function (d) {
-      opts.push('<option value="' + d.key + '"' +
-                (d.key === active ? " selected" : "") + ">" +
-                esc(d.label) + " (" + countFor(d.key) + ")</option>");
+  function weeksAvailable() {
+    var seen = {};
+    realList().forEach(function (c) {
+      if (c.week != null) seen[c.week] = true;
     });
-    sel.innerHTML = opts.join("");
+    return Object.keys(seen).map(Number).sort(function (a, b) { return a - b; });
+  }
 
-    if (!sel.dataset.wired) {
+  function buildFilters(demand, week) {
+    var dSel = document.getElementById("filterDemand");
+    var wSel = document.getElementById("filterWeek");
+    if (!dSel || !wSel) return;
+
+    // demand counts respect the chosen week, and vice versa
+    var inWeek = realList().filter(function (c) {
+      return !week || String(c.week) === String(week);
+    });
+    var inDemand = realList().filter(function (c) {
+      return !demand || c.demand === demand;
+    });
+
+    var dOpts = ['<option value="">All demands (' + inWeek.length + ')</option>'];
+    DEMANDS.forEach(function (d) {
+      var n = inWeek.filter(function (c) { return c.demand === d.key; }).length;
+      dOpts.push('<option value="' + d.key + '"' +
+                 (d.key === demand ? " selected" : "") + ">" +
+                 esc(d.label) + " (" + n + ")</option>");
+    });
+    dSel.innerHTML = dOpts.join("");
+
+    var wOpts = ['<option value="">All weeks (' + inDemand.length + ')</option>'];
+    weeksAvailable().forEach(function (w) {
+      var n = inDemand.filter(function (c) { return String(c.week) === String(w); }).length;
+      wOpts.push('<option value="' + w + '"' +
+                 (String(w) === String(week) ? " selected" : "") +
+                 ">Week " + w + " (" + n + ")</option>");
+    });
+    wSel.innerHTML = wOpts.join("");
+
+    function wire(sel) {
+      if (sel.dataset.wired) return;
       sel.addEventListener("change", function () {
-        location.hash = sel.value ? "demand-" + sel.value : "";
+        var d = document.getElementById("filterDemand").value;
+        var w = document.getElementById("filterWeek").value;
+        var bits = [];
+        if (d) bits.push("demand-" + d);
+        if (w) bits.push("week-" + w);
+        location.hash = bits.join("+");
       });
       sel.dataset.wired = "1";
     }
+    wire(dSel);
+    wire(wSel);
   }
 
   /* ---------- collection view ---------- */
@@ -106,9 +133,12 @@
            "</div>";
   }
 
-  function renderGrid(demand) {
+  function renderGrid(demand, week) {
     var list = sorted().filter(function (c) {
-      return !demand || c.demand === demand;
+      if (isGap(c)) return !demand && !week;
+      if (demand && c.demand !== demand) return false;
+      if (week && String(c.week) !== String(week)) return false;
+      return true;
     });
 
     var cards = list.map(function (c) {
@@ -128,23 +158,28 @@
     }).join("");
 
     var heading = "";
-    if (demand) {
+    if (demand || week) {
       var note = "";
-      for (var d = 0; d < DEMANDS.length; d++) {
-        if (DEMANDS[d].key === demand && DEMANDS[d].note) note = DEMANDS[d].note;
+      if (demand) {
+        for (var d = 0; d < DEMANDS.length; d++) {
+          if (DEMANDS[d].key === demand && DEMANDS[d].note) note = DEMANDS[d].note;
+        }
       }
+      var what = [];
+      if (demand) what.push("<strong>" + esc(demandLabel(demand)) + "</strong>");
+      if (week)   what.push("<strong>Week " + esc(week) + "</strong>");
+
       heading =
         '<div class="set-note">' +
-          '<p class="filter-note">Showing <strong>' +
-            esc(demandLabel(demand)) + "</strong> &mdash; " + list.length +
-            " of " + realCount() +
+          '<p class="filter-note">Showing ' + what.join(" in ") + " &mdash; " +
+            list.length + " of " + realList().length +
             ' captures. <a href="#">Show all</a></p>' +
           (note ? '<p class="set-text">' + esc(note) + "</p>" : "") +
         "</div>";
     }
 
     view.innerHTML =
-      (demand ? "" : (SITE.blurb ? '<div class="intro"><p>' + esc(SITE.blurb) + "</p></div>" : "")) +
+      ((demand || week) ? "" : (SITE.blurb ? '<div class="intro"><p>' + esc(SITE.blurb) + "</p></div>" : "")) +
       heading +
       (list.length ? '<div class="grid">' + cards + "</div>"
                    : '<p class="empty-state">No captures in this category yet.</p>');
@@ -179,7 +214,7 @@
         "</div>";
     }
 
-        var detailFig = "";
+    var detailFig = "";
     if (c.detail && c.detail.image) {
       detailFig = '<figure class="detail">' +
                     '<a href="' + esc(c.detail.image) + '" target="_blank">' +
@@ -190,10 +225,15 @@
                       esc(c.detail.caption || "") + "</figcaption>" +
                   "</figure>";
     }
-     var facts = [];
+
+    var facts = [];
     if (c.demand) {
       facts.push('<a class="demand-link" href="#demand-' + esc(c.demand) + '">' +
                  esc(demandLabel(c.demand)) + "</a>");
+    }
+    if (c.week != null) {
+      facts.push('<a class="demand-link" href="#week-' + esc(c.week) + '">Week ' +
+                 esc(c.week) + "</a>");
     }
     if (c.followed === true)  facts.push("Account followed");
     if (c.followed === false) facts.push("Account not followed");
@@ -217,7 +257,7 @@
           (facts.length ? '<p class="facts">' + facts.join(" &middot; ") + "</p>" : "") +
           tagList(c.tags) +
           notes +
-       detailFig +
+          detailFig +
           cols +
           '<nav class="prevnext">' +
             (older ? '<a href="#capture-' + esc(older.id) + '">&larr; ' + esc(older.title) + "</a>"
@@ -266,23 +306,29 @@
 
     var hash = location.hash;
     var mCap = hash.match(/^#capture-(.+)$/);
-    var mDem = hash.match(/^#demand-(.+)$/);
+
+    var demand = "", week = "";
+    hash.replace(/^#/, "").split("+").forEach(function (part) {
+      var d = part.match(/^demand-(.+)$/);
+      var w = part.match(/^week-(.+)$/);
+      if (d) demand = d[1];
+      if (w) week = w[1];
+    });
 
     if (mCap) {
       var found = CAPTURES.filter(function (c) {
         return String(c.id) === mCap[1] && !isGap(c);
       })[0];
       if (found) {
-        buildFilter("");
+        buildFilters("", "");
         renderDetail(found);
         window.scrollTo(0, 0);
         return;
       }
     }
 
-    var demand = mDem ? mDem[1] : "";
-    buildFilter(demand);
-    renderGrid(demand);
+    buildFilters(demand, week);
+    renderGrid(demand, week);
     window.scrollTo(0, 0);
   }
 

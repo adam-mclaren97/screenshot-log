@@ -170,6 +170,28 @@ var CAPTURES = [
 
     remark: "The post appears to concern a woman's expression in a courtroom image. In my feed, that expression becomes the basis for a judgment about her character, while the imagined scene involving her children supplies an emotional force the image cannot verify. I had been searching for rage bait, so my decision to save this particular post is part of the story the archive tells. Placed beside my other captures of the trial, it shows how the same case can repeatedly become a prompt for immediate judgment."
   },
+     {
+    id:    "006",
+    week:  1,
+    date:  "2026-08-30",
+    time:  "08:53",
+    title: "The Collapse Joke",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-006.png",
+    alt:   "An X post imagines an absurd future after an AI bubble bursts, with a pink liked heart and several replies visible below.",
+    tags:  ["ai-bubble", "economic-anxiety", "satire", "thread"],
+    demand:   "amuse",
+    obscured: true,
+    cutOff:   false,
+
+    preview: "The first time I let the top of my feed choose the capture, it gave me a joke about several anxieties at once. I liked it before saving it.",
+
+    pins: [],
+
+    record: "On August 30 at 8:53 a.m. I was in bed after waking up and scrolling X. This was my first capture under the rule of saving what appeared first in my feed. The post is from 8/27 at 22:09 with 1.4M views, 108K likes and 259 replies. An account I follow had reposted it; I do not follow the original poster. I read the post quickly, liked it, and took the screenshot without reading the replies.",
+
+    remark: "On its surface, this is a joke about an imagined economic and technological collapse. For me, its effect was to make several worrying topics funny enough to take in at once. Unlike the earlier captures I selected for their anger, this one reached me through an account I follow when I let the feed choose. The visible like also records a limit of my method at that point: I had reacted before capturing, because I had not yet settled on my rule to screenshot first."
+  },
 
   /* Add the next capture below, after a comma:
 

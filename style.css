@@ -548,3 +548,8 @@ a { color: inherit; }
   line-height: 1.6;
   color: var(--ink);
 }
+/* two filter menus sit side by side */
+.masthead-filter {
+  display: inline-flex;
+  gap: 10px;
+}

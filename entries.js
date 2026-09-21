@@ -196,6 +196,29 @@ var CAPTURES = [
 
     remark: "On its surface, this is a joke about an imagined economic and technological collapse. For me, its effect was to make several worrying topics funny enough to take in at once. Unlike the earlier captures I selected for their anger, this one reached me through an account I follow when I let the feed choose. The visible like also records a limit of my method at that point: I had reacted before capturing, because I had not yet settled on my rule to screenshot first."
   },
+     {
+    id:    "007",
+    week:  1,
+    date:  "2026-08-31",
+    time:  "11:31",
+    title: "Who Decides the Point",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-007.png",
+    alt:   "An X post comments on reactions to the Lindsay Clancy trial above a quoted news update containing a Fox News video still.",
+    tags:  ["clancy-trial", "jury-deliberations", "framing", "solo"],
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "The first post in my feed brought me back to a case already in this collection. I read its argument without watching the report beneath it.",
+
+    pins: [],
+
+    record: "On August 31 at 11:31 a.m. I was in my kitchen drinking coffee and waiting for my toast. This was the first post on my For You feed. The post is from 8/30 at 21:43 with 774K views, 33K likes and 428 replies. I do not follow either account. I read both posts before taking the screenshot but did not watch the video.",
+
+    remark: "This appears to be about the Clancy trial and the jury's deliberations. The main post uses that update to set up an argument with people it describes but does not show speaking for themselves. I encountered the argument before hearing anything in the attached video. This is another Clancy-related capture, though its recurrence alone cannot tell me why X placed it first that morning."
+  },
   /* Add the next capture below, after a comma:
 
   ,{

@@ -186,8 +186,12 @@ var CAPTURES = [
 
     preview: "The first time I let the top of my feed choose the capture, it gave me a joke about several anxieties at once. I liked it before saving it.",
 
-    pins: [],
-
+    pins: [
+      { x: 55.2, y: 12.7, label: "FRAMING", text: "A followed repost carries an unfollowed voice" },
+      { x: 41.7, y: 31, label: "FOREGROUND", text: "Absurdity makes the collapse easy to laugh at" },
+      { x: 66.6, y: 39.3, label: "EVIDENCE", text: "My like predates the rule I follow now" },
+      { x: 77.7, y: 80.6, label: "RESPONSE", text: "The replies enter the frame unread" }
+    ],
     record: "On August 30 at 8:53 a.m. I was in bed after waking up and scrolling X. This was my first capture under the rule of saving what appeared first in my feed. The post is from 8/27 at 22:09 with 1.4M views, 108K likes and 259 replies. An account I follow had reposted it; I do not follow the original poster. I read the post quickly, liked it, and took the screenshot without reading the replies.",
 
     remark: "On its surface, this is a joke about an imagined economic and technological collapse. For me, its effect was to make several worrying topics funny enough to take in at once. Unlike the earlier captures I selected for their anger, this one reached me through an account I follow when I let the feed choose. The visible like also records a limit of my method at that point: I had reacted before capturing, because I had not yet settled on my rule to screenshot first."

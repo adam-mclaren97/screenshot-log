@@ -192,7 +192,6 @@ var CAPTURES = [
 
     remark: "On its surface, this is a joke about an imagined economic and technological collapse. For me, its effect was to make several worrying topics funny enough to take in at once. Unlike the earlier captures I selected for their anger, this one reached me through an account I follow when I let the feed choose. The visible like also records a limit of my method at that point: I had reacted before capturing, because I had not yet settled on my rule to screenshot first."
   },
-
   /* Add the next capture below, after a comma:
 
   ,{

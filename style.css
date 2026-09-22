@@ -553,3 +553,92 @@ a { color: inherit; }
   display: inline-flex;
   gap: 10px;
 }
+
+/* ============================================================
+   TYPOGRAPHY + MASTHEAD, second pass
+   ============================================================ */
+
+:root {
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+
+  /* WORDMARK — swap this one line to try each:
+     "Archivo Black", "Helvetica Neue", Arial, sans-serif
+     "Bodoni Moda", Georgia, serif
+     "Fraunces", Georgia, serif                              */
+  --wordmark: "Archivo Black", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ---- reading copy gets a serif; interface stays sans ---- */
+
+.intro,
+.card .preview,
+.columns p,
+.set-text,
+.page p,
+.page .lede,
+.detail figcaption {
+  font-family: var(--serif);
+}
+
+.intro         { font-size: 19px;   line-height: 1.55; }
+.card .preview { font-size: 15.5px; line-height: 1.5;  }
+.columns p     { font-size: 16.5px; line-height: 1.6;  }
+.set-text      { font-size: 18px;   line-height: 1.6;  }
+
+/* ---- two-tier masthead ---- */
+
+.masthead {
+  display: block;
+  padding: 0 40px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.masthead-top {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+  padding: 26px 0 18px;
+}
+
+.wordmark {
+  font-family: var(--wordmark);
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: -.005em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.masthead-sub {
+  padding-left: 22px;
+  border-left: 1px solid var(--rule);
+  max-width: 230px;
+}
+
+.masthead-tagline {
+  margin-left: auto;
+  padding-left: 0;
+  border-left: 0;
+}
+
+.masthead-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 11px 0 13px;
+  border-top: 1px solid var(--rule);
+}
+
+.masthead-nav { margin-left: 0; }
+
+.masthead-filter select { padding: 6px 10px; }
+
+@media (max-width: 760px) {
+  .masthead { padding-left: 20px; padding-right: 20px; }
+  .masthead-top { padding: 20px 0 14px; }
+  .wordmark { font-size: 26px; }
+  .masthead-bar { flex-direction: column; align-items: stretch; gap: 10px; }
+  .masthead-nav { justify-content: flex-start; }
+}

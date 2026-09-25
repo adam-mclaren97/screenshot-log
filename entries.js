@@ -224,6 +224,29 @@ var CAPTURES = [
 
     remark: "This appears to be about the Clancy trial and the jury's deliberations. The main post uses that update to set up an argument with people it describes but does not show speaking for themselves. I encountered the argument before hearing anything in the attached video. This is another Clancy-related capture, though its recurrence alone cannot tell me why X placed it first that morning."
   },
+     {
+    id:    "008",
+    week:  2,
+    date:  "2026-09-01",
+    time:  "15:20",
+    title: "Party Lines, Betting Lines",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-008.png",
+    alt:   "An X For You feed shows a political image carousel comparing Democrats and Republicans above an NYRA Bets advertisement.",
+    tags:  ["trump-support", "partisan-framing", "gambling-ad", "solo"],
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "The feed kept a simple rhythm during my break from drumming: choose a political side, then place a bet.",
+
+    pins: [],
+
+    record: "On September 1 at 3:20 p.m. I was taking a break from practicing drums when I refreshed my For You feed. This was the first post displayed. The post is four hours old with 401K views, 4.9K likes and 88 replies. I do not follow the account. I paused to examine the visible images and the advertisement beneath them. I had not liked or otherwise interacted with the post before taking the screenshot.",
+
+    remark: "On the surface, this is an endorsement of Trump accompanied by a two-column account of American politics. To me, the comparison looked like a Fox News graphic assembled from every hot-button phrase at once; its attempt to explain everything was part of the absurdity. X then placed a horse-racing promotion immediately beneath it, making political identity and gambling feel like consecutive forms of choosing a side. I had stepped away from practicing drums, but the feed supplied its own rhythm: position, reaction, wager."
+  }
   /* Add the next capture below, after a comma:
 
   ,{

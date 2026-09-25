@@ -20,6 +20,17 @@ var DEMANDS = [
   { key: "distract", label: "Distract" },
   { key: "sell",     label: "Sell"     }
 ];
+/* Optional. Gives a tag a proper name and a paragraph of its own.
+   A tag with no entry here still works — it just shows no note. */
+var TAG_NOTES = {
+  "the-house": {
+    title: "The House",
+    note: "The subject above it changes every day. The offer below it does " +
+          "not. Kalshi, FanDuel, DraftKings, NYRA — different companies, " +
+          "one position in the feed, reserved for a wager. These are the " +
+          "captures where the second item was a bet."
+  }
+};
 var CAPTURES = [
 
   {
@@ -233,7 +244,7 @@ var CAPTURES = [
     dek:   "A single scroll. A larger story.",
     image: "images/capture-008.png",
     alt:   "An X For You feed shows a political image carousel comparing Democrats and Republicans above an NYRA Bets advertisement.",
-    tags:  ["trump-support", "partisan-framing", "gambling-ad", "solo"],
+    tags:  ["trump-support", "partisan-framing", "nyra", "the-house", "solo"],
     demand:   "provoke",
     followed: false,
     obscured: false,
@@ -263,7 +274,7 @@ var CAPTURES = [
     dek:   "A single scroll. A larger story.",
     image: "images/capture-009.png",
     alt:   "An X feed shows a caption criticizing Olivia Rodrigo's singing above a quoted performance video, with a partially visible NYRA Bets advertisement underneath.",
-    tags:  ["olivia-rodrigo", "music", "gambling-ad", "nyra-bets", "solo"],
+    tags:  ["olivia-rodrigo", "music", "nyra", "the-house", "solo"],
     demand:   "amuse",
     obscured: false,
     cutOff:   false,
@@ -327,7 +338,7 @@ var CAPTURES = [
     dek:   "A single scroll. A larger story.",
     image: "images/capture-011.png",
     alt:   "An X feed screenshot with an Uber arrival indicator shows a sarcastic Clancy quote post above a courtroom photograph, followed by a partially visible DraftKings advertisement.",
-    tags:  ["clancy-trial", "gambling-ad", "draftkings", "bachelor-weekend", "solo"],
+    tags:  ["clancy-trial", "draftkings", "the-house", "bachelor-weekend", "solo"],
     demand:   "provoke",
     followed: false,
     obscured: false,
@@ -412,7 +423,7 @@ var CAPTURES = [
     dek:   "A single scroll. A larger story.",
     image: "images/capture-014.png",
     alt:   "X's For You feed shows Collin Rugg commenting on a Clancy juror's account of jury disagreement above an interview clip, followed by a partially visible Kalshi cryptocurrency-market advertisement.",
-    tags:  ["clancy-trial", "jurors", "kalshi", "solo"],
+    tags:  ["clancy-trial", "jurors", "kalshi", "the-house", "solo"],
     demand:   "provoke",
     followed: false,
     obscured: false,

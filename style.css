@@ -721,3 +721,9 @@ a { color: inherit; }
   color: var(--ink);
   background: transparent;
 }
+/* a tag that names a set reads as a section, not a keyword */
+.tags li.is-named {
+  border-color: var(--ink);
+  color: var(--ink);
+  background: transparent;
+}

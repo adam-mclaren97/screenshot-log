@@ -279,6 +279,17 @@ var CAPTURES = [
     record: "On September 2 at 2:01 p.m. I was taking a break at work. This was the first post in my For You feed. The post is ten hours old with 1.2M views, 7K likes and 186 replies; the quoted Variety post is fourteen hours old. I had not liked or otherwise interacted with it before taking the screenshot. I am not certain whether I follow the posting account.",
 
     remark: "I don't particularly care for Olivia Rodrigo's music, but a post criticizing her singing still caught my attention during a work break. That made me wonder whether my lack of interest could itself become a reason to look: I might skip a performance and stop for someone mocking it. I don't know whether X made that calculation, but I noticed myself considering the invitation. Beneath it was the same NYRA Bets offer that appeared under the previous day's political comparison. New subject, same horse-racing proposal."
+  },
+     {
+    kind:    "gap",
+    id:      "009a",
+    week:    2,
+    date:    "2026-09-03",
+    title:   "Otherwise Occupied",
+    reason:  "No capture. Anniversary.",
+    preview: "I spent the day with my girlfriend. For once, 'For You' didn't get a turn.",
+    record:  "September 3 was my anniversary with my girlfriend. I got caught up in the day and did not open X. No screenshot was taken.",
+    remark:  "Most entries show what appeared when I gave X my attention. This one marks a day when I never opened the app. I was not deliberately taking a digital break; I was busy with my anniversary. Leaving this space in the collection acknowledges that my attention also has somewhere else to be."
   }
   /* Add the next capture below, after a comma:
 

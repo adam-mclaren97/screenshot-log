@@ -465,7 +465,7 @@ var CAPTURES = [
     dek:   "A single scroll. A larger story.",
     image: "images/capture-015.png",
     alt:   "X's For You feed shows a live Al Jazeera English banner above a post by TiredAndOnFire quoting Ag0at's tweet about Nintendo adding sprint to an Ocarina of Time remake, with gameplay footage in the quoted post, followed by a partially visible FanDuel Sports advertisement.",
-    tags:  ["zelda", "breath-of-the-wild", "remake", "fanduel", "the-second-item", "morning-feed"],
+    tags:  ["zelda", "breath-of-the-wild", "remake", "fanduel", "the-second-item", "morning-feed", "always-live"],
     demand:   "amuse",
     followed: false,
     obscured: false,
@@ -476,7 +476,7 @@ var CAPTURES = [
              "because the argument was so dramatic over something I find funny.",
 
     pins: [
-      { x: 80, y: 20, label: "INTERRUPTION", text: "A live war broadcast has been sitting above all of this the whole time" },
+      { x: 80, y: 20, label: "INTERRUPTION", text: "A live news channel has been sitting above all of this the whole time" },
       { x: 30, y: 28, label: "FOREGROUND",   text: "This is the part that makes me stop" },
       { x:  8, y: 32, label: "FRAMING",      text: "The wording turns a small change into a crisis" },
       { x:  8, y: 40, label: "EVIDENCE",     text: "The quoted post gives the argument something to hang on" },
@@ -498,7 +498,7 @@ var CAPTURES = [
             "commercial rhythm underneath it stays the same. The joke is about Zelda, " +
             "but the structure of the feed still pushes me from amusement toward " +
             "consumption. And above all of it, unopened, a live news channel had been " +
-            "waiting since before I started reading. One frame held a war, a joke " +
+            "waiting since before I started reading. One frame held a live news channel, a joke " +
             "about Zelda, and a bet. Forget all that, though — apparently I should go " +
             "gamble."
   }

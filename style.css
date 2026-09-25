@@ -664,3 +664,41 @@ a { color: inherit; }
 
 .card-gap { cursor: pointer; }
 .card-gap:hover { border-color: var(--accent); transform: none; box-shadow: none; }
+
+/* gap cards carry their record and remark on the card itself */
+.card-gap {
+  justify-content: flex-start;
+  min-height: 0;
+  text-align: left;
+  padding: 22px 20px 24px;
+}
+
+.card-gap h2 { margin-top: 6px; }
+
+.card-gap .preview {
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.gap-field {
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+}
+
+.gap-field h3 {
+  margin: 0 0 6px;
+  font-family: var(--ui);
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.gap-field p {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--ink);
+}

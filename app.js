@@ -125,11 +125,16 @@
 
   /* ---------- collection view ---------- */
 
-    function gapCard(c) {
+   function gapCard(c) {
     return '<a class="card card-gap" href="#capture-' + esc(c.id) + '">' +
-             '<p class="meta">' + (c.date ? esc(prettyDate(c.date)) : "") + "</p>" +
+             '<p class="meta">' + (c.date ? esc(prettyDate(c.date)) : "") +
+               " &middot; <span class=\"demand\">No capture</span></p>" +
              "<h2>" + esc(c.title || "No capture") + "</h2>" +
              (c.reason ? '<p class="preview">' + esc(c.reason) + "</p>" : "") +
+             (c.record ? '<div class="gap-field"><h3>Record</h3><p>' +
+                         esc(c.record) + "</p></div>" : "") +
+             (c.remark ? '<div class="gap-field"><h3>Remark</h3><p>' +
+                         esc(c.remark) + "</p></div>" : "") +
            "</a>";
   }
 

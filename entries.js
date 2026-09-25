@@ -345,6 +345,29 @@ var CAPTURES = [
     record: "On September 5 at 4:42 a.m. I was waiting for an Uber outside an Airbnb, returning to my hotel near the casino during my best friend's bachelor weekend. I had not yet slept. The post is ten hours old with 191K views, 18K likes and 55 replies, and it was already liked when I captured it. I follow neither TruthHurts nor Jay Gatling. I had not gambled at the casino and did not take up the DraftKings offer.",
 
     remark: "The previous day, I wanted the Clancy mistrial update ahead of tennis; now the case is back on top with another commentator adding disgust. Wanting to follow a story apparently comes with plenty of chances to rehearse a reaction. Beneath that, DraftKings offers to extend an evening in which I had already declined to gamble. Its placement does not tell me whether the ad had anything to do with my casino visit, but the coincidence gives this capture its punchline. I was waiting for a ride back to my hotel, and my feed still had suggestions for the night."
+  },
+     {
+    id:    "012",
+    week:  2,
+    date:  "2026-09-06",
+    time:  "17:54",
+    title: "Someone Else's Feed",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-012.png",
+    alt:   "X's For You feed shows Jason Burne praising a quoted trailcam video of an elk beside a stream at sunset, with a US Open tennis video partially visible below.",
+    tags:  ["trailcam", "wildlife", "us-open", "solo", "pre-schedule"],
+    demand:   "distract",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "For a second, I thought I had opened someone else's feed. Then tennis appeared underneath, and I recognized the place.",
+
+    pins: [],
+
+    record: "On September 6 at 5:54 p.m. I opened X after returning home from my best friend's bachelor weekend and lying down in bed to relax. The post is three hours old with 376K views, 7K likes and 20 replies. Below it is a US Open post. I follow neither Jason Burne nor trailcam, but I do follow the US Open.",
+
+    remark: "After a run of provocative content, a quiet wildlife scene felt like my feed had deliberately offered me a break. I cannot know whether that was the intention, but the change was strong enough to make this briefly feel like someone else's feed. The tennis post underneath brought me back to familiar territory. What stays with me is how unfamiliar calm had become: an animal beside a stream felt more out of place than another argument about the Clancy trial."
   }
   /* Add the next capture below, after a comma:
 

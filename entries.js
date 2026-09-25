@@ -307,8 +307,12 @@ var CAPTURES = [
     cutOff:   false,
 
     preview: "X put tennis first. I noticed Clancy first and nearly scrolled past the screenshot I was supposed to take.",
-
-    pins: [],
+        
+    pins: [
+      { x: 29.8, y: 31.4, label: "FRAMING", text: "First in my feed, second in my attention" },
+      { x: 48.2, y: 64.4, label: "INTERRUPTION", text: "The story I keep seeing returns" },
+      { x: 58.3, y: 71.6, label: "FOREGROUND", text: "This is where I actually start reading" }
+    ],
 
     record: "On September 4 at 2:17 p.m. I opened X while eating in my kitchen at home. The Tennis Letter, an account I follow, supplied the first post in my feed; it is 52 minutes old with 151K views, 3.1K likes and 107 replies. Below it, two hours old, TMZ announced a mistrial in the Lindsay Clancy case. I noticed the Clancy announcement first and nearly scrolled toward it before remembering to take the screenshot.",
 

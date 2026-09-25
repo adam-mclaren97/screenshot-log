@@ -391,7 +391,13 @@ var CAPTURES = [
 
     preview: "A second day of animals, this time explicitly recommended as a break from rage bait. Then Game of Thrones appears underneath. Apparently my break has terms and conditions.",
 
-    pins: [],
+    pins: [
+      { x: 56.7, y: 25.3, label: "FRAMING", text: "A user describes the pattern I am documenting" },
+      { x: 21, y: 39.8, label: "SOURCE", text: "Same wildlife account, another person showing me in" },
+      { x: 63.7, y: 63, label: "EVIDENCE", text: "I liked the break before I recorded it" },
+      { x: 80.8, y: 63.1, label: "MEASUREMENT", text: "39k likes, 20 replies - the highest ratio in the archive" },
+      { x: 52.3, y: 76.9, label: "INTERRUPTION", text: "My grudge is waiting directly below" }
+    ],
 
     record: "On September 7 at 1:35 p.m. I was at home about to get ready for work when I opened X. The post is six hours old with 1M views, 39K likes and 20 replies; it quotes a trailcam post from the previous day. I recognized trailcam from the previous day's capture, this time quoted by a different account. I liked the post before capturing and left the like visible. I follow none of the accounts shown.",
 

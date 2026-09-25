@@ -52,11 +52,20 @@
     return n;
   }
 
+  // a tag with a title in TAG_NOTES shows the title, not the raw slug
+  function tagDisplay(t) {
+    var s = tagSet(t);
+    return (s && s.title) ? s.title : t;
+  }
+
   function tagList(tags, asLinks) {
     if (!tags || !tags.length) return "";
     return '<ul class="tags">' + tags.map(function (t) {
-      if (!asLinks) return "<li>" + esc(t) + "</li>";
-      return '<li><a href="#tag-' + encodeURIComponent(t) + '">' + esc(t) + "</a></li>";
+      var shown = esc(tagDisplay(t));
+      var named = tagSet(t) && tagSet(t).title ? " is-named" : "";
+      if (!asLinks) return '<li class="tag' + named + '">' + shown + "</li>";
+      return '<li class="tag' + named + '"><a href="#tag-' +
+             encodeURIComponent(t) + '">' + shown + "</a></li>";
     }).join("") + "</ul>";
   }
 
@@ -79,10 +88,14 @@
     return found;
   }
 
-  function tagNote(tag) {
-    if (!tag) return "";
-    if (typeof TAG_NOTES === "undefined" || !TAG_NOTES) return "";
-    return TAG_NOTES[tag] || "";
+  // a tag may have a title and a note in TAG_NOTES, or nothing at all
+  function tagSet(tag) {
+    if (!tag) return null;
+    if (typeof TAG_NOTES === "undefined" || !TAG_NOTES) return null;
+    var v = TAG_NOTES[tag];
+    if (!v) return null;
+    if (typeof v === "string") return { title: "", note: v };
+    return { title: v.title || "", note: v.note || "" };
   }
 
   function phone(c, showPins) {
@@ -221,10 +234,14 @@
           if (DEMANDS[d].key === demand && DEMANDS[d].note) note = DEMANDS[d].note;
         }
       }
-      if (tag && tagNote(tag)) note = tagNote(tag);
+      var set = tagSet(tag);
+      if (set && set.note) note = set.note;
 
       var what = [];
-      if (tag)    what.push('<strong class="tag-name">' + esc(tag) + "</strong>");
+      if (tag) {
+        what.push('<strong class="tag-name">' +
+                  esc(set && set.title ? set.title : tag) + "</strong>");
+      }
       if (demand) what.push("<strong>" + esc(demandLabel(demand)) + "</strong>");
       if (week)   what.push("<strong>Week " + esc(week) + "</strong>");
 

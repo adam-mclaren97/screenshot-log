@@ -334,8 +334,13 @@ var CAPTURES = [
     cutOff:   false,
 
     preview: "I made it through a casino visit without gambling. While I waited for my Uber, X supplied another Clancy argument and one more opportunity to reconsider.",
-
-    pins: [],
+        
+    pins: [
+      { x: 49.7, y: 3, label: "SURROUNDINGS", text: "My ride home shares a space with another argument" },
+      { x: 74.4, y: 24.3, label: "FRAMING", text: "Yesterday I wanted today's news; today I get another jab" },
+      { x: 44.3, y: 75.3, label: "EVIDENCE", text: "I had already liked it before I captured it" },
+      { x: 76.7, y: 80.1, label: "INTERRUPTION", text: "I leave the casino; the pitch follows" }
+    ],
 
     record: "On September 5 at 4:42 a.m. I was waiting for an Uber outside an Airbnb, returning to my hotel near the casino during my best friend's bachelor weekend. I had not yet slept. The post is ten hours old with 191K views, 18K likes and 55 replies, and it was already liked when I captured it. I follow neither TruthHurts nor Jay Gatling. I had not gambled at the casino and did not take up the DraftKings offer.",
 

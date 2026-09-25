@@ -714,3 +714,10 @@ a { color: inherit; }
 .tags li a:hover {
   color: var(--accent);
 }
+
+/* a tag that names a set reads as a section, not a keyword */
+.tags li.is-named {
+  border-color: var(--ink);
+  color: var(--ink);
+  background: transparent;
+}

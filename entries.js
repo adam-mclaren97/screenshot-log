@@ -253,6 +253,28 @@ var CAPTURES = [
     record: "On September 1 at 3:20 p.m. I was taking a break from practicing drums when I refreshed my For You feed. This was the first post displayed. The post is four hours old with 401K views, 4.9K likes and 88 replies. I do not follow the account. I paused to examine the visible images and the advertisement beneath them. I had not liked or otherwise interacted with the post before taking the screenshot.",
 
     remark: "On the surface, this is an endorsement of Trump accompanied by a two-column account of American politics. To me, the comparison looked like a Fox News graphic assembled from every hot-button phrase at once; its attempt to explain everything was part of the absurdity. X then placed a horse-racing promotion immediately beneath it, making political identity and gambling feel like consecutive forms of choosing a side. I had stepped away from practicing drums, but the feed supplied its own rhythm: position, reaction, wager."
+  },
+     {
+    id:    "009",
+    week:  2,
+    date:  "2026-09-02",
+    time:  "14:01",
+    title: "Anyway, Bet on Horses",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-009.png",
+    alt:   "An X feed shows a caption criticizing Olivia Rodrigo's singing above a quoted performance video, with a partially visible NYRA Bets advertisement underneath.",
+    tags:  ["olivia-rodrigo", "music", "gambling-ad", "nyra-bets", "solo"],
+    demand:   "amuse",
+    obscured: false,
+    cutOff:   false,
+
+    preview: "Apparently, not caring for her music still leaves room for caring about someone criticizing it. And X would once again like to know whether I fancy a bet.",
+
+    pins: [],
+
+    record: "On September 2 at 2:01 p.m. I was taking a break at work. This was the first post in my For You feed. The post is ten hours old with 1.2M views, 7K likes and 186 replies; the quoted Variety post is fourteen hours old. I had not liked or otherwise interacted with it before taking the screenshot. I am not certain whether I follow the posting account.",
+
+    remark: "I don't particularly care for Olivia Rodrigo's music, but a post criticizing her singing still caught my attention during a work break. That made me wonder whether my lack of interest could itself become a reason to look: I might skip a performance and stop for someone mocking it. I don't know whether X made that calculation, but I noticed myself considering the invitation. Beneath it was the same NYRA Bets offer that appeared under the previous day's political comparison. New subject, same horse-racing proposal."
   }
   /* Add the next capture below, after a comma:
 

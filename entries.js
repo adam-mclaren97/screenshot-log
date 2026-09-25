@@ -402,6 +402,47 @@ var CAPTURES = [
     record: "On September 7 at 1:35 p.m. I was at home about to get ready for work when I opened X. The post is six hours old with 1M views, 39K likes and 20 replies; it quotes a trailcam post from the previous day. I recognized trailcam from the previous day's capture, this time quoted by a different account. I liked the post before capturing and left the like visible. I follow none of the accounts shown.",
 
     remark: "Yesterday's wildlife felt like someone else's feed; today the same account returns, and the person quoting it says outright that animal videos cleanse you between rage-bait and Nazi posts. Someone inside the feed is describing the pattern I am trying to document, and treating it as an ordinary feature of the place. I left my like visible because the break was welcome. Then the post underneath reminded me how much I dislike the ending of Game of Thrones. My feed gave me a breather and put an old grudge within thumb's reach."
+  },
+     ,{
+    id:    "014",
+    week:  3,
+    date:  "2026-09-08",
+    time:  "19:16",
+    title: "Back to Our Program",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-014.png",
+    alt:   "X's For You feed shows Collin Rugg commenting on a Clancy juror's account of jury disagreement above an interview clip, followed by a partially visible Kalshi cryptocurrency-market advertisement.",
+    tags:  ["clancy-trial", "jurors", "kalshi", "solo"],
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "Two days of wildlife, then straight back to Clancy with a trading ad " +
+             "underneath. I opened X to get my capture; I stayed to check whether " +
+             "someone really said that.",
+
+    pins: [
+      { x: 55, y: 29, label: "FOREGROUND",   text: "My first reaction is that context is missing" },
+      { x: 22, y: 36, label: "FRAMING",      text: "The caption picks a side before I listen" },
+      { x: 56, y: 49, label: "EVIDENCE",     text: "I watch this after taking the screenshot" },
+      { x: 39, y: 63, label: "MEASUREMENT",  text: "1.2M views, 30K likes, 2.7K replies. The heart is empty: I watched, I did not endorse" },
+      { x: 44, y: 70, label: "SURROUNDINGS", text: "The animals leave; the money pitch returns" }
+    ],
+
+    record: "On September 8, 2026, at 7:16 p.m., I opened X in my bedroom after " +
+            "dinner with my girlfriend to take my daily capture. I do not follow " +
+            "Collin Rugg. I took the screenshot before watching the attached " +
+            "interview clip, then watched it to check the quotation.",
+
+    remark: "After two days of wildlife, my feed returned to Clancy with a caption I " +
+            "thought must be taking someone out of context. Watching the attached " +
+            "clip afterward, I heard the quoted words, although that alone did not " +
+            "settle what the surrounding interview might add. My skepticism still " +
+            "kept me watching: I did not have to accept the framing for the post to " +
+            "hold my attention. Underneath, Kalshi supplied another invitation to " +
+            "put money into play. Apparently the nature break was over, and the " +
+            "sponsors were back."
   }
   /* Add the next capture below, after a comma:
 

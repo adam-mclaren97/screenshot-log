@@ -642,3 +642,25 @@ a { color: inherit; }
   .masthead-bar { flex-direction: column; align-items: stretch; gap: 10px; }
   .masthead-nav { justify-content: flex-start; }
 }
+
+/* ---------- a logged gap, opened ---------- */
+
+.capture-gap {
+  grid-template-columns: 1fr;
+  max-width: 760px;
+}
+
+.capture-gap .eyebrow { color: var(--muted); }
+.capture-gap .eyebrow::before { background: var(--muted); }
+
+.gap-lede {
+  font-family: var(--serif);
+  font-size: 21px;
+  line-height: 1.5;
+  margin: 26px 0 0;
+  padding-bottom: 8px;
+  color: var(--ink);
+}
+
+.card-gap { cursor: pointer; }
+.card-gap:hover { border-color: var(--accent); transform: none; box-shadow: none; }

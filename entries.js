@@ -290,6 +290,29 @@ var CAPTURES = [
     preview: "I spent the day with my girlfriend. For once, 'For You' didn't get a turn.",
     record:  "September 3 was my anniversary with my girlfriend. I got caught up in the day and did not open X. No screenshot was taken.",
     remark:  "Most entries show what appeared when I gave X my attention. This one marks a day when I never opened the app. I was not deliberately taking a digital break; I was busy with my anniversary. Leaving this space in the collection acknowledges that my attention also has somewhere else to be."
+  },
+     {
+    id:    "010",
+    week:  2,
+    date:  "2026-09-04",
+    time:  "14:17",
+    title: "Misplaced Priority",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-010.png",
+    alt:   "X's For You feed shows a Tennis Letter post about Aryna Sabalenka complaining about marijuana smoke at the U.S. Open, followed by a TMZ Clancy mistrial announcement with a partially visible courtroom photograph.",
+    tags:  ["us-open", "clancy-trial", "adjacency", "solo"],
+    demand:   "distract",
+    followed: true,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "X put tennis first. I noticed Clancy first and nearly scrolled past the screenshot I was supposed to take.",
+
+    pins: [],
+
+    record: "On September 4 at 2:17 p.m. I opened X while eating in my kitchen at home. The Tennis Letter, an account I follow, supplied the first post in my feed; it is 52 minutes old with 151K views, 3.1K likes and 107 replies. Below it, two hours old, TMZ announced a mistrial in the Lindsay Clancy case. I noticed the Clancy announcement first and nearly scrolled toward it before remembering to take the screenshot.",
+
+    remark: "After days of Clancy posts dominating my feed, the mistrial announcement was the update I actually wanted to see. X gave the first spot to a tennis interruption instead. I follow The Tennis Letter, but that does not mean everything it posts takes priority for me. My attention went straight to the trial update below, and I nearly forgot the capture because I wanted to keep reading. For You and what I wanted were briefly out of order."
   }
   /* Add the next capture below, after a comma:
 

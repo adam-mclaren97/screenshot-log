@@ -270,7 +270,11 @@ var CAPTURES = [
 
     preview: "Apparently, not caring for her music still leaves room for caring about someone criticizing it. And X would once again like to know whether I fancy a bet.",
 
-    pins: [],
+    pins: [
+      { x: 71.2, y: 26.8, label: "FRAMING", text: "Someone else's verdict gets here before the music" },
+      { x: 84.5, y: 47.8, label: "ABSENCE", text: "My existing taste enters the picture unseen" },
+      { x: 60.9, y: 83.9, label: "SURROUNDINGS", text: "Different day, same invitation to gamble" }
+    ],
 
     record: "On September 2 at 2:01 p.m. I was taking a break at work. This was the first post in my For You feed. The post is ten hours old with 1.2M views, 7K likes and 186 replies; the quoted Variety post is fourteen hours old. I had not liked or otherwise interacted with it before taking the screenshot. I am not certain whether I follow the posting account.",
 

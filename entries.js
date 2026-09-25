@@ -373,6 +373,29 @@ var CAPTURES = [
     record: "On September 6 at 5:54 p.m. I opened X after returning home from my best friend's bachelor weekend and lying down in bed to relax. The post is three hours old with 376K views, 7K likes and 20 replies. Below it is a US Open post. I follow neither Jason Burne nor trailcam, but I do follow the US Open.",
 
     remark: "After a run of provocative content, a quiet wildlife scene felt like my feed had deliberately offered me a break. I cannot know whether that was the intention, but the change was strong enough to make this briefly feel like someone else's feed. The tennis post underneath brought me back to familiar territory. What stays with me is how unfamiliar calm had become: an animal beside a stream felt more out of place than another argument about the Clancy trial."
+  },
+     {
+    id:    "013",
+    week:  3,
+    date:  "2026-09-07",
+    time:  "13:35",
+    title: "Break's Over",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-013.png",
+    alt:   "X's For You feed shows Quetzal recommending a quoted trailcam video of a cougar beside a pool of water as relief from rage bait, with a pink liked heart and a Game of Thrones complaint below.",
+    tags:  ["trailcam", "game-of-thrones", "relief", "solo", "pre-schedule"],
+    demand:   "distract",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "A second day of animals, this time explicitly recommended as a break from rage bait. Then Game of Thrones appears underneath. Apparently my break has terms and conditions.",
+
+    pins: [],
+
+    record: "On September 7 at 1:35 p.m. I was at home about to get ready for work when I opened X. The post is six hours old with 1M views, 39K likes and 20 replies; it quotes a trailcam post from the previous day. I recognized trailcam from the previous day's capture, this time quoted by a different account. I liked the post before capturing and left the like visible. I follow none of the accounts shown.",
+
+    remark: "Yesterday's wildlife felt like someone else's feed; today the same account returns, and the person quoting it says outright that animal videos cleanse you between rage-bait and Nazi posts. Someone inside the feed is describing the pattern I am trying to document, and treating it as an ordinary feature of the place. I left my like visible because the break was welcome. Then the post underneath reminded me how much I dislike the ending of Game of Thrones. My feed gave me a breather and put an old grudge within thumb's reach."
   }
   /* Add the next capture below, after a comma:
 

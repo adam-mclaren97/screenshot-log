@@ -241,7 +241,14 @@ var CAPTURES = [
 
     preview: "The feed kept a simple rhythm during my break from drumming: choose a political side, then place a bet.",
 
-    pins: [],
+    pins: [
+      { x: 68.4, y: 19, label: "INTERRUPTION", text: "Live news coverage sits above the algorithm offering" },
+      { x: 39.4, y: 29.5, label: "FOREGROUND", text: "A morning greeting delivers a partisan test" },
+      { x: 76.4, y: 37.9, label: "FRAMING", text: "Politics becomes a two-column scorecard" },
+      { x: 75.6, y: 55.3, label: "ABSENCE", text: "The scorecard offers no sources or qualifications" },
+      { x: 44.8, y: 65.6, label: "MEASUREMENT", text: "Likes outnumber replies about fifty-five to one" },
+      { x: 30.3, y: 80.6, label: "SURROUNDINGS", text: "The next choice comes with a deposit match" }
+    ],
 
     record: "On September 1 at 3:20 p.m. I was taking a break from practicing drums when I refreshed my For You feed. This was the first post displayed. The post is four hours old with 401K views, 4.9K likes and 88 replies. I do not follow the account. I paused to examine the visible images and the advertisement beneath them. I had not liked or otherwise interacted with the post before taking the screenshot.",
 

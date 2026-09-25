@@ -125,12 +125,12 @@
 
   /* ---------- collection view ---------- */
 
-  function gapCard(c) {
-    return '<div class="card card-gap">' +
+    function gapCard(c) {
+    return '<a class="card card-gap" href="#capture-' + esc(c.id) + '">' +
              '<p class="meta">' + (c.date ? esc(prettyDate(c.date)) : "") + "</p>" +
              "<h2>" + esc(c.title || "No capture") + "</h2>" +
              (c.reason ? '<p class="preview">' + esc(c.reason) + "</p>" : "") +
-           "</div>";
+           "</a>";
   }
 
   function renderGrid(demand, week) {
@@ -187,7 +187,42 @@
 
   /* ---------- single capture view ---------- */
 
-  function renderDetail(c) {
+  function prevNext(c) {
+    var list = sorted();
+    var i = list.indexOf(c);
+    var newer = list[i - 1];
+    var older = list[i + 1];
+    function label(x) { return x.title || "No capture"; }
+    return '<nav class="prevnext">' +
+      (older ? '<a href="#capture-' + esc(older.id) + '">&larr; ' + esc(label(older)) + "</a>"
+             : '<span class="spacer">.</span>') +
+      (newer ? '<a href="#capture-' + esc(newer.id) + '">' + esc(label(newer)) + " &rarr;</a>"
+             : '<span class="spacer">.</span>') +
+      "</nav>";
+  }
+
+  function renderGap(c) {
+    var cols = "";
+    if (c.record || c.remark) {
+      cols = '<div class="columns">' +
+        (c.record ? "<section><h3>Record</h3><p>" + esc(c.record) + "</p></section>" : "") +
+        (c.remark ? "<section><h3>Remark</h3><p>" + esc(c.remark) + "</p></section>" : "") +
+        "</div>";
+    }
+    view.innerHTML =
+      '<a class="back" href="#">&larr; All captures</a>' +
+      '<article class="capture capture-gap">' +
+        '<div class="capture-text">' +
+          '<p class="eyebrow">' + (c.date ? esc(prettyDate(c.date)) : "") + "</p>" +
+          "<h1>" + esc(c.title || "No capture") + "</h1>" +
+          '<p class="dek">No capture</p>' +
+          (c.preview ? '<p class="gap-lede">' + esc(c.preview) + "</p>" : "") +
+          cols +
+          prevNext(c) +
+        "</div>" +
+      "</article>";
+  }
+   function renderDetail(c) {
     var list = sorted().filter(function (x) { return !isGap(x); });
     var i = list.indexOf(c);
     var newer = list[i - 1];
@@ -259,12 +294,7 @@
           notes +
           detailFig +
           cols +
-          '<nav class="prevnext">' +
-            (older ? '<a href="#capture-' + esc(older.id) + '">&larr; ' + esc(older.title) + "</a>"
-                   : '<span class="spacer">.</span>') +
-            (newer ? '<a href="#capture-' + esc(newer.id) + '">' + esc(newer.title) + " &rarr;</a>"
-                   : '<span class="spacer">.</span>') +
-          "</nav>" +
+                    prevNext(c) +
         "</div>" +
       "</article>";
 
@@ -316,12 +346,12 @@
     });
 
     if (mCap) {
-      var found = CAPTURES.filter(function (c) {
-        return String(c.id) === mCap[1] && !isGap(c);
+           var found = CAPTURES.filter(function (c) {
+        return String(c.id) === mCap[1];
       })[0];
       if (found) {
         buildFilters("", "");
-        renderDetail(found);
+        if (isGap(found)) { renderGap(found); } else { renderDetail(found); }
         window.scrollTo(0, 0);
         return;
       }

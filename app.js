@@ -37,17 +37,52 @@
     return key || "";
   }
 
+  // newest capture first
   function sorted() {
     return CAPTURES.slice().sort(function (a, b) {
       return String(b.id).localeCompare(String(a.id));
     });
   }
 
-  function tagList(tags) {
+  function countFor(key) {
+    var n = 0;
+    for (var i = 0; i < CAPTURES.length; i++) {
+      if (CAPTURES[i].demand === key) n++;
+    }
+    return n;
+  }
+
+  function tagList(tags, asLinks) {
     if (!tags || !tags.length) return "";
     return '<ul class="tags">' + tags.map(function (t) {
-      return "<li>" + esc(t) + "</li>";
+      if (!asLinks) return "<li>" + esc(t) + "</li>";
+      return '<li><a href="#tag-' + encodeURIComponent(t) + '">' + esc(t) + "</a></li>";
     }).join("") + "</ul>";
+  }
+
+  function hasTag(c, tag) {
+    if (!tag) return true;
+    if (!c.tags) return false;
+    for (var i = 0; i < c.tags.length; i++) {
+      if (c.tags[i] === tag) return true;
+    }
+    return false;
+  }
+
+  // read the tag out of the address bar, so the menus never lose it
+  function currentTag() {
+    var found = "";
+    location.hash.replace(/^#/, "").split("+").forEach(function (part) {
+      var t = part.match(/^tag-(.+)$/);
+      if (t) found = decodeURIComponent(t[1]);
+    });
+    return found;
+  }
+
+  function tagNote(tag) {
+    if (!tag) return "";
+    if (typeof TAG_NOTES === "undefined" || !TAG_NOTES) return "";
+    return TAG_NOTES[tag] || "";
   }
 
   function phone(c, showPins) {
@@ -76,16 +111,29 @@
     return Object.keys(seen).map(Number).sort(function (a, b) { return a - b; });
   }
 
-  function buildFilters(demand, week) {
+  // captures matching the given demand and week ("" means no filter)
+  function matching(demand, week) {
+    return CAPTURES.filter(function (c) {
+      if (isGap(c)) return !demand && !week;
+      if (demand && c.demand !== demand) return false;
+      if (week && String(c.week) !== String(week)) return false;
+      return true;
+    });
+  }
+
+  function buildFilters(demand, week, tag) {
     var dSel = document.getElementById("filterDemand");
     var wSel = document.getElementById("filterWeek");
     if (!dSel || !wSel) return;
 
+    // if a tag is showing, every count is counted inside that tag
+    var pool = realList().filter(function (c) { return hasTag(c, tag); });
+
     // demand counts respect the chosen week, and vice versa
-    var inWeek = realList().filter(function (c) {
+    var inWeek = pool.filter(function (c) {
       return !week || String(c.week) === String(week);
     });
-    var inDemand = realList().filter(function (c) {
+    var inDemand = pool.filter(function (c) {
       return !demand || c.demand === demand;
     });
 
@@ -112,9 +160,11 @@
       sel.addEventListener("change", function () {
         var d = document.getElementById("filterDemand").value;
         var w = document.getElementById("filterWeek").value;
+        var t = currentTag();
         var bits = [];
         if (d) bits.push("demand-" + d);
         if (w) bits.push("week-" + w);
+        if (t) bits.push("tag-" + encodeURIComponent(t));
         location.hash = bits.join("+");
       });
       sel.dataset.wired = "1";
@@ -125,7 +175,7 @@
 
   /* ---------- collection view ---------- */
 
-   function gapCard(c) {
+  function gapCard(c) {
     return '<a class="card card-gap" href="#capture-' + esc(c.id) + '">' +
              '<p class="meta">' + (c.date ? esc(prettyDate(c.date)) : "") +
                " &middot; <span class=\"demand\">No capture</span></p>" +
@@ -138,11 +188,12 @@
            "</a>";
   }
 
-  function renderGrid(demand, week) {
+  function renderGrid(demand, week, tag) {
     var list = sorted().filter(function (c) {
-      if (isGap(c)) return !demand && !week;
+      if (isGap(c)) return !demand && !week && !tag;
       if (demand && c.demand !== demand) return false;
       if (week && String(c.week) !== String(week)) return false;
+      if (tag && !hasTag(c, tag)) return false;
       return true;
     });
 
@@ -163,14 +214,17 @@
     }).join("");
 
     var heading = "";
-    if (demand || week) {
+    if (demand || week || tag) {
       var note = "";
       if (demand) {
         for (var d = 0; d < DEMANDS.length; d++) {
           if (DEMANDS[d].key === demand && DEMANDS[d].note) note = DEMANDS[d].note;
         }
       }
+      if (tag && tagNote(tag)) note = tagNote(tag);
+
       var what = [];
+      if (tag)    what.push('<strong class="tag-name">' + esc(tag) + "</strong>");
       if (demand) what.push("<strong>" + esc(demandLabel(demand)) + "</strong>");
       if (week)   what.push("<strong>Week " + esc(week) + "</strong>");
 
@@ -184,7 +238,7 @@
     }
 
     view.innerHTML =
-      ((demand || week) ? "" : (SITE.blurb ? '<div class="intro"><p>' + esc(SITE.blurb) + "</p></div>" : "")) +
+      ((demand || week || tag) ? "" : (SITE.blurb ? '<div class="intro"><p>' + esc(SITE.blurb) + "</p></div>" : "")) +
       heading +
       (list.length ? '<div class="grid">' + cards + "</div>"
                    : '<p class="empty-state">No captures in this category yet.</p>');
@@ -227,7 +281,8 @@
         "</div>" +
       "</article>";
   }
-   function renderDetail(c) {
+
+  function renderDetail(c) {
     var list = sorted().filter(function (x) { return !isGap(x); });
     var i = list.indexOf(c);
     var newer = list[i - 1];
@@ -254,6 +309,7 @@
         "</div>";
     }
 
+    // the small factual strip under the headline
     var detailFig = "";
     if (c.detail && c.detail.image) {
       detailFig = '<figure class="detail">' +
@@ -270,10 +326,6 @@
     if (c.demand) {
       facts.push('<a class="demand-link" href="#demand-' + esc(c.demand) + '">' +
                  esc(demandLabel(c.demand)) + "</a>");
-    }
-    if (c.week != null) {
-      facts.push('<a class="demand-link" href="#week-' + esc(c.week) + '">Week ' +
-                 esc(c.week) + "</a>");
     }
     if (c.followed === true)  facts.push("Account followed");
     if (c.followed === false) facts.push("Account not followed");
@@ -295,17 +347,18 @@
           "<h1>" + esc(c.title) + "</h1>" +
           (c.dek ? '<p class="dek">' + esc(c.dek) + "</p>" : "") +
           (facts.length ? '<p class="facts">' + facts.join(" &middot; ") + "</p>" : "") +
-          tagList(c.tags) +
+          tagList(c.tags, true) +
           notes +
           detailFig +
           cols +
-                    prevNext(c) +
+          prevNext(c) +
         "</div>" +
       "</article>";
 
     linkPins();
   }
 
+  // hovering a note highlights its dot, and the other way round
   function linkPins() {
     var notes = view.querySelectorAll(".notes li");
     var dots  = view.querySelectorAll(".pin");
@@ -342,28 +395,30 @@
     var hash = location.hash;
     var mCap = hash.match(/^#capture-(.+)$/);
 
-    var demand = "", week = "";
+    var demand = "", week = "", tag = "";
     hash.replace(/^#/, "").split("+").forEach(function (part) {
       var d = part.match(/^demand-(.+)$/);
       var w = part.match(/^week-(.+)$/);
+      var t = part.match(/^tag-(.+)$/);
       if (d) demand = d[1];
       if (w) week = w[1];
+      if (t) tag = decodeURIComponent(t[1]);
     });
 
     if (mCap) {
-           var found = CAPTURES.filter(function (c) {
+      var found = CAPTURES.filter(function (c) {
         return String(c.id) === mCap[1];
       })[0];
       if (found) {
-        buildFilters("", "");
+        buildFilters("", "", "");
         if (isGap(found)) { renderGap(found); } else { renderDetail(found); }
         window.scrollTo(0, 0);
         return;
       }
     }
 
-    buildFilters(demand, week);
-    renderGrid(demand, week);
+    buildFilters(demand, week, tag);
+    renderGrid(demand, week, tag);
     window.scrollTo(0, 0);
   }
 

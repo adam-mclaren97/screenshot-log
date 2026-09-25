@@ -186,6 +186,46 @@
     wire(wSel);
   }
 
+  /* ---------- running threads ---------- */
+
+  // every tag named in TAG_NOTES that at least two captures carry
+  function namedSets() {
+    if (typeof TAG_NOTES === "undefined" || !TAG_NOTES) return [];
+    var out = [];
+    Object.keys(TAG_NOTES).forEach(function (key) {
+      var set = tagSet(key);
+      if (!set || !set.title) return;
+      var n = realList().filter(function (c) { return hasTag(c, key); }).length;
+      if (n < 2) return;
+      out.push({ key: key, title: set.title, note: set.note, count: n });
+    });
+    return out.sort(function (a, b) { return b.count - a.count; });
+  }
+
+  function firstSentence(s) {
+    if (!s) return "";
+    var i = s.indexOf(". ");
+    return i === -1 ? s : s.slice(0, i + 1);
+  }
+
+  function renderThreads() {
+    var sets = namedSets();
+    if (!sets.length) return "";
+    return '<section class="threads">' +
+      '<p class="eyebrow">Running Threads</p>' +
+      '<ul class="thread-list">' +
+        sets.map(function (s) {
+          return '<li><a href="#tag-' + encodeURIComponent(s.key) + '">' +
+                   '<span class="thread-title">' + esc(s.title) + "</span>" +
+                   '<span class="thread-count">' + s.count + " captures</span>" +
+                   '<span class="thread-teaser">' +
+                     esc(firstSentence(s.note)) + "</span>" +
+                 "</a></li>";
+        }).join("") +
+      "</ul>" +
+    "</section>";
+  }
+
   /* ---------- collection view ---------- */
 
   function gapCard(c) {
@@ -255,7 +295,9 @@
     }
 
     view.innerHTML =
-      ((demand || week || tag) ? "" : (SITE.blurb ? '<div class="intro"><p>' + esc(SITE.blurb) + "</p></div>" : "")) +
+      ((demand || week || tag) ? ""
+        : ((SITE.blurb ? '<div class="intro"><p>' + esc(SITE.blurb) + "</p></div>" : "") +
+           renderThreads())) +
       heading +
       (list.length ? '<div class="grid">' + cards + "</div>"
                    : '<p class="empty-state">No captures in this category yet.</p>');

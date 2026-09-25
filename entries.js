@@ -363,7 +363,12 @@ var CAPTURES = [
 
     preview: "For a second, I thought I had opened someone else's feed. Then tennis appeared underneath, and I recognized the place.",
 
-    pins: [],
+    pins: [
+      { x: 32.4, y: 31.8, label: "FRAMING", text: "Even a quiet scene arrives with a superlative" },
+      { x: 36.5, y: 47.7, label: "FOREGROUND", text: "This much calm feels like someone else's feed" },
+      { x: 26.9, y: 61.3, label: "MEASUREMENT", text: "7k likes, 20 replies - nothing to argue about" },
+      { x: 60.6, y: 69, label: "SURROUNDINGS", text: "Tennis tells me I am back home" }
+    ],
 
     record: "On September 6 at 5:54 p.m. I opened X after returning home from my best friend's bachelor weekend and lying down in bed to relax. The post is three hours old with 376K views, 7K likes and 20 replies. Below it is a US Open post. I follow neither Jason Burne nor trailcam, but I do follow the US Open.",
 

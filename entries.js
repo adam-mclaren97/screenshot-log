@@ -455,6 +455,52 @@ var CAPTURES = [
             "hold my attention. Underneath, Kalshi supplied another invitation to " +
             "put money into play. Apparently the nature break was over, and the " +
             "sponsors were back."
+  },
+     ,{
+    id:    "015",
+    week:  3,
+    date:  "2026-09-09",
+    time:  "08:34",
+    title: "Zelda Before Work",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-015.png",
+    alt:   "X's For You feed shows a live Al Jazeera English banner above a post by TiredAndOnFire quoting Ag0at's tweet about Nintendo adding sprint to an Ocarina of Time remake, with gameplay footage in the quoted post, followed by a partially visible FanDuel Sports advertisement.",
+    tags:  ["zelda", "breath-of-the-wild", "remake", "fanduel", "the-second-item", "morning-feed"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I opened X right after waking up and landed on a Zelda debate with a " +
+             "gambling ad waiting underneath. I came for the daily capture; I stayed " +
+             "because the argument was so dramatic over something I find funny.",
+
+    pins: [
+      { x: 51, y: 20,   label: "INTERRUPTION", text: "A live war broadcast has been sitting above all of this the whole time" },
+      { x: 40, y: 30,   label: "FOREGROUND",   text: "This is the part that makes me stop" },
+      { x: 77, y: 32.5, label: "FRAMING",      text: "The wording turns a small change into a crisis" },
+      { x: 54, y: 40,   label: "EVIDENCE",     text: "The quoted post gives the argument something to hang on" },
+      { x: 38, y: 66,   label: "MEASUREMENT",  text: "988K views, 5.5K likes, 334 replies. The heart is empty" },
+      { x: 44, y: 71,   label: "SURROUNDINGS", text: "Before I can leave the joke, the feed offers me money" }
+    ],
+
+    record: "On September 9, 2026, at 8:34 a.m., I opened X in bed right after waking " +
+            "up, before getting ready for work, to take my daily capture. I do not " +
+            "follow either account in the main post. I read the post as it appeared in " +
+            "my For You feed and took the screenshot there.",
+
+    remark: "This one stands out from some of my other captures because it is not " +
+            "trying to alarm me or pull me into political outrage. It works because I " +
+            "already like Breath of the Wild, so the idea that its influence on Zelda " +
+            "is some irreversible disaster feels funny to me rather than upsetting. At " +
+            "the same time, the feed still follows the post with a familiar money " +
+            "pitch. Even when the content shifts from controversy to fandom, the " +
+            "commercial rhythm underneath it stays the same. The joke is about Zelda, " +
+            "but the structure of the feed still pushes me from amusement toward " +
+            "consumption. And above all of it, unopened, a live news channel had been " +
+            "waiting since before I started reading. One frame held a war, a joke " +
+            "about Zelda, and a bet. Forget all that, though — apparently I should go " +
+            "gamble."
   }
   /* Add the next capture below, after a comma:
 

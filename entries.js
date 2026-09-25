@@ -476,14 +476,14 @@ var CAPTURES = [
              "because the argument was so dramatic over something I find funny.",
 
     pins: [
-      { x: 51, y: 20,   label: "INTERRUPTION", text: "A live war broadcast has been sitting above all of this the whole time" },
-      { x: 40, y: 30,   label: "FOREGROUND",   text: "This is the part that makes me stop" },
-      { x: 77, y: 32.5, label: "FRAMING",      text: "The wording turns a small change into a crisis" },
-      { x: 54, y: 40,   label: "EVIDENCE",     text: "The quoted post gives the argument something to hang on" },
-      { x: 38, y: 66,   label: "MEASUREMENT",  text: "988K views, 5.5K likes, 334 replies. The heart is empty" },
-      { x: 44, y: 71,   label: "SURROUNDINGS", text: "Before I can leave the joke, the feed offers me money" }
+      { x: 80, y: 20, label: "INTERRUPTION", text: "A live war broadcast has been sitting above all of this the whole time" },
+      { x: 30, y: 28, label: "FOREGROUND",   text: "This is the part that makes me stop" },
+      { x:  8, y: 32, label: "FRAMING",      text: "The wording turns a small change into a crisis" },
+      { x:  8, y: 40, label: "EVIDENCE",     text: "The quoted post gives the argument something to hang on" },
+      { x:  8, y: 66, label: "MEASUREMENT",  text: "988K views, 5.5K likes, 334 replies. The heart is empty" },
+      { x: 70, y: 75, label: "SURROUNDINGS", text: "Before I can leave the joke, the feed offers me money" }
     ],
-
+        
     record: "On September 9, 2026, at 8:34 a.m., I opened X in bed right after waking " +
             "up, before getting ready for work, to take my daily capture. I do not " +
             "follow either account in the main post. I read the post as it appeared in " +

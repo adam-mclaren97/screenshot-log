@@ -317,6 +317,29 @@ var CAPTURES = [
     record: "On September 4 at 2:17 p.m. I opened X while eating in my kitchen at home. The Tennis Letter, an account I follow, supplied the first post in my feed; it is 52 minutes old with 151K views, 3.1K likes and 107 replies. Below it, two hours old, TMZ announced a mistrial in the Lindsay Clancy case. I noticed the Clancy announcement first and nearly scrolled toward it before remembering to take the screenshot.",
 
     remark: "After days of Clancy posts dominating my feed, the mistrial announcement was the update I actually wanted to see. X gave the first spot to a tennis interruption instead. I follow The Tennis Letter, but that does not mean everything it posts takes priority for me. My attention went straight to the trial update below, and I nearly forgot the capture because I wanted to keep reading. For You and what I wanted were briefly out of order."
+  },
+     {
+    id:    "011",
+    week:  2,
+    date:  "2026-09-05",
+    time:  "04:42",
+    title: "Still Taking Bets",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-011.png",
+    alt:   "An X feed screenshot with an Uber arrival indicator shows a sarcastic Clancy quote post above a courtroom photograph, followed by a partially visible DraftKings advertisement.",
+    tags:  ["clancy-trial", "gambling-ad", "draftkings", "bachelor-weekend", "solo"],
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I made it through a casino visit without gambling. While I waited for my Uber, X supplied another Clancy argument and one more opportunity to reconsider.",
+
+    pins: [],
+
+    record: "On September 5 at 4:42 a.m. I was waiting for an Uber outside an Airbnb, returning to my hotel near the casino during my best friend's bachelor weekend. I had not yet slept. The post is ten hours old with 191K views, 18K likes and 55 replies, and it was already liked when I captured it. I follow neither TruthHurts nor Jay Gatling. I had not gambled at the casino and did not take up the DraftKings offer.",
+
+    remark: "The previous day, I wanted the Clancy mistrial update ahead of tennis; now the case is back on top with another commentator adding disgust. Wanting to follow a story apparently comes with plenty of chances to rehearse a reaction. Beneath that, DraftKings offers to extend an evening in which I had already declined to gamble. Its placement does not tell me whether the ad had anything to do with my casino visit, but the coincidence gives this capture its punchline. I was waiting for a ride back to my hotel, and my feed still had suggestions for the night."
   }
   /* Add the next capture below, after a comma:
 

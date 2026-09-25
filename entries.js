@@ -198,7 +198,7 @@ var CAPTURES = [
   },
      {
     id:    "007",
-    week:  1,
+    week:  2,
     date:  "2026-08-31",
     time:  "11:31",
     title: "Who Decides the Point",

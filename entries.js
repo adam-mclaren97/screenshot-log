@@ -508,6 +508,54 @@ var CAPTURES = [
             "waiting since before I started reading. One frame held a live news channel, a joke " +
             "about Zelda, and a bet. Forget all that, though — apparently I should go " +
             "gamble."
+  },
+     ,{
+    id:    "016",
+    week:  3,
+    date:  "2026-09-10",
+    time:  "15:46",
+    title: "Same Case, Different Villain",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-016.png",
+    alt:   "An X feed shows a live Al Jazeera English banner above a post by Jayson Blair questioning a Clancy holdout juror's motives, quoting a post with an interview video, followed by a partially visible US Open tennis post.",
+    tags:  ["clancy-trial", "jurors", "us-open", "always-live", "solo"],
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I finished playing drums and opened X to find the Clancy argument " +
+             "waiting for me again. At least the next item wants me to watch tennis " +
+             "instead of bet on it.",
+
+    pins: [
+      { x: 70, y: 20, label: "INTERRUPTION", text: "The same live channel, pinned here for the second day running" },
+      { x: 78, y: 26, label: "SOURCE",       text: "Former New York Times reporter, resigned in 2003 over fabricated stories." },
+      { x:  8, y: 30, label: "FRAMING",      text: "An earlier capture's hero becomes today's suspect" },
+      { x:  8, y: 46, label: "EVIDENCE",     text: "The accusation arrives before the quote is finished" },
+      { x:  8, y: 73, label: "MEASUREMENT",  text: "73K views, 424 replies, 226 likes — more argument than approval" },
+      { x: 79, y: 78, label: "SURROUNDINGS", text: "I expect a betting pitch; tennis appears instead" }
+    ],
+
+    record: "On September 10, 2026, I opened X after finishing drum practice, while " +
+            "still sitting behind my kit. This was the first post in my For You feed, " +
+            "and I captured it at 3:46 p.m. I follow neither Jayson Blair nor the " +
+            "quoted account, Ivanka Gog. I do follow the US Open.",
+
+    remark: "Two days earlier, my feed presented the Clancy holdout juror as a " +
+            "patriot; now it presents him as someone whose motives deserve suspicion. " +
+            "Yesterday's Zelda post gave me a day away, but apparently this argument " +
+            "still has a seat reserved for me. The position changes while the " +
+            "invitation stays familiar: decide which person deserves my distrust. " +
+            "The account making the accusation belongs to Jayson Blair, who resigned " +
+            "from the New York Times in 2003 after fabricating stories. I did not " +
+            "know that while I was scrolling, and the frame does not say it. My feed " +
+            "asked me to judge one man's good faith without telling me anything about " +
+            "the man asking. Above the whole thing, the same live channel is docked " +
+            "for the second day running, still unopened. Below it, the US Open " +
+            "occupies the space where I have started expecting a gambling ad. I am " +
+            "now noticing the absence of a sales pitch, which says something about " +
+            "how familiar those pitches have become."
   }
   /* Add the next capture below, after a comma:
 

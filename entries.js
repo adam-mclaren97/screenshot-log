@@ -30,6 +30,13 @@ var TAG_NOTES = {
           "about rent — the item directly beneath it is an invitation to " +
           "place a bet. Kalshi, FanDuel, DraftKings, NYRA. Four companies, " +
           "one slot. The feed changes its mind about everything except the house."
+  },
+  "always-live": {
+    title: "Always Live",
+    note: "A live news channel is docked above the feed, in the same place, " +
+          "whatever sits below it. Al Jazeera English, two days running: once " +
+          "above a joke about Zelda, once above a murder trial. I have not " +
+          "opened it either time."
   }
 };
 var CAPTURES = [

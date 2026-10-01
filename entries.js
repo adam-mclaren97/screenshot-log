@@ -25,18 +25,35 @@ var DEMANDS = [
 var TAG_NOTES = {
   "the-second-item": {
     title: "The Second Item",
-    note: "Different day, different subject, same position. Whatever the " +
-          "first post is about — a murder trial, a trailcam, a complaint " +
-          "about rent — the item directly beneath it is an invitation to " +
-          "place a bet. Kalshi, FanDuel, DraftKings, NYRA. Four companies, " +
-          "one slot. The feed changes its mind about everything except the house."
+    note: "The item directly beneath the first post. Seven times it has been a " +
+          "wager — Kalshi, FanDuel, DraftKings, NYRA. Once it was satellite " +
+          "internet. Four times it was an ordinary post that happened to be " +
+          "next. The subject above the slot changes every day; what sits below " +
+          "is most often something being sold to me."
   },
   "always-live": {
     title: "Always Live",
-    note: "A live news channel is docked above the feed, in the same place, " +
-          "whatever sits below it. Al Jazeera English, two days running: once " +
-          "above a joke about Zelda, once above a murder trial. I have not " +
-          "opened it either time."
+    note: "A live module docked above the feed. For three days it carried Al " +
+          "Jazeera English. One day it was gone. Then it was an NFL scoreboard. " +
+          "Then it became a row, with a second broadcast behind the first, and " +
+          "then the row reordered so football led, and the news channel was " +
+          "pushed to the edge. The slot is the constant; what it broadcasts is " +
+          "not. I have never once opened it."
+  },
+  "borrowed-frame": {
+    title: "Secondhand",
+    note: "What reaches me is rarely anyone's own. A comment section " +
+          "screenshotted into a post. A clip carrying another account's " +
+          "watermark. A quote of a quote of a video someone else filmed. By the " +
+          "time it arrives, the material has passed through two or three hands, " +
+          "and each one has added a line telling me what it means."
+  },
+  "expectations": {
+    title: "What I Expect Now",
+    note: "Captures where the archive shows up inside my own reading. I brace " +
+          "for a gambling advertisement, or assume an unreadable sliver is one, " +
+          "or notice its absence as a deviation. These are the entries where the " +
+          "thing I built to watch the feed has started watching back."
   }
 };
 var CAPTURES = [
@@ -858,7 +875,7 @@ var CAPTURES = [
     dek:   "A single scroll. A larger story.",
     image: "images/capture-023.png",
     alt:   "An X feed shows a live football banner with an Al Jazeera banner behind it, above a reposted Verstappen onboard clip captioned inside the video, a quoted complaint about the same moment, and a NYRA Bets advertisement below.",
-    tags:  ["max-verstappen", "f1", "nyra-bets", "the-second-item", "text-in-image", "borrowed-frame", "solo"],
+    tags:  ["max-verstappen", "f1", "nyra-bets", "the-second-item", "text-in-image", "borrowed-frame", "solo", "always-live"],
     demand:   "amuse",
     followed: false,
     obscured: false,

@@ -47,13 +47,6 @@ var TAG_NOTES = {
           "watermark. A quote of a quote of a video someone else filmed. By the " +
           "time it arrives, the material has passed through two or three hands, " +
           "and each one has added a line telling me what it means."
-  },
-  "expectations": {
-    title: "What I Expect Now",
-    note: "Captures where the archive shows up inside my own reading. I brace " +
-          "for a gambling advertisement, or assume an unreadable sliver is one, " +
-          "or notice its absence as a deviation. These are the entries where the " +
-          "thing I built to watch the feed has started watching back."
   }
 };
 var CAPTURES = [

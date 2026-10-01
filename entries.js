@@ -1070,6 +1070,57 @@ var CAPTURES = [
             "put money on Atletico shows how easily I could imagine turning a " +
             "sporting preference into a wager; it does not establish that the ad " +
             "caused that thought."
+  },
+     ,{
+    id:    "027",
+    week:  5,
+    date:  "2026-09-21",
+    time:  "08:31",
+    title: "Still Enjoying Sunday",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-027.png",
+    alt:   "An X feed displays a Seattle Seahawks victory graphic featuring celebrating players and defensive statistics, beneath an Al Jazeera live banner and above a partially visible Kalshi promotion offering credit with a code.",
+    tags:  ["seahawks", "nfl", "kalshi", "the-second-item", "fandom", "always-live", "solo"],
+    demand:   "amuse",
+    followed: true,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "Yesterday I borrowed Atletico for two hours. This is my team, and I am " +
+             "happy to let Sunday's win follow me into Monday.",
+
+    pins: [
+      { x: 65, y: 20,   label: "INTERRUPTION", text: "The live slot is back to one, and back to Al Jazeera" },
+      { x: 88, y: 25.7, label: "SOURCE",       text: "This is a relationship I choose to maintain" },
+      { x:  8, y: 32,   label: "TECHNIQUE",    text: "The club publishes its own highlight graphic. What I follow is also a marketing channel" },
+      { x:  8, y: 42,   label: "FRAMING",      text: "These numbers give my team pride something concrete" },
+      { x:  8, y: 60,   label: "FOREGROUND",   text: "Yesterday's win still improves my Monday morning" },
+      { x:  8, y: 84,   label: "MEASUREMENT",  text: "50K views, 3K likes, 260 reposts, 16 replies" },
+      { x: 55, y: 88.5, label: "ABSENCE",      text: "If this carries an Ad label, the compose button is sitting on top of it" },
+      { x:  8, y: 93,   label: "SURROUNDINGS", text: "I celebrate yesterday while Kalshi sells me tonight, with a code" }
+    ],
+
+    record: "On September 21, 2026, at 8:31 a.m., I was in bed looking at X after a " +
+            "Seahawks win the previous day. I am a longtime Seahawks fan and follow " +
+            "the team's account. Their post appeared beneath an Al Jazeera live " +
+            "banner and above a partially visible Kalshi promotion for Monday Night " +
+            "Football.",
+
+    remark: "This was an easy recommendation to welcome: my team had won, and I was " +
+            "still enjoying it. Unlike the previous capture's temporary Atletico " +
+            "allegiance, my attachment to the Seahawks needed no explanation beyond " +
+            "being a fan. What the team sent me is a produced graphic, with its own " +
+            "statistics and its own branded nickname for the defense, so the account " +
+            "I follow out of loyalty is also a marketing channel. The Kalshi " +
+            "promotion underneath shifted from yesterday's result to tonight's " +
+            "opportunity to put money down, and it has moved on from naming itself " +
+            "to offering fifty-five dollars with a code. I cannot see whether it " +
+            "carries an Ad label, because the compose button sits exactly where that " +
+            "label appears in my earlier captures of the same account. Neither " +
+            "appearance surprised me, which is itself a change worth recording: the " +
+            "betting invitation has become almost as predictable as the sports " +
+            "content I actively follow. The first post worked perfectly well on its " +
+            "own; enjoying a win already gave me a reason to look."
   }
   /* Add the next capture below, after a comma:
 

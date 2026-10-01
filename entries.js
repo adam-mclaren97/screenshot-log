@@ -601,9 +601,57 @@ var CAPTURES = [
             "in passing. Below it was a complaint about Wolverine, a game I have no " +
             "interest in playing. The subjects have very different stakes, yet my " +
             "next move through the feed was another opportunity to encounter " +
-            "someone's dissatisfaction. For the second day in a row the slot beneath " +
+            "someone's dissatisfaction. For the second day in a row, the slot beneath " +
             "the first post held no wager. The pattern I have been tracking may be " +
             "narrower than I thought, or this week is simply different."
+  },
+     ,{
+    id:    "018",
+    week:  3,
+    date:  "2026-09-12",
+    time:  "10:39",
+    title: "Heartbreak Has a Sponsor",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-018.png",
+    alt:   "An X feed shows The Tennis Letter's post about Frances Tiafoe leaving the court after a loss, above a large DraftKings Sports advertisement featuring Matt Leinart, a bonus offer and fine-print gambling disclaimers.",
+    tags:  ["tiafoe", "tennis", "draftkings", "the-second-item", "solo"],
+    demand:   "sell",
+    followed: true,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I had already watched the loss and joined the conversation. My feed " +
+             "brought the disappointment back, with a much harder-to-miss invitation " +
+             "to gamble underneath.",
+
+    pins: [
+      { x: 85, y: 14.5, label: "ABSENCE",      text: "Three days of a live news banner sat here. Today, nothing" },
+      { x: 88, y: 21,   label: "FOREGROUND",   text: "My earlier attention finds its way back here" },
+      { x:  8, y: 48,   label: "MEASUREMENT",  text: "509K views, 14K likes, 831 reposts, 113 replies" },
+      { x: 80, y: 52,   label: "SURROUNDINGS", text: "The usual second item returns, labeled as an ad" },
+      { x:  8, y: 71,   label: "FRAMING",      text: "The offer is set in the largest type anywhere on the screen" },
+      { x:  8, y: 91,   label: "TECHNIQUE",    text: "The helpline number is printed at a fraction of the size of the offer" }
+    ],
+
+    record: "On September 12, 2026, at 10:39 a.m., I was sitting in my living room " +
+            "on a Saturday off work, before attending my friend's wedding. The " +
+            "Tiafoe post appeared first when I opened X. I had watched the match " +
+            "live and interacted with posts about him after his loss. I follow The " +
+            "Tennis Letter.",
+
+    remark: "I like Tiafoe, so this reminder of his loss reached a disappointment I " +
+            "already felt. Having watched the match and interacted with related " +
+            "posts, I could recognize my own activity in what appeared first. What " +
+            "stood out was how much space DraftKings occupied underneath. Yesterday " +
+            "I wondered whether the pattern I had been tracking was narrower than I " +
+            "thought; today the wager returned taking more of the frame than the post " +
+            "I came for. The advertisement also carries its own warning: a gambling " +
+            "helpline number sits in the fine print, in type a fraction the size of " +
+            "the offer above it. I cannot tell whether these items were deliberately " +
+            "paired, but together they move from my investment in a player to an " +
+            "invitation to invest money in sports. The news banner that had sat at " +
+            "the top of the last three captures was not there at all. My feed had " +
+            "changed the emotion while keeping the sales pitch."
   }
   /* Add the next capture below, after a comma:
 

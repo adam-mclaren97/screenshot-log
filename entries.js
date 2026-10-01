@@ -917,6 +917,58 @@ var CAPTURES = [
             "of people and nobody said anything or passed it on. Then NYRA Bets " +
             "offered a different kind of racing involvement; being pleased with the " +
             "first item still came with the usual second invitation."
+  },
+     ,{
+    id:    "024",
+    week:  4,
+    date:  "2026-09-18",
+    time:  "10:11",
+    title: "The Seats Become Evidence",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-024.png",
+    alt:   "An X quote-post comments on luxury seating above a caption attributing concertgoers' reactions to Macklemore saying Free Palestine, with a video still of spectators gesturing and a partial NFL post below.",
+    tags:  ["macklemore", "palestine", "privilege", "borrowed-frame", "expectations", "solo"],
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I have spent years interacting with posts about Israel and Palestine. " +
+             "This one reached that familiar interest through a concert clip where " +
+             "even the seating became part of the argument.",
+
+    pins: [
+      { x: 89, y: 20.7, label: "FRAMING",      text: "The seating becomes an argument about privilege" },
+      { x:  8, y: 29,   label: "EVIDENCE",     text: "The caption asserts a cause the footage alone cannot show" },
+      { x: 88, y: 34.5, label: "SOURCE",       text: "Two accounts tell me what to see before the video plays" },
+      { x:  8, y: 55,   label: "FOREGROUND",   text: "I have a stake in this argument, and the feed found it" },
+      { x:  8, y: 78.5, label: "MEASUREMENT",  text: "3.8M views, 183K likes, 11K reposts, 226 replies. The largest reach in this archive" },
+      { x: 55, y: 83,   label: "SURROUNDINGS", text: "Football arrives, and I expect a betting pitch that never comes" }
+    ],
+
+    record: "On September 18, 2026, at 10:11 a.m., I was at home in my recliner with " +
+            "my coffee. The first post concerned audience reactions at a Macklemore " +
+            "performance, with an NFL post partially visible below. I have interacted " +
+            "with posts about Israel and Palestine for years. I follow none of the " +
+            "accounts shown.",
+
+    remark: "I recognized this as another appearance of the music controversy already " +
+            "circulating through my feed, but the luxury-box comment widened the " +
+            "argument. I read it as connecting the spectators' apparent privilege to " +
+            "their political stance, although their seats cannot establish their " +
+            "beliefs or make them representative of an entire conflict. The caption " +
+            "above the clip does something similar: it names a cause for what the " +
+            "people in the video are doing, and the footage on its own cannot show " +
+            "that. By the time it reached me, somebody had filmed it, somebody had " +
+            "told me what it meant, and somebody else had added what their seats " +
+            "proved. My own history matters here too: I have spent years giving this " +
+            "subject attention, so its return hardly feels random. Like the earlier " +
+            "Sheeran meme, this post gives a complicated dispute a compact frame that " +
+            "attracts far more likes than replies, without those counts telling me " +
+            "why people responded. It is also the furthest-traveled thing in my " +
+            "archive, by a wide margin. Below it, football resumes, and I catch " +
+            "myself anticipating a gambling advertisement that has not actually " +
+            "appeared."
   }
   /* Add the next capture below, after a comma:
 

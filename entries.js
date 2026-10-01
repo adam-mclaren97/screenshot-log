@@ -796,6 +796,58 @@ var CAPTURES = [
             "broadcast sliding in behind Al Jazeera. The post held me long enough to " +
             "react, while the explanation I might have needed remained in an article " +
             "I never opened."
+  },
+     ,{
+    id:    "022",
+    week:  4,
+    date:  "2026-09-16",
+    time:  "08:37",
+    title: "The Argument Shrinks",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-022.png",
+    alt:   "An X post pairs captioned images of Macklemore and Ed Sheeran above a quoted post containing a cropped article excerpt and a link, followed by engagement counts and part of an unrelated post.",
+    tags:  ["ed-sheeran", "macklemore", "framing", "text-in-image", "the-second-item", "solo"],
+    demand:   "distract",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "The controversy had already filled my feed. This version made the " +
+             "argument smaller and easier to pass along, with roughly 850 likes for " +
+             "every reply.",
+
+    pins: [
+      { x: 86, y: 18.5, label: "SOURCE",       text: "Unlike most sources in this archive, this one states its politics in its name" },
+      { x:  8, y: 30,   label: "TECHNIQUE",    text: "The claim is printed into the picture. It cannot be quoted back or corrected" },
+      { x:  8, y: 40,   label: "FRAMING",      text: "Two captions make a complicated dispute look settled" },
+      { x:  8, y: 71,   label: "EVIDENCE",     text: "The supporting article is cropped on both sides. I cannot read it" },
+      { x:  8, y: 80.5, label: "MEASUREMENT",  text: "310K views, 40K likes, 3.5K reposts, 47 replies. Roughly 850 likes per reply" },
+      { x: 72, y: 85,   label: "SURROUNDINGS", text: "The slot below is not an advertisement today, just an unrelated post" }
+    ],
+
+    record: "On September 16, 2026, at 8:37 a.m., I was in bed with my coffee, " +
+            "getting ready for a twelve-hour shift. I opened X only to take my daily " +
+            "capture. Posts about this controversy had been appearing frequently in " +
+            "my feed. I follow none of the accounts shown and did not recognize the " +
+            "subject of the next post.",
+
+    remark: "I was already familiar with this controversy from its repeated " +
+            "appearances in my feed, so another post about it was unsurprising. What " +
+            "stood out was how the meme assigned each person a simplified position, " +
+            "giving me a ready-made argument before I examined the smaller excerpt " +
+            "beneath it. Its captions are the creator's framing, which I cannot " +
+            "treat as a transcript of what either person said. They are also printed " +
+            "into the picture itself, which means they travel as an image rather " +
+            "than as text anyone can quote back or correct. The article excerpt that " +
+            "might have supplied context is cropped on both sides; I cannot read a " +
+            "full sentence of it in the frame. I expected more discussion, but the " +
+            "displayed likes and reposts far outnumbered replies. Those counts show " +
+            "activity without explaining why people participated, and three and a " +
+            "half thousand reposts against forty-seven replies describes something " +
+            "passed along rather than argued over. The live banner that has opened " +
+            "most of this week's captures was not there today. This capture makes me " +
+            "notice how easily a controversy can keep circulating while the space " +
+            "given to its context gets smaller."
   }
   /* Add the next capture below, after a comma:
 

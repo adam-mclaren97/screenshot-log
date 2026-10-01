@@ -969,6 +969,59 @@ var CAPTURES = [
             "archive, by a wide margin. Below it, football resumes, and I catch " +
             "myself anticipating a gambling advertisement that has not actually " +
             "appeared."
+  },
+     ,{
+    id:    "025",
+    week:  4,
+    date:  "2026-09-19",
+    time:  "21:50",
+    title: "One Familiar, One Stranger",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-025.png",
+    alt:   "An X feed shows Philip Lewis relaying an AP sentence about Ed Sheeran's comments on Gaza, with Variety-watermarked concert footage, followed by a partially visible Entertainment Tonight post about Brittany Broski's fashion inspiration.",
+    tags:  ["ed-sheeran", "palestine", "recommendations", "borrowed-frame", "expectations", "solo"],
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "The first post continued an argument I was already invested in. The " +
+             "second seemed to assume I knew who Brittany Broski was.",
+
+    pins: [
+      { x: 78, y: 18.5, label: "SOURCE",      text: "An AP wire sentence relayed by someone else, over footage belonging to Variety" },
+      { x: 91, y: 25,   label: "FRAMING",     text: "The headline sounds firmer than my reading of his response" },
+      { x: 90, y: 35,   label: "EVIDENCE",    text: "The commentary reached me first. The thing being commented on arrived a week later" },
+      { x: 90, y: 50,   label: "FOREGROUND",  text: "Hearing him directly still leaves me dissatisfied" },
+      { x:  8, y: 79,   label: "MEASUREMENT", text: "1.2M views, 6.8K likes, 1.7K reposts, 600 replies. Eleven likes per reply, where the memes ran past eight hundred" },
+      { x: 80, y: 83.5, label: "ABSENCE",     text: "I expect advertising, but no ad label appears" }
+    ],
+
+    record: "On September 19, 2026, at 9:50 p.m., I was at home relaxing in my " +
+            "bedroom. A Philip Lewis post containing a video of Ed Sheeran appeared " +
+            "above an Entertainment Tonight post about Brittany Broski. I watched the " +
+            "Sheeran video. I follow none of the accounts shown.",
+
+    remark: "After several captures of other people arguing about Sheeran, I finally " +
+            "heard him address the issue himself, and I still felt he was sitting on " +
+            "the fence. The caption presented a forceful statement, but watching the " +
+            "response left me with the impression that he was trying to satisfy " +
+            "everyone. The order is worth noting: my feed gave me a week of " +
+            "commentary about what he said before it gave me him saying it. The post " +
+            "itself belongs to nobody in the frame either. The sentence is an AP wire " +
+            "lede, the footage carries a Variety watermark, and the account relaying " +
+            "both adds nothing of its own. The numbers differ from the earlier posts " +
+            "about this controversy as well. Six hundred replies against six thousand " +
+            "eight hundred likes is roughly eleven likes per reply, where the meme " +
+            "and the crowd clip both ran past eight hundred. People passed those " +
+            "along; they argued with this one. Below it, the feed moved into celebrity " +
+            "fashion coverage about someone I did not recognize, making its sense of " +
+            "my interests suddenly feel much less precise. I initially called that " +
+            "second post an advertisement, although there is no visible ad label: " +
+            "repeated commercial placements have started shaping what I expect to " +
+            "find there. Both posts involve entertainment figures, but my investment " +
+            "in the first comes from the political issue, and that interest does not " +
+            "automatically carry over to the second."
   }
   /* Add the next capture below, after a comma:
 

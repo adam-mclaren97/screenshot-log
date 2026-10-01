@@ -1022,6 +1022,61 @@ var CAPTURES = [
             "find there. Both posts involve entertainment figures, but my investment " +
             "in the first comes from the political issue, and that interest does not " +
             "automatically carry over to the second."
+  },
+     ,{
+    id:    "026",
+    week:  4,
+    date:  "2026-09-20",
+    time:  "11:30",
+    title: "Two-Hour Atletico Fan",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-026.png",
+    alt:   "An X feed shows an Al Jazeera live banner above a Kalshi FC post about a disputed challenge in Atletico Madrid versus Real Madrid, with broadcast replay and referee-review footage, above a partially visible FanDuel advertisement.",
+    tags:  ["madrid-derby", "football", "kalshi", "fanduel", "the-second-item", "always-live", "borrowed-frame", "solo"],
+    demand:   "sell",
+    followed: true,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I was a Barcelona supporter spending two hours rooting for Atletico. " +
+             "FanDuel offered to make that temporary allegiance a financial " +
+             "commitment.",
+
+    pins: [
+      { x: 48, y: 6,    label: "RECORD",       text: "The phone documenting my feed is also powering the work on this project" },
+      { x: 76, y: 20,   label: "INTERRUPTION", text: "Al Jazeera leads the row again, now counting 267 live broadcasts" },
+      { x: 86, y: 25.7, label: "SOURCE",       text: "A prediction market delivering football content, with no ad label. I chose to follow it" },
+      { x: 60, y: 30,   label: "FRAMING",      text: "The verdict is decided for me before the replay starts" },
+      { x:  8, y: 40,   label: "EVIDENCE",     text: "The radio incident finally becomes something I can examine" },
+      { x:  8, y: 50,   label: "TECHNIQUE",    text: "A Spanish match, an Arabic broadcast, a clipper's watermark, a betting brand — and an advertisement inside the footage" },
+      { x:  8, y: 57.5, label: "MEASUREMENT",  text: "27K views, 185 likes, 23 replies, 22 reposts" },
+      { x: 82, y: 61.5, label: "SURROUNDINGS", text: "The second betting company in the frame, and the only one labeled as an advertisement" }
+    ],
+
+    record: "On September 20, 2026, at 11:30 a.m., I was in the passenger seat while " +
+            "my brother drove us to New Jersey for a lacrosse game. I was listening " +
+            "to Atletico Madrid versus Real Madrid on the radio and using my personal " +
+            "hotspot for work on this project. I recognized the incident from the " +
+            "commentary and took the screenshot midway through my first viewing of " +
+            "the clip. I follow Kalshi FC but not FanDuel Sports.",
+
+    remark: "As a Barcelona supporter I do not usually root for Atletico, but my " +
+            "dislike of Real Madrid made the arrangement easy for two hours. This " +
+            "clip gave me something the radio could not: a chance to examine the " +
+            "challenge myself, although I arrived with a clear preference about which " +
+            "team should benefit. Unlike recommendations from strangers, this one " +
+            "came from an account I already follow, placing my own choices inside the " +
+            "pattern I am documenting. The more I look at the frame, the less of it " +
+            "is not for sale. Kalshi supplied the football discussion and carries no " +
+            "ad label. FanDuel appeared directly underneath, labeled. And an " +
+            "advertisement for a sports channel runs across the top of the broadcast " +
+            "footage itself. Three invitations, one of them disclosed. The clip " +
+            "belongs to nobody here either: a Spanish match, shown by an " +
+            "Arabic-language broadcaster, clipped by an account asking me to follow " +
+            "it, reposted by a prediction market. My later thought that I should have " +
+            "put money on Atletico shows how easily I could imagine turning a " +
+            "sporting preference into a wager; it does not establish that the ad " +
+            "caused that thought."
   }
   /* Add the next capture below, after a comma:
 

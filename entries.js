@@ -848,6 +848,58 @@ var CAPTURES = [
             "most of this week's captures was not there today. This capture makes me " +
             "notice how easily a controversy can keep circulating while the space " +
             "given to its context gets smaller."
+  },
+     ,{
+    id:    "023",
+    week:  4,
+    date:  "2026-09-17",
+    time:  "21:26",
+    title: "Finally, My Side",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-023.png",
+    alt:   "An X feed shows a live football banner with an Al Jazeera banner behind it, above a reposted Verstappen onboard clip captioned inside the video, a quoted complaint about the same moment, and a NYRA Bets advertisement below.",
+    tags:  ["max-verstappen", "f1", "nyra-bets", "the-second-item", "text-in-image", "borrowed-frame", "solo"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "My feed usually finds an F1 opinion I disagree with. On a week without " +
+             "racing, it finally gave me something I could enjoy without arguing.",
+
+    pins: [
+      { x: 50, y: 20,   label: "INTERRUPTION", text: "The live row has reordered. Football first now, the news channel pushed to the edge" },
+      { x: 70, y: 30,   label: "FRAMING",      text: "My favorite driver makes this an easy welcome" },
+      { x:  8, y: 35,   label: "TECHNIQUE",    text: "The claim is printed into the clip, and the clip is someone else's" },
+      { x:  8, y: 50,   label: "FOREGROUND",   text: "For once, being a fan requires no argument from me" },
+      { x:  8, y: 68,   label: "EVIDENCE",     text: "The post I enjoyed is a rebuttal. The argument is in the frame; I am on the winning side of it" },
+      { x:  8, y: 75.5, label: "MEASUREMENT",  text: "11K views, 199 likes, and the reply and repost counters are blank" },
+      { x: 72, y: 80,   label: "SURROUNDINGS", text: "The slot returns to a wager. Seven of eleven now" }
+    ],
+
+    record: "On September 17, 2026, at 9:26 p.m., I was in bed at home. It was a week " +
+            "without an F1 race, and I encountered a positive post about Max " +
+            "Verstappen, my favorite driver. A live football banner and part of an " +
+            "Al Jazeera banner appeared above it, with a NYRA Bets advertisement " +
+            "below. I follow none of the accounts shown.",
+
+    remark: "With no race that week, a positive Verstappen post gave me a little of " +
+            "the F1 activity I was missing. I usually notice racing posts because " +
+            "someone's opinion clashes with mine, so agreeing felt like a welcome " +
+            "change. Looking at it again, the argument is still in the frame: the " +
+            "post is a reply to the complaint quoted beneath it, and what I enjoyed " +
+            "was being on the winning side of it rather than being spared it. The " +
+            "clip is not the poster's either, and the line explaining what to look " +
+            "for is printed into the video rather than written beside it. The " +
+            "football banner above concerned teams I had no interest in, and the " +
+            "news channel that led this row all last week had been pushed to its " +
+            "edge. I cannot know whether the timing was deliberate, but the " +
+            "recommendation felt well placed in my evening. The numbers are the " +
+            "strangest part: eleven thousand views, one hundred and ninety-nine " +
+            "likes, and both the reply and repost counters empty. It reached a lot " +
+            "of people and nobody said anything or passed it on. Then NYRA Bets " +
+            "offered a different kind of racing involvement; being pleased with the " +
+            "first item still came with the usual second invitation."
   }
   /* Add the next capture below, after a comma:
 

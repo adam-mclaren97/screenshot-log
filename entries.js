@@ -652,6 +652,54 @@ var CAPTURES = [
             "invitation to invest money in sports. The news banner that had sat at " +
             "the top of the last three captures was not there at all. My feed had " +
             "changed the emotion while keeping the sales pitch."
+  },
+     ,{
+    id:    "019",
+    week:  3,
+    date:  "2026-09-13",
+    time:  "16:54",
+    title: "A Kitchen Time Machine",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-019.png",
+    alt:   "An X feed shows a live Green Bay versus Minnesota scoreboard above solelynostalgia's quote post featuring the What's New, Scooby-Doo? theme, with a partially visible Kalshi sports advertisement below.",
+    tags:  ["scooby-doo", "nostalgia", "kalshi", "the-second-item", "always-live", "solo"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I opened X because I owed the project a capture. A few seconds later, I " +
+             "was five again, standing in a kitchen where we were supposed to be " +
+             "making stew.",
+
+    pins: [
+      { x: 60, y: 20,   label: "INTERRUPTION", text: "The live slot is still here. Last week a news channel, today a football game" },
+      { x: 80, y: 28,   label: "FRAMING",      text: "A stranger's reaction arrives before the song does" },
+      { x:  8, y: 50,   label: "FOREGROUND",   text: "My kitchen briefly becomes a time machine" },
+      { x:  8, y: 71.5, label: "MEASUREMENT",  text: "351K views, 16K likes, 1.9K reposts, and 5 replies. Nothing here to argue about" },
+      { x: 65, y: 76,   label: "SURROUNDINGS", text: "The second item returns, two days running. It calls itself trading, not betting" }
+    ],
+
+    record: "On September 13, 2026, at 4:54 p.m., I was in the kitchen getting ready " +
+            "to make stew with my girlfriend, on the Sunday after our friend's " +
+            "wedding. I opened X to take my daily capture and listened to a song I " +
+            "had not heard in years. My girlfriend also commented on how good it was. " +
+            "I follow neither solelynostalgia nor the quoted account, culture, and I " +
+            "do not follow Kalshi.",
+
+    remark: "I had forgotten how good the \"What's New, Scooby-Doo?\" theme was until " +
+            "it interrupted an ordinary afternoon of getting dinner ready. Suddenly I " +
+            "felt five again, and my girlfriend joined in appreciating a song that " +
+            "neither the screenshot nor its engagement totals can explain my " +
+            "attachment to. This is something my original search for rage bait would " +
+            "have passed over: a recommendation that made the room I was already in " +
+            "more enjoyable. Sixteen thousand likes and five replies. The captures " +
+            "that angered me collected arguments; this one collected agreement and " +
+            "nothing left to say. Football sat above it, and Kalshi waited below, " +
+            "keeping the familiar commercial invitation in place. Where a live news " +
+            "channel had sat for three days, a live football game now sits. The slot " +
+            "did not disappear; it changed what it was broadcasting. For once, " +
+            "though, the second item can wait. I am still listening to the first."
   }
   /* Add the next capture below, after a comma:
 

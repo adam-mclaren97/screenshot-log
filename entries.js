@@ -700,6 +700,54 @@ var CAPTURES = [
             "channel had sat for three days, a live football game now sits. The slot " +
             "did not disappear; it changed what it was broadcasting. For once, " +
             "though, the second item can wait. I am still listening to the first."
+  },
+     ,{
+    id:    "020",
+    week:  4,
+    date:  "2026-09-14",
+    time:  "10:31",
+    title: "One Laugh, Then Out",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-020.png",
+    alt:   "An X feed shows an Al Jazeera live banner mid-redraw above a post about Ben Shelton containing a screenshot of a comment section mocking him, with a quoted remark about Alcaraz, and the edge of an unidentifiable next post below.",
+    tags:  ["ben-shelton", "tennis", "mockery", "borrowed-frame", "always-live", "solo"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "Yesterday my feed brought back a childhood favorite. Today it found a " +
+             "player I am happy to laugh at. Both worked on me.",
+
+    pins: [
+      { x: 70, y: 20,   label: "INTERRUPTION", text: "The live slot returns, caught mid-redraw as I pressed the shutter" },
+      { x: 45, y: 28,   label: "FRAMING",      text: "My existing opinion does some of the work" },
+      { x: 90, y: 32,   label: "TECHNIQUE",    text: "A screenshot of a comment section, inside a post, inside my screenshot" },
+      { x: 90, y: 45,   label: "FOREGROUND",   text: "I arrive already willing to laugh. Every line inverts a stock football phrase" },
+      { x:  8, y: 90.5, label: "MEASUREMENT",  text: "26K views, 1.3K likes, 2 replies — while one comment inside the image has 27.6K" },
+      { x: 30, y: 95.5, label: "ABSENCE",      text: "I expect gambling before I can identify anything" }
+    ],
+
+    record: "On September 14, 2026, at 10:31 a.m., I was finishing my coffee after " +
+            "making breakfast. I opened X specifically to take my daily capture. I " +
+            "read the post, laughed, took the screenshot, and left without scrolling " +
+            "farther. I follow no account in the frame.",
+
+    remark: "A joke at Ben Shelton's expense was an easy way to get a laugh out of me " +
+            "because I already was not a huge fan. Like the previous day's " +
+            "Scooby-Doo post, it met me with something I was ready to enjoy, though " +
+            "this time that enjoyment came from mockery. What I did not notice while " +
+            "laughing is that I was looking at a screenshot of a comment section, " +
+            "posted inside someone else's post, inside my own screenshot. Three " +
+            "frames deep, and only the outermost one is mine. The jokes themselves " +
+            "are a template: each line inverts a stock football phrase, so the " +
+            "humor comes from the format rather than from anything about Shelton. " +
+            "One of those comments has 27,600 likes; the post that screenshotted " +
+            "them has 1,300. The post got my attention for a moment, and then I " +
+            "closed the app. Looking back, I am also ready to assume that the barely " +
+            "visible next post is another gambling advertisement. I cannot establish " +
+            "that from this screenshot; what it preserves is the point where a " +
+            "pattern in my archive has become an expectation I bring to the feed."
   }
   /* Add the next capture below, after a comma:
 

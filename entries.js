@@ -748,6 +748,54 @@ var CAPTURES = [
             "visible next post is another gambling advertisement. I cannot establish " +
             "that from this screenshot; what it preserves is the point where a " +
             "pattern in my archive has become an expectation I bring to the feed."
+  },
+     ,{
+    id:    "021",
+    week:  4,
+    date:  "2026-09-15",
+    time:  "18:39",
+    title: "Read Twice, Click Never",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-021.png",
+    alt:   "An X feed shows a row of live broadcast banners above a CNN post reporting a change to an FBI hiring disqualification, with the headline printed into a large photograph of Kash Patel, and the top edge of a Starlink advertisement below.",
+    tags:  ["kash-patel", "fbi-hiring", "cnn", "starlink", "the-second-item", "always-live", "expectations", "solo"],
+    demand:   "distract",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I read the headline twice and the article zero times. Patel's face had " +
+             "already set my expectations before I understood the reported decision.",
+
+    pins: [
+      { x: 58, y: 20,   label: "INTERRUPTION", text: "The live slot is now a row. Al Jazeera, and another sliding in behind it" },
+      { x:  8, y: 30,   label: "FRAMING",      text: "I bring an expectation of absurdity to this" },
+      { x: 80, y: 36.5, label: "ABSENCE",      text: "My unanswered questions stay behind a link I never opened" },
+      { x:  8, y: 48,   label: "TECHNIQUE",    text: "The headline is printed into the image, so the post is complete without the article" },
+      { x:  8, y: 70,   label: "FOREGROUND",   text: "A familiar face gives my attention a destination" },
+      { x:  8, y: 90.5, label: "MEASUREMENT",  text: "901K views, 5.4K likes, 1.3K reposts, 458 replies" },
+      { x: 72, y: 95.5, label: "SURROUNDINGS", text: "The slot below is an advertisement again, this time for satellite internet" }
+    ],
+
+    record: "On September 15, 2026, at 6:39 p.m., I was at my girlfriend's house, " +
+            "hanging out after she returned from work. I read the headline twice but " +
+            "did not open the article or investigate the reported decision further. " +
+            "I do not follow CNN.",
+
+    remark: "CNN's post presented an FBI hiring decision whose stated rationale I " +
+            "could not connect to the policy change from the caption alone. Patel's " +
+            "face was enough to make me stop, because I associate posts about him " +
+            "with something absurd, and this fit that expectation. The headline is " +
+            "also printed into the image itself, so the post carries its whole claim " +
+            "without the article attached. I read it twice because it was there to be " +
+            "read twice. I chose not to spend more of my evening investigating it, " +
+            "which is one way I limit how much attention I give politics on X. That " +
+            "choice also left my first impression largely untested. Below it, the " +
+            "slot held an advertisement again, satellite internet rather than a " +
+            "wager. Above it, the live banner had become a row, with a second " +
+            "broadcast sliding in behind Al Jazeera. The post held me long enough to " +
+            "react, while the explanation I might have needed remained in an article " +
+            "I never opened."
   }
   /* Add the next capture below, after a comma:
 

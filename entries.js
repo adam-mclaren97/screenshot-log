@@ -556,6 +556,54 @@ var CAPTURES = [
             "occupies the space where I have started expecting a gambling ad. I am " +
             "now noticing the absence of a sales pitch, which says something about " +
             "how familiar those pitches have become."
+  },
+     ,{
+    id:    "017",
+    week:  3,
+    date:  "2026-09-11",
+    time:  "10:05",
+    title: "Coffee, Then Complaints",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-017.png",
+    alt:   "An X For You feed shows a live Al Jazeera English banner above Clete Torres reacting to a quoted post about a Clancy juror's comments on autopsy evidence, with a captioned interview video, followed by a partially visible gaming post.",
+    tags:  ["clancy-trial", "jurors", "wolverine", "always-live", "solo"],
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I finished breakfast and found another Clancy reaction waiting for me. " +
+             "Below it, the subject changed to Wolverine, but the invitation to " +
+             "disapprove stayed familiar.",
+
+    pins: [
+      { x: 70, y: 20, label: "INTERRUPTION", text: "Third day running, same channel, same place" },
+      { x: 50, y: 34, label: "FRAMING",      text: "Someone else's disbelief sets up my reading" },
+      { x:  8, y: 44, label: "EVIDENCE",     text: "The crime's severity shapes how I receive this" },
+      { x:  8, y: 50, label: "ABSENCE",      text: "This excerpt leaves my questions about context unanswered" },
+      { x: 90, y: 68, label: "TECHNIQUE",    text: "Burned-in captions, highlighted word by word. Built to be watched with the sound off" },
+      { x:  8, y: 76, label: "MEASUREMENT",  text: "283K views, 979 reposts, 16K likes, 55 replies. This one travelled rather than argued" },
+      { x: 60, y: 83, label: "SURROUNDINGS", text: "Different stakes arrive in the same scrolling motion" }
+    ],
+
+    record: "On September 11, 2026, at 10:05 a.m., I was at the dining table " +
+            "finishing coffee after breakfast. This was the first post I saw that " +
+            "day. I follow none of the accounts shown. A partially visible gaming " +
+            "post appeared beneath the Clancy post.",
+
+    remark: "This appears to be another update about the Clancy jurors, but I " +
+            "encountered it as another reaction to their words. The horrific nature " +
+            "of the crime matters to how I understand the reported comment, and I " +
+            "found it difficult to make sense of that response from this excerpt " +
+            "alone. The surrounding commentary supplies disbelief more readily than " +
+            "context. The clip itself is subtitled with the current word highlighted, " +
+            "which is how a video is built when it expects to be watched silently, " +
+            "in passing. Below it was a complaint about Wolverine, a game I have no " +
+            "interest in playing. The subjects have very different stakes, yet my " +
+            "next move through the feed was another opportunity to encounter " +
+            "someone's dissatisfaction. For the second day in a row the slot beneath " +
+            "the first post held no wager. The pattern I have been tracking may be " +
+            "narrower than I thought, or this week is simply different."
   }
   /* Add the next capture below, after a comma:
 

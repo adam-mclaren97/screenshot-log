@@ -1271,6 +1271,203 @@ var CAPTURES = [
             "dollars with a code, now up to two thousand. Sixteen days, one slot, and " +
             "the number keeps going up. Apparently having an emotional investment in " +
             "football still leaves room for a financial one."
+  },
+     ,{
+    id:    "031",
+    week:  5,
+    date:  "2026-09-25",
+    time:  "08:32",
+    title: "Picking Up Where We Left",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-031.png",
+    alt:   "An X feed shows a quote post disputing a description of a footballer's corner-flag celebration, quoting a caption that gives the referee's reason, with the same broadcast clip captured the previous day, followed by a partially visible Kalshi FC post mocking Vinicius.",
+    tags:  ["football", "israel-palestine", "kalshi-fc", "always-live", "borrowed-frame", "thread"],
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I spent last night engaging with this argument, and it was waiting for " +
+             "me after breakfast. My capture rule changes what I select, but it does " +
+             "not erase what I do between captures.",
+
+    pins: [
+      { x: 89, y: 30,   label: "FOREGROUND",  text: "The rebuttal keeps the argument centered on intent" },
+      { x:  8, y: 38,   label: "FRAMING",     text: "Today the caption supplies the reason yesterday's left out, and ends in emoji that restate it" },
+      { x:  8, y: 47,   label: "EVIDENCE",    text: "The same footage as yesterday, under a different person's name" },
+      { x:  8, y: 58,   label: "ABSENCE",     text: "Neither caption mentions removing the corner flag" },
+      { x:  8, y: 67.7, label: "MEASUREMENT", text: "270K views, 7.2K likes, 140 reposts, 107 replies. Yesterday's version of the same clip reached half as many" },
+      { x: 79, y: 72,   label: "SOURCE",      text: "This time I follow the account underneath, and it is selling nothing" }
+    ],
+
+    record: "On September 25, 2026, at 8:32 a.m., I captured this at home after " +
+            "breakfast while relaxing before my day off. I had engaged extensively " +
+            "with discussion of the same celebration the previous evening. Of the " +
+            "accounts shown, I follow only Kalshi FC.",
+
+    remark: "The celebration returned the next morning with an argument about what " +
+            "the player was pretending to do. To me, that reframing encouraged " +
+            "another round of disagreement while leaving out what I understood to be " +
+            "the separate issue of removing the corner flag. What interests me more " +
+            "is the difference between the two days. Yesterday's caption stopped " +
+            "before saying why the card was shown; this one says the referee thought " +
+            "he was mimicking a gun, and then repeats that claim in emoji. The " +
+            "footage is the same both times, down to the broadcaster's watermark, " +
+            "but yesterday it carried one person's name across the bottom and today " +
+            "it carries another's. The fuller version also traveled further: two " +
+            "hundred and seventy thousand views against yesterday's hundred and " +
+            "twenty-four. Having spent time engaging with the discussion the night " +
+            "before, I was not surprised to encounter it again, although that alone " +
+            "cannot establish why X selected it. Below it, Kalshi FC made fun of one " +
+            "of my least favorite players, giving me an easy change of mood. In the " +
+            "previous capture Kalshi appeared with a direct financial offer; here an " +
+            "account I choose to follow earns my attention through a football joke."
+  },
+     ,{
+    id:    "032",
+    week:  5,
+    date:  "2026-09-26",
+    time:  "20:03",
+    title: "Club Before Country",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-032.png",
+    alt:   "An X feed shows a parody account's translated post praising Barcelona's contribution to Spain above a player-rating lineup graphic, with an active phone timer at the top and a partially visible Novig betting advertisement below.",
+    tags:  ["barcelona", "international-football", "novig", "the-second-item", "always-live", "borrowed-frame", "thread"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I dislike international breaks, but I will gladly make time for " +
+             "Barcelona praise. Novig will have to compete with that and the pasta.",
+
+    pins: [
+      { x: 48, y: 6,    label: "RECORD",       text: "The timer is for the pasta. X has my attention, but it has to share" },
+      { x: 75, y: 30,   label: "SOURCE",       text: "The app tells me this is a parody account and that these are not the original words" },
+      { x:  8, y: 36,   label: "FRAMING",      text: "Club loyalty decides how I read this performance" },
+      { x:  8, y: 50,   label: "EVIDENCE",     text: "Someone else's ratings, screenshotted in as proof" },
+      { x:  8, y: 60,   label: "FOREGROUND",   text: "International duty still gives me something to celebrate" },
+      { x:  8, y: 77.5, label: "MEASUREMENT",  text: "59K views, 2.8K likes, 84 reposts, 26 replies" },
+      { x: 62, y: 82,   label: "SURROUNDINGS", text: "A fifth betting company, new to me, offering $25 in credits to start" }
+    ],
+
+    record: "On September 26, 2026, at 8:03 p.m., I took this screenshot while " +
+            "cooking pasta with my girlfriend. The active timer at the top of the " +
+            "screen was for the pasta. I do not follow any of the accounts shown.",
+
+    remark: "I can dislike international breaks and still enjoy seeing Barcelona's " +
+            "players perform well for Spain. This post gives me exactly that " +
+            "opening, turning a national-team performance into something I can " +
+            "appreciate through my club loyalty. Two things in the frame should have " +
+            "slowed me down and did not. X labels the account as a parody, and " +
+            "labels the caption as translated from Spanish, so the name is not a " +
+            "person and the words are not the ones that were written. I read both " +
+            "lines and went to the joke anyway. The evidence underneath is also " +
+            "somebody else's: a ratings card from another service, screenshotted in " +
+            "to support the claim. Novig appears below with a familiar invitation " +
+            "from a company I had never heard of, which makes five now, and my " +
+            "enthusiasm for football still does not translate into wanting to bet on " +
+            "it. The pasta timer adds something neither post accounts for: I am also " +
+            "making dinner with my girlfriend. X has some of my attention here, but " +
+            "it has to share."
+  },
+     ,{
+    id:    "033",
+    week:  5,
+    date:  "2026-09-27",
+    time:  "09:41",
+    title: "Hard to Cheer",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-033.png",
+    alt:   "An X post criticizes a celebration beside a video still of USC football players near an end zone, beneath an Al Jazeera live banner and above an A24 documentary advertisement.",
+    tags:  ["usc-football", "player-safety", "celebrations", "always-live", "thread"],
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "Last night I kept engaging because this bothered me. This morning the " +
+             "same subject was waiting, much like the earlier argument over the " +
+             "corner-flag celebration.",
+
+    pins: [
+      { x: 89, y: 30,   label: "FRAMING",      text: "Agreement keeps me engaged with an upsetting subject" },
+      { x:  8, y: 38,   label: "FOREGROUND",   text: "My enjoyment stops at celebrating another player's injury" },
+      { x:  8, y: 48,   label: "ABSENCE",      text: "The person I am worried about is outside this frame" },
+      { x:  8, y: 57,   label: "MEASUREMENT",  text: "1.7M views, 7.5K likes, 959 reposts, 317 replies. Twenty-four likes per reply, where last week's political joke ran past three thousand" },
+      { x: 55, y: 61.5, label: "SURROUNDINGS", text: "Not a wager this time, but still a sale — a film called You Can See Everything, under a complaint about what this frame leaves out" }
+    ],
+
+    record: "On September 27, 2026, at 9:41 a.m., I captured this while hanging out " +
+            "in bed at home. I had interacted extensively with posts about the hit " +
+            "the previous night. I do not follow any of the accounts shown.",
+
+    remark: "I like football, but moments like this make me uncomfortable with what " +
+            "I am watching for entertainment. The celebration after the hit bothered " +
+            "me because I was thinking about what an injury could mean for the other " +
+            "player long after the game ended. He is not in the video. The complaint " +
+            "is about how people behaved toward someone the frame does not show, " +
+            "which is most of why the clip is hard to watch. Unlike posts that draw " +
+            "me in through disagreement, this one echoes my concern and still brings " +
+            "me back into an upsetting discussion. The replies bear that out: three " +
+            "hundred and seventeen of them against seven and a half thousand likes, " +
+            "where the political joke I captured five days ago collected thirty-nine " +
+            "replies against a hundred and twenty-two thousand. People argue with " +
+            "this kind of post and pass the other kind along. I had already given the " +
+            "subject plenty of attention the night before, so its return felt " +
+            "familiar after the corner-flag controversy, even though I cannot " +
+            "establish why X selected it. The slot underneath sold me a film rather " +
+            "than a bet. Sports keeps dominating these captures, but the shift from " +
+            "enjoying Barcelona's performance to worrying about a player's future " +
+            "shows how little the topic alone says about the experience."
+  },
+     ,{
+    id:    "034",
+    week:  6,
+    date:  "2026-09-28",
+    time:  "10:01",
+    title: "Right Sport, Wrong Team",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-034.png",
+    alt:   "An X feed shows a post quoting song lyrics in capitals with rows of crying emojis above a large Fanatics advertisement featuring Detroit Lions clothing from an NFL and lululemon collection, with both posts' engagement counts visible.",
+    tags:  ["clairo", "fanatics", "nfl", "advertising", "thread"],
+    demand:   "sell",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "The second item was the first thing I noticed. Fanatics got my interest " +
+             "in football right and my team wrong.",
+
+    pins: [
+      { x: 76, y: 18.5, label: "ABSENCE",      text: "Someone else's lyrics, with nobody credited" },
+      { x: 68, y: 39,   label: "SURROUNDINGS", text: "A different product occupies the familiar sales slot" },
+      { x:  8, y: 43.4, label: "FRAMING",      text: "Your team, your style — addressed to a fan of a different team" },
+      { x:  8, y: 55,   label: "FOREGROUND",   text: "Second in order, first to catch my eye" },
+      { x:  8, y: 70,   label: "TECHNIQUE",    text: "An NFL and lululemon collection, sold by Fanatics, officially licensed. Four brands in one tile" },
+      { x:  8, y: 89,   label: "MEASUREMENT",  text: "The ad: 4.3M views, 75 likes. The post above it: 588K views, 60K likes. Seven times the reach, and almost nobody reacted" }
+    ],
+
+    record: "On September 28, 2026, at 10:01 a.m., I captured this at home in my " +
+            "kitchen after eating breakfast. I do not follow any of the accounts " +
+            "shown. I stayed only briefly, took the screenshot, and left the app.",
+
+    remark: "Song lyrics were a change from the sports posts that had been " +
+            "dominating my feed, but the Fanatics advertisement was where my eyes " +
+            "went first. The first post still determines what I capture, while the " +
+            "size and placement of what follows can determine what I actually " +
+            "notice. As a Seahawks fan, being offered Lions gear made the " +
+            "advertisement feel broadly relevant and personally off. That mismatch " +
+            "makes me question how closely the advertising matches the interests " +
+            "reflected elsewhere in my feed, although this screenshot cannot explain " +
+            "how the ad was selected. The two sets of counters are the most " +
+            "interesting thing here. The advertisement reports four point three " +
+            "million views and seventy-five likes. The post above it reports five " +
+            "hundred and eighty-eight thousand views and sixty thousand likes. The " +
+            "paid item reached seven times as many people and produced almost no " +
+            "response at all. It got my attention without giving me much reason to " +
+            "stay, let alone shop, and apparently that is true of nearly everyone " +
+            "else it reached."
   }
   /* Add the next capture below, after a comma:
 

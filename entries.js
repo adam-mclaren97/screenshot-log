@@ -1468,6 +1468,105 @@ var CAPTURES = [
             "response at all. It got my attention without giving me much reason to " +
             "stay, let alone shop, and apparently that is true of nearly everyone " +
             "else it reached."
+  },
+     ,{
+    id:    "035",
+    week:  6,
+    date:  "2026-09-29",
+    time:  "19:15",
+    title: "Already Sold",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-035.png",
+    alt:   "An X feed shows a fan account relaying reported GTA 6 features credited to Game Informer, illustrated with watermarked game imagery, beneath an Al Jazeera live banner and above a partially visible quote post defending the game against criticism.",
+    tags:  ["gta6", "gaming", "anticipation", "always-live", "borrowed-frame", "thread"],
+    demand:   "sell",
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I opened X to get a screenshot and found more reasons to want something " +
+             "I already wanted. Apparently, even the wind deserves a preview.",
+
+    pins: [
+      { x: 86, y: 25.7, label: "SOURCE",       text: "A magazine's preview, relayed by a fan account, illustrated with the magazine's own images" },
+      { x:  8, y: 35,   label: "FRAMING",      text: "Technical detail gives my anticipation somewhere to go" },
+      { x: 73, y: 43,   label: "ABSENCE",      text: "I captured and annotated a post I had not finished reading" },
+      { x:  8, y: 58,   label: "FOREGROUND",   text: "I need very little convincing here" },
+      { x:  8, y: 74.3, label: "MEASUREMENT",  text: "263K views, 6.9K likes. Yesterday's paid advertisement reached sixteen times as many people and collected seventy-five" },
+      { x: 72, y: 78.8, label: "SURROUNDINGS", text: "The next post gives my enthusiasm an opponent" }
+    ],
+
+    record: "On September 29, 2026, at 7:15 p.m., I took this screenshot while " +
+            "hanging out at my girlfriend's house. I opened X because I realized I " +
+            "still needed a capture. The first post's text was collapsed behind a " +
+            "Show more link, and I did not expand it before capturing.",
+
+    remark: "I am already sold on GTA 6, but I am still eager for details that give " +
+            "me more to anticipate. A post about its wind system can hold my " +
+            "attention because I bring that excitement with me; it does not have to " +
+            "build my interest from scratch. None of this is labeled as " +
+            "advertising. The information is a magazine's preview, the pictures are " +
+            "that magazine's own promotional images, and the account passing both " +
+            "along is a fan. Yesterday's capture had an advertisement that announced " +
+            "itself, reached four point three million people and collected " +
+            "seventy-five likes. This one reached two hundred and sixty-three " +
+            "thousand and collected nearly seven thousand. The thing that says it is " +
+            "selling gets scrolled past; the thing that does not gets believed. The " +
+            "next post shifts from features to defending the game against criticism, " +
+            "placing me on a side I am already inclined to support. Capturing the " +
+            "whole frame shows two ways of sustaining my interest in the same " +
+            "product: give me something to look forward to, then something to defend."
+  },
+     ,{
+    id:    "036",
+    week:  6,
+    date:  "2026-09-30",
+    time:  "11:43",
+    title: "Saved by the Doorbell",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-036.png",
+    alt:   "An X feed shows a political quote-post exchange about United States intervention in Latin America with a cartoon reaction image, beneath a purple live listening-room banner and above a partially visible Kalshi advertisement.",
+    tags:  ["us-foreign-policy", "kalshi", "the-second-item", "always-live", "thread"],
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "X had an argument ready for me, but the store doorbell had other plans. " +
+             "When I returned, the post was gone from my feed.",
+
+    pins: [
+      { x: 14, y: 6,    label: "RECORD",       text: "Captured on my work break. When I came back, this post was gone from my feed" },
+      { x: 50, y: 16.7, label: "INTERRUPTION", text: "The live slot is a listening room today, not a broadcast" },
+      { x: 82, y: 25.7, label: "SOURCE",       text: "Three accounts deep, and the first one is not here" },
+      { x:  8, y: 33,   label: "FRAMING",      text: "Each caption treats the other position as obvious nonsense" },
+      { x:  8, y: 50,   label: "FOREGROUND",   text: "The kind of argument I would normally join" },
+      { x:  8, y: 71.5, label: "MEASUREMENT",  text: "1.7M views, 186K likes, 18K reposts, 453 replies" },
+      { x: 65, y: 76,   label: "SURROUNDINGS", text: "Politics above, the same $2,000 offer below. Six days unchanged" }
+    ],
+
+    record: "On September 30, 2026, at 11:43 a.m., I took this screenshot in the back " +
+            "room during my first break at work, with about twenty minutes left in my " +
+            "capture window. The doorbell rang, and I returned to work. When I " +
+            "reopened X, the post was no longer in my feed. I do not follow the " +
+            "accounts in the posts and am unsure whether I follow anyone featured in " +
+            "the live banner.",
+
+    remark: "After several sports-heavy captures, my feed returned to a political " +
+            "disagreement presented through a mocking cartoon exchange. I would " +
+            "normally spend time with something like this, but I had opened X to meet " +
+            "my capture deadline, and the doorbell cut that visit short. What makes " +
+            "this entry worth keeping is what happened next: when I opened the app " +
+            "again, the post was not there. The screenshot is now the only place I " +
+            "can look at it. That is the simplest argument for doing any of this. A " +
+            "feed is not a thing you can return to, so the only way to examine one " +
+            "twice is to take it out of the feed first. Like the pasta timer in an " +
+            "earlier capture, the interruption also shows that my attention answers " +
+            "to things outside the app. Above the post, the live slot had become a " +
+            "listening room rather than a news channel, with forty-three people in it " +
+            "and a title I could not finish reading. Below it, Kalshi repeated the " +
+            "same two-thousand-dollar offer I captured six days ago, in football " +
+            "language, underneath an argument about foreign policy. Neither the " +
+            "argument nor the advertisement kept me from getting back to work."
   }
   /* Add the next capture below, after a comma:
 

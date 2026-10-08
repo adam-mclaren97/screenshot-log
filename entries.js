@@ -1172,6 +1172,57 @@ var CAPTURES = [
             "distinction to my running thread: the invitation to buy keeps appearing " +
             "even when the invitation to gamble does not."
   },
+     ,{
+    id:    "029",
+    week:  5,
+    date:  "2026-09-23",
+    time:  "08:10",
+    title: "Count Me Out",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-029.png",
+    alt:   "An X feed shows sarcastic commentary quoting a Variety announcement of a Vice TV documentary series about the public's response to athletes, with a studio portrait of Jake Paul, beneath an Al Jazeera live banner and above a partially visible post about Rockstar Games.",
+    tags:  ["everybody-hates", "celebrity", "gta6", "always-live", "thread"],
+    demand:   "provoke",
+    obscured: false,
+    cutOff:   false,
+
+    preview: "Apparently, disliking someone is a reason to watch a whole show about " +
+             "them. I am happy to leave it at disliking them.",
+
+    pins: [
+      { x: 77, y: 20,   label: "INTERRUPTION", text: "The live counter reads 8.4K today. It has also read 6, 8, 188 and 267" },
+      { x: 70, y: 34.4, label: "FRAMING",      text: "The joke groups unlike grievances together" },
+      { x:  8, y: 42,   label: "ABSENCE",      text: "The post names no one. The only face shown belongs to one man, and the list sits above him" },
+      { x:  8, y: 50,   label: "TECHNIQUE",    text: "A network has commissioned a series about the public's reaction to athletes. The reaction is the product" },
+      { x:  8, y: 62,   label: "FOREGROUND",   text: "One familiar face is enough for me" },
+      { x:  8, y: 74.5, label: "MEASUREMENT",  text: "870K views, 16K likes, 617 reposts, 30 replies" },
+      { x: 80, y: 79,   label: "SURROUNDINGS", text: "My feed offers another kind of entertainment" }
+    ],
+
+    record: "On September 23, 2026, at 8:10 a.m., I took this screenshot at home " +
+            "while drinking my morning coffee. I did not read through who would " +
+            "appear in the series before capturing it, and I did not check any of " +
+            "the claims made in the commentary above it.",
+
+    remark: "A documentary about disliked athletes seems to assume that having an " +
+            "opinion about someone means wanting to spend more time with them. The " +
+            "announcement itself is worth pausing on: a network has commissioned a " +
+            "series in which the public's reaction is the subject rather than " +
+            "anything the athletes did. That is close to what this collection has " +
+            "been documenting, except here it has been sold as entertainment. Seeing " +
+            "one of the Paul brothers had the opposite effect on me; I already knew I " +
+            "was not particularly interested. The commentary above reinforced that " +
+            "impression, although it names nobody, I did not investigate its claims, " +
+            "and the only person pictured is the one the announcement happens to " +
+            "illustrate. The counts are worth noting too. Sixteen thousand likes " +
+            "against thirty replies is the shape my funny captures make, not my " +
+            "angry ones. I was being invited to be indignant and declined; most " +
+            "people seem to have treated it as a joke. This belongs in the collection " +
+            "because inflammatory material does not always produce an intense " +
+            "response from me. Sometimes it just gets dismissed. The post underneath " +
+            "offered something more amusing, and I expect that subject to keep " +
+            "returning as its release approaches."
+  }
   /* Add the next capture below, after a comma:
 
   ,{

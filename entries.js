@@ -1121,7 +1121,57 @@ var CAPTURES = [
             "betting invitation has become almost as predictable as the sports " +
             "content I actively follow. The first post worked perfectly well on its " +
             "own; enjoying a win already gave me a reason to look."
-  }
+  },
+     ,{
+    id:    "028",
+    week:  5,
+    date:  "2026-09-22",
+    time:  "19:52",
+    title: "Funny Until Further Notice",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-028.png",
+    alt:   "An X feed shows a post pairing a photograph of Trump standing behind Mamdani with a still from a horror film, beneath a live-news banner drawing over itself, and above a Google Pixel advertisement.",
+    tags:  ["trump-mamdani", "political-humor", "advertising", "always-live", "solo"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I can appreciate the joke without feeling better about the situation. " +
+             "Below it, the sales pitch survives a change of product: today, a phone " +
+             "instead of a bet.",
+
+    pins: [
+      { x: 66, y: 20, label: "INTERRUPTION", text: "Caught mid-redraw again, two banners drawing over each other" },
+      { x: 65, y: 28, label: "FOREGROUND",   text: "I find this funny and still feel uneasy" },
+      { x:  8, y: 35, label: "FRAMING",      text: "The comparison casts politics as a horror scene" },
+      { x:  8, y: 45, label: "ABSENCE",      text: "No words here to argue with. The claim is made entirely by placing two pictures side by side" },
+      { x:  8, y: 51, label: "MEASUREMENT",  text: "749K views, 122K likes, 10K reposts, 39 replies. Over three thousand likes for every reply" },
+      { x: 60, y: 60, label: "SURROUNDINGS", text: "Different product, same slot — and this one calls itself a statement, not a distraction" }
+    ],
+
+    record: "On September 22, 2026, at 7:52 p.m., I captured this at home after " +
+            "dinner while hanging out with my girlfriend. I do not follow any of the " +
+            "accounts shown.",
+
+    remark: "Trump and Mamdani have provided some funny photographs together, and " +
+            "this comparison makes use of that. I can see the humor, but what is " +
+            "happening in the country and the world makes it harder to enjoy without " +
+            "reservation. The post gives me a way to laugh at something I am also " +
+            "uneasy about. It does that without writing anything down. Unlike the " +
+            "meme I captured a fortnight ago, there are no captions here at all; the " +
+            "argument is made entirely by putting two pictures next to each other, " +
+            "which leaves nothing to quote back or dispute. The numbers behave " +
+            "accordingly. A hundred and twenty-two thousand likes against " +
+            "thirty-nine replies is over three thousand to one, and ten thousand " +
+            "people passed it on. My other political captures collected hundreds of " +
+            "replies; this one collected almost none. A political joke travels like " +
+            "a joke, not like politics. Meanwhile, Google occupies the space where I " +
+            "have become accustomed to seeing gambling advertisements, and sells a " +
+            "phone as a statement rather than a distraction. That adds a useful " +
+            "distinction to my running thread: the invitation to buy keeps appearing " +
+            "even when the invitation to gamble does not."
+  },
   /* Add the next capture below, after a comma:
 
   ,{

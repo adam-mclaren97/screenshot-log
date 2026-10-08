@@ -1222,6 +1222,55 @@ var CAPTURES = [
             "response from me. Sometimes it just gets dismissed. The post underneath " +
             "offered something more amusing, and I expect that subject to keep " +
             "returning as its release approaches."
+  },
+     ,{
+    id:    "030",
+    week:  5,
+    date:  "2026-09-24",
+    time:  "18:06",
+    title: "Are You Serious?",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-030.png",
+    alt:   "An X post shows a footballer aiming a corner flag like a weapon during a celebration, captioned with a reference to a booking, beneath an Al Jazeera live banner and above a Kalshi advertisement offering up to two thousand dollars with a sign-up code.",
+    tags:  ["football", "israel-palestine", "kalshi", "the-second-item", "always-live", "borrowed-frame", "thread"],
+    demand:   "provoke",
+    obscured: false,
+    cutOff:   false,
+
+    preview: "My disbelief was directed at the celebration. That does not mean I " +
+             "thought the referee was making a geopolitical statement.",
+
+    pins: [
+      { x: 60, y: 20,   label: "INTERRUPTION", text: "The live row carries a second item now, two faces instead of a broadcast" },
+      { x: 86, y: 25.7, label: "SOURCE",       text: "French broadcast footage, clipped by one account, posted by another" },
+      { x:  8, y: 29,   label: "FRAMING",      text: "Nationality is the first word, and it frames everything after it" },
+      { x:  8, y: 36,   label: "ABSENCE",      text: "The caption trails off before giving the referee's reason" },
+      { x:  8, y: 43,   label: "FOREGROUND",   text: "My disbelief starts with the celebration itself" },
+      { x:  8, y: 54.5, label: "MEASUREMENT",  text: "124K views, 979 likes, 130 reposts. The reply counter is redrawing and unreadable" },
+      { x: 65, y: 59,   label: "SURROUNDINGS", text: "The same advertiser, the same slot" },
+      { x: 78, y: 72,   label: "EVIDENCE",     text: "Trade on sports, then $55 with a code, now up to $2,000. The same account, sixteen days apart" }
+    ],
+
+    record: "On September 24, 2026, at 6:06 p.m., I captured this while hanging out " +
+            "at my girlfriend's house. A football clip appeared above a Kalshi " +
+            "advertisement.",
+
+    remark: "My first reaction to the celebration was, are you serious? Given the " +
+            "Israel-Palestine conflict, pretending to fire a weapon felt incredibly " +
+            "tone deaf to me. But my understanding was that the second yellow " +
+            "concerned removing the corner flag, which made the discussion I " +
+            "encountered about the booking feel tangled up with a different " +
+            "argument. I can object to the celebration while still wanting people to " +
+            "distinguish their political interpretation from the referee's reason for " +
+            "penalizing it. The caption does not help with that. It begins with " +
+            "nationality, mentions the booking second, and trails off before saying " +
+            "why the card was shown, which leaves the connection for me to make " +
+            "rather than making it. Below that, Kalshi offers an incentive to trade " +
+            "on sports. It is the same account I first captured offering nothing but " +
+            "its own name: trade on crypto, then trade on sports, then fifty-five " +
+            "dollars with a code, now up to two thousand. Sixteen days, one slot, and " +
+            "the number keeps going up. Apparently having an emotional investment in " +
+            "football still leaves room for a financial one."
   }
   /* Add the next capture below, after a comma:
 

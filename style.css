@@ -788,3 +788,75 @@ a { color: inherit; }
   .thread-list { grid-template-columns: 1fr; gap: 12px; }
   .threads { margin-bottom: 34px; }
 }
+
+/* ---- first look: the reader answers before the notes appear ---- */
+.look-ask {
+  margin: 0 0 14px;
+  padding: 11px 14px;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.look-skip {
+  font: inherit;
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  padding: 0 0 0 4px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.look-skip:hover { color: var(--accent); }
+
+.capture-media.is-asking .phone { cursor: crosshair; }
+.capture-media.is-asking .pin { display: none; }
+.capture-media.is-asking ~ .capture-text .notes { display: none; }
+.capture-media.has-looked .look-ask { display: none; }
+
+.look-dot {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  margin: -13px 0 0 -13px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.45);
+  background: transparent;
+  pointer-events: none;
+}
+
+.look-dot::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  margin: -2.5px 0 0 -2.5px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.look-result {
+  margin: 12px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.look-result:empty { display: none; }
+
+.look-you {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.look-result a { color: var(--muted); }
+.look-result a:hover { color: var(--accent); }

@@ -390,11 +390,18 @@
     if (c.followed === false) facts.push("Account not followed");
     if (c.cutOff)             facts.push("Item continued past the frame");
 
+    var hasPins   = !!(c.pins && c.pins.length);
+    var savedLook = hasPins ? readLook(c.id) : null;
+
     view.innerHTML =
       '<a class="back" href="#">&larr; All captures</a>' +
       '<article class="capture">' +
-        '<div class="capture-media">' +
+        '<div class="capture-media' + (hasPins ? (savedLook ? " has-looked" : " is-asking") : "") + '">' +
+          (hasPins ? '<p class="look-ask">Before you read on &mdash; where did your eye ' +
+                     'go first? Click the screenshot. ' +
+                     '<button type="button" class="look-skip">Skip this</button></p>' : "") +
           phone(c, true) +
+          (hasPins ? '<p class="look-result"></p>' : "") +
           '<a class="fullsize" href="' + esc(c.image) + '" target="_blank">View full size &nearr;</a>' +
           (c.obscured ? '<p class="obscured">An identity in this capture has been ' +
                         "obscured. Nothing else in the frame was altered.</p>" : "") +
@@ -415,6 +422,109 @@
       "</article>";
 
     linkPins();
+    wireLook(c);
+  }
+
+  /* ---------- first look ----------
+     Before the annotations appear, the reader is asked where their eye
+     went first. Their answer is kept in their own browser only. */
+
+  function lookKey(id) { return "wholeframe-look-" + id; }
+
+  function readLook(id) {
+    try {
+      var raw = localStorage.getItem(lookKey(id));
+      if (!raw) return null;
+      var p = JSON.parse(raw);
+      if (typeof p.x !== "number" || typeof p.y !== "number") return null;
+      return p;
+    } catch (e) { return null; }
+  }
+
+  function saveLook(id, p) {
+    try { localStorage.setItem(lookKey(id), JSON.stringify(p)); } catch (e) {}
+  }
+
+  function clearLook(id) {
+    try { localStorage.removeItem(lookKey(id)); } catch (e) {}
+  }
+
+  function nearestPin(c, p) {
+    var best = null, bestD = Infinity;
+    (c.pins || []).forEach(function (pin, i) {
+      var dx = pin.x - p.x, dy = pin.y - p.y;
+      var d = dx * dx + dy * dy;
+      if (d < bestD) { bestD = d; best = { pin: pin, n: i + 1 }; }
+    });
+    return best;
+  }
+
+  function wireLook(c) {
+    var media = view.querySelector(".capture-media");
+    if (!media || !c.pins || !c.pins.length) return;
+
+    var phoneEl  = media.querySelector(".phone");
+    var resultEl = media.querySelector(".look-result");
+    if (!phoneEl || !resultEl) return;
+
+    function reveal(p) {
+      var dot = phoneEl.querySelector(".look-dot");
+      if (!dot) {
+        dot = document.createElement("span");
+        dot.className = "look-dot";
+        phoneEl.appendChild(dot);
+      }
+      dot.style.left = p.x + "%";
+      dot.style.top  = p.y + "%";
+
+      media.classList.remove("is-asking");
+      media.classList.add("has-looked");
+
+      var near = nearestPin(c, p);
+      resultEl.innerHTML =
+        '<span class="look-you">You looked here first.</span> ' +
+        (near ? "The nearest note is " + pad(near.n) +
+                (near.pin.label ? " " + esc(near.pin.label) : "") + ". " : "") +
+        '<a href="#" class="look-again">Try again</a>';
+    }
+
+    function dismiss() {
+      media.classList.remove("is-asking");
+      media.classList.add("has-looked");
+      resultEl.innerHTML = "";
+    }
+
+    var saved = readLook(c.id);
+    if (saved) reveal(saved);
+
+    phoneEl.addEventListener("click", function (e) {
+      if (!media.classList.contains("is-asking")) return;
+      var img = phoneEl.querySelector("img");
+      var box = (img || phoneEl).getBoundingClientRect();
+      if (!box.width || !box.height) return;
+      var p = {
+        x: Math.round(((e.clientX - box.left) / box.width)  * 1000) / 10,
+        y: Math.round(((e.clientY - box.top)  / box.height) * 1000) / 10
+      };
+      if (p.x < 0 || p.x > 100 || p.y < 0 || p.y > 100) return;
+      saveLook(c.id, p);
+      reveal(p);
+    });
+
+    media.addEventListener("click", function (e) {
+      var t = e.target;
+      if (!t || !t.classList) return;
+      if (t.classList.contains("look-skip")) { dismiss(); }
+      if (t.classList.contains("look-again")) {
+        e.preventDefault();
+        clearLook(c.id);
+        var dot = phoneEl.querySelector(".look-dot");
+        if (dot && dot.parentNode) dot.parentNode.removeChild(dot);
+        resultEl.innerHTML = "";
+        media.classList.remove("has-looked");
+        media.classList.add("is-asking");
+      }
+    });
   }
 
   // hovering a note highlights its dot, and the other way round

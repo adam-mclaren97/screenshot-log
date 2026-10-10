@@ -51,7 +51,7 @@ var TAG_NOTES = {
            "screenshotted into a post. A clip carrying another account's " +
            "watermark. A quote of a quote of a video someone else filmed. A " +
            "Spanish match shown by an Arabic broadcaster, clipped by a stranger, " +
-           "reposted by a betting brand. By the time it arrives, the material has " +
+           "reposted by a betting brand. By the time it arrives the material has " +
            "passed through two or three hands, and each one has added a line " +
            "telling me what it means."
   }

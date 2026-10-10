@@ -9,7 +9,8 @@ var SITE = {
   tagline:     "Same feeds. Bigger questions.",
   blurb:       "Once a day, without scrolling to find something better, I photograph the first thing X puts in my feed — the whole screen, not just the post.",
   footerLeft:  "Documenting the feed",
-  footerRight: "Still scrolling. Still a story."
+  footerRight: "Still scrolling. Still a story.",
+  formUrl:     "https://forms.gle/jKN2fTKTCrWELA1k8"
 };
 /* The five demands. Every capture gets exactly one.
    Change a label here and it changes everywhere on the site. */

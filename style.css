@@ -860,3 +860,51 @@ a { color: inherit; }
 
 .look-result a { color: var(--muted); }
 .look-result a:hover { color: var(--accent); }
+
+/* ---- a thread's question to the reader, and the answers it has had ---- */
+.set-ask {
+  margin: 16px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.set-ask a {
+  white-space: nowrap;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.set-voices {
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+}
+
+.set-voices li {
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  background: rgba(0, 0, 0, .035);
+  border-left: 2px solid var(--muted);
+}
+
+.set-voices blockquote {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+.set-voices cite {
+  display: block;
+  margin-top: 7px;
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-style: normal;
+  color: var(--muted);
+}

@@ -94,8 +94,29 @@
     if (typeof TAG_NOTES === "undefined" || !TAG_NOTES) return null;
     var v = TAG_NOTES[tag];
     if (!v) return null;
-    if (typeof v === "string") return { title: "", note: v };
-    return { title: v.title || "", note: v.note || "" };
+    if (typeof v === "string") return { title: "", note: v, ask: "", voices: [] };
+    return {
+      title:  v.title  || "",
+      note:   v.note   || "",
+      ask:    v.ask    || "",
+      voices: v.voices || []
+    };
+  }
+
+  // the question a thread puts to the reader, and the answers it has had
+  function askHtml(set) {
+    if (!set || !set.ask || !SITE.formUrl) return "";
+    return '<p class="set-ask">' + esc(set.ask) +
+           ' <a href="' + esc(SITE.formUrl) + '" target="_blank" rel="noopener">' +
+           "Tell me what you see &nearr;</a></p>";
+  }
+
+  function voicesHtml(set) {
+    if (!set || !set.voices || !set.voices.length) return "";
+    return '<ul class="set-voices">' + set.voices.map(function (v) {
+      return "<li><blockquote>" + esc(v.text) + "</blockquote>" +
+             "<cite>" + esc(v.name || "Anonymous") + "</cite></li>";
+    }).join("") + "</ul>";
   }
 
   function phone(c, showPins) {
@@ -291,6 +312,8 @@
             list.length + " of " + realList().length +
             ' captures. <a href="#">Show all</a></p>' +
           (note ? '<p class="set-text">' + esc(note) + "</p>" : "") +
+          voicesHtml(set) +
+          askHtml(set) +
         "</div>";
     }
 

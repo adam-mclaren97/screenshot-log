@@ -1574,6 +1574,590 @@ var CAPTURES = [
             "same two-thousand-dollar offer I captured six days ago, in football " +
             "language, underneath an argument about foreign policy. Neither the " +
             "argument nor the advertisement kept me from getting back to work."
+  },
+     ,{
+    id:    "037",
+    week:  6,
+    date:  "2026-10-02",
+    time:  "18:24",
+    title: "At Least I Know Him",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-038.png",
+    alt:   "An X For You feed shows a purple live listening-room banner, a text post about two people I do not recognize, and a large Digger advertisement featuring Tom Cruise with a shovel, with both posts' engagement counts visible.",
+    tags:  ["digger", "advertising", "unfamiliarity", "always-live", "thread"],
+    demand:   "sell",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "Those could be made-up people for all I know. At least the " +
+             "advertisement has some idea of what I am interested in.",
+
+    pins: [
+      { x: 37, y: 13.9, label: "FRAMING",      text: "The tab says For You. I do not recognize anyone in this conversation" },
+      { x: 84, y: 32.3, label: "ABSENCE",      text: "I lack the backstory this conversation assumes" },
+      { x: 73, y: 39.6, label: "SURROUNDINGS", text: "The second item finally matches something I want" },
+      { x:  8, y: 44,   label: "TECHNIQUE",    text: "The ad asks for a tap twice, in the text and burned into the poster" },
+      { x:  8, y: 60,   label: "FOREGROUND",   text: "I already want to see this film" },
+      { x: 70, y: 88.5, label: "SOURCE",       text: "Served from a domain that is not the studio's" },
+      { x:  8, y: 90.4, label: "MEASUREMENT",  text: "The ad: 7.5M views, 2.6K likes. The post above it: 152K views, 3.6K likes. Forty-nine times the reach, fewer likes" }
+    ],
+
+    record: "On October 2, 2026, at 6:24 p.m., I took this screenshot at my " +
+            "girlfriend's house while she was packing for our trip to Atlantic City " +
+            "to see Phish. I had previously shown interest in seeing Digger. I do " +
+            "not follow any of the accounts shown.",
+
+    remark: "The first post drops me into a disagreement about people I do not " +
+            "recognize, with none of the context I would need to understand it. The " +
+            "tab above it says For You. I have no idea what in my activity made this " +
+            "seem like a relevant opening for my feed. The advertisement below makes " +
+            "more sense to me because I already want to see the movie, and it asks " +
+            "for a tap twice over, once in the text and once printed into the " +
+            "poster. After repeatedly finding gambling offers in that second " +
+            "position, this is an invitation that actually connects with my " +
+            "interests. The counters complicate it further. The advertisement " +
+            "reports seven and a half million views and two thousand six hundred " +
+            "likes. The post above it reports a hundred and fifty-two thousand views " +
+            "and three thousand six hundred likes. The paid item reached nearly " +
+            "fifty times as many people and collected fewer reactions, which is the " +
+            "second time I have caught both sets of numbers on the same screen " +
+            "saying the same thing. The contrast complicates how I read the feed: " +
+            "the recommended conversation leaves me outside, while the paid " +
+            "placement gives me something familiar."
+  },
+     ,{
+    id:    "038",
+    week:  6,
+    date:  "2026-10-03",
+    time:  "11:05",
+    title: "There's Always Time for This",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-039.png",
+    alt:   "An X For You feed showing a new MLB tab, a purple banner reporting that another account is listening, a post mocking a complaint to UEFA above four stacked football match stills, and the beginning of an HPE post about AI and networks.",
+    tags:  ["real-madrid", "football", "rivalry", "fandom", "always-live", "thread"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I have a four-hour drive ahead and only opened X to get my capture. " +
+             "Apparently, there is still time for Real Madrid slander.",
+
+    pins: [
+      { x: 71, y: 13.9, label: "INTERRUPTION", text: "A new tab since yesterday. The app changed, not just the feed" },
+      { x: 75, y: 20,   label: "SOURCE",       text: "The live slot now reports what another user is listening to" },
+      { x: 86, y: 30,   label: "FOREGROUND",   text: "My club loyalty makes this an easy sell" },
+      { x: 86, y: 42,   label: "EVIDENCE",     text: "Four stills with years printed on them, arguing by arrangement alone" },
+      { x: 86, y: 62,   label: "FRAMING",      text: "I welcome the bias because it matches mine" },
+      { x:  8, y: 84,   label: "MEASUREMENT",  text: "169K views, 1.2K likes, 158 reposts, 22 replies" },
+      { x: 50, y: 88.5, label: "SURROUNDINGS", text: "Yesterday this slot knew exactly what I wanted. Today it is selling enterprise networking" }
+    ],
+
+    record: "On October 3, 2026, at 11:05 a.m., I took this screenshot just before " +
+            "getting on the road to Atlantic City. I had remembered I needed my " +
+            "daily capture and expected to spend the next four hours driving. I do " +
+            "not follow any of the accounts shown.",
+
+    remark: "The post uses old match images to frame Real Madrid's complaint as " +
+            "hypocrisy, and I am a very willing audience for that argument. As a " +
+            "Barcelona supporter, I will always make time for something at Madrid's " +
+            "expense. Unlike the unfamiliar names in my previous capture, this needs " +
+            "very little introduction to get my attention. That also makes my own " +
+            "participation harder to ignore: I regularly engage with this kind of " +
+            "content, so its return is hardly surprising. Two things above the post " +
+            "changed overnight. There is a new MLB tab in my feed that was not there " +
+            "yesterday, so the application itself altered without telling me. And " +
+            "the live banner, which has carried a news channel, a football " +
+            "scoreboard and a listening room on different days, now reports what " +
+            "another user is listening to. Below the post, the slot that offered me " +
+            "a film I already wanted to see yesterday is selling enterprise " +
+            "networking today. Capturing the first post removes my choice of what to " +
+            "save, but it does not remove the preferences I bring to the feed."
+  },
+     ,{
+    id:    "039",
+    week:  6,
+    date:  "2026-10-04",
+    time:  "19:01",
+    title: "Back in Another World",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-040.png",
+    alt:   "An X feed shows a live baseball score banner, a post naming Red Dead Redemption characters above a quoted trailcam photograph of two deer touching noses, and a Kalshi advertisement offering odds on the 2027 NFL champion.",
+    tags:  ["red-dead-redemption", "trailcam", "kalshi", "the-second-item", "always-live", "borrowed-frame", "thread"],
+    demand:   "distract",
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I am waiting for Phish, and two deer briefly take me back to Red Dead " +
+             "Redemption 2. Apparently, staying at a casino does not excuse me from " +
+             "the usual gambling invitation.",
+
+    pins: [
+      { x: 55, y: 20,   label: "INTERRUPTION", text: "Yesterday a baseball tab appeared. Today baseball is in the live slot" },
+      { x:  8, y: 30,   label: "FRAMING",      text: "My favorite game gives these animals a backstory" },
+      { x: 83, y: 32.5, label: "SOURCE",       text: "The same wildlife account I captured on September 7, reaching me through someone else this time" },
+      { x:  8, y: 55,   label: "TECHNIQUE",    text: "An automatic camera photographing whatever walks past, stamped with its time and its maker" },
+      { x:  8, y: 67,   label: "MEASUREMENT",  text: "1.4K views, 165 likes, 13 reposts, 1 reply. The quietest first item in the archive, where the loudest reached 3.8 million" },
+      { x: 65, y: 71.6, label: "SURROUNDINGS", text: "The casino weekend follows me onto my screen" },
+      { x: 76, y: 90,   label: "EVIDENCE",     text: "The wager it offers me includes my own team" }
+    ],
+
+    record: "On October 4, 2026, at 7:01 p.m., I took this screenshot inside the " +
+            "venue in Atlantic City while waiting for Phish to take the stage. I was " +
+            "staying at Harrah's casino that weekend. Red Dead Redemption 2 is my " +
+            "favorite game.",
+
+    remark: "Trailcam posts have offered breaks from the more contentious material " +
+            "in my collection before, but this one arrives with a reference that " +
+            "makes it especially personal. Someone else turns two deer into " +
+            "characters from my favorite game, and I immediately understand the " +
+            "connection. It is the same wildlife account I captured on September 7, " +
+            "the first account in this archive to come back, and it came back " +
+            "through somebody else rather than directly. There is something I like " +
+            "about what that account does: a camera left in a field, photographing " +
+            "whatever walks past, stamping each frame with the time and the make of " +
+            "the camera. Its comparatively low engagement complicates my impression " +
+            "that the first slot usually belongs to something already attracting a " +
+            "large audience. Fourteen hundred views is the quietest thing my feed " +
+            "has opened with; the loudest reached three point eight million. Below " +
+            "it, Kalshi offers another opportunity to bet while I am spending the " +
+            "weekend at a casino, and the market it shows me includes my own team. I " +
+            "cannot tell whether that placement has anything to do with my location, " +
+            "but the invitation feels particularly redundant here."
+  },
+     ,{
+    id:    "040",
+    week:  7,
+    date:  "2026-10-05",
+    time:  "11:07",
+    title: "Someone Check on Domino's",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-041.png",
+    alt:   "An X feed shows a live football score banner, a fan account reacting to Domino's Pizza UK posting a Red Dead Redemption 2 scene of a rider on horseback, and a partially visible Starlink advertisement offering a referral payment.",
+    tags:  ["red-dead-redemption", "dominos", "fandom", "advertising", "starlink", "always-live", "borrowed-frame", "thread"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I am picturing the Domino's intern finishing Red Dead Redemption 2 and " +
+             "needing a moment on the company account. Honestly, I understand.",
+
+    pins: [
+      { x: 60, y: 32.3, label: "FRAMING",      text: "Someone else's disbelief brings the brand to me" },
+      { x: 70, y: 39.7, label: "SOURCE",       text: "A pizza company posting like a player, with nothing to sell" },
+      { x:  8, y: 42,   label: "FOREGROUND",   text: "I recognize the feeling behind the joke" },
+      { x:  8, y: 58,   label: "EVIDENCE",     text: "Red Dead for the second day running, from a wildlife account yesterday and a pizza chain today" },
+      { x:  8, y: 70,   label: "MEASUREMENT",  text: "50K views, 5.2K likes, 276 reposts, 14 replies" },
+      { x: 70, y: 74.5, label: "SURROUNDINGS", text: "The second slot changes advertisers again" },
+      { x:  8, y: 90,   label: "TECHNIQUE",    text: "This one does not ask me to buy. It asks me to sell, for a hundred dollars a head" }
+    ],
+
+    record: "On October 5, 2026, at 11:07 a.m., I took this screenshot while relaxing " +
+            "in the hotel room after another late night seeing Phish. My girlfriend " +
+            "and I were about to head down for brunch, and I opened X to get my " +
+            "daily capture. I do not follow any of the accounts shown.",
+
+    remark: "Red Dead Redemption 2 returns to the top of my feed, this time through " +
+            "a pizza company apparently having feelings about Arthur Morgan. I " +
+            "immediately imagine an intern finishing the game and taking those " +
+            "feelings to the company account, although I have no idea who actually " +
+            "wrote it. Yesterday a wildlife photograph connected with my favorite " +
+            "game; today a pizza chain does. Two days, two first items, the same " +
+            "game, and neither account has anything to do with games. What strikes " +
+            "me about the Domino's post is that it is not selling anything. No " +
+            "pizza, no offer, no link, just a screenshot and a line a player would " +
+            "write. The quote post questions why Domino's is involved while also " +
+            "carrying its name into my feed. I can notice that commercial benefit " +
+            "and still think the whole exchange is hilarious. The advertisement " +
+            "below asks for something different again. Starlink sold me satellite " +
+            "internet a few weeks ago; this time it offers me a hundred dollars for " +
+            "every person I bring it. The slot has stopped asking me to buy and " +
+            "started asking me to recruit."
+  },
+     ,{
+    id:    "041",
+    week:  7,
+    date:  "2026-10-06",
+    time:  "11:02",
+    title: "Fine, You Have My Attention",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-042.png",
+    alt:   "An X feed shows Kalshi Tennis reporting a disqualification and Djokovic's advancement above a muted broadcast clip carrying several sponsor logos, followed by a partially visible political advertisement urging Texans to plan to vote.",
+    tags:  ["tennis", "djokovic", "medvedev", "kalshi-tennis", "brand-as-peer", "borrowed-frame", "thread"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "Kalshi finally brings me something I actually want: tennis drama " +
+             "involving two of my favorite players. Djokovic advancing certainly " +
+             "helps.",
+
+    pins: [
+      { x: 83, y: 18.5, label: "SOURCE",       text: "A betting company is now my tennis reporter" },
+      { x:  8, y: 24,   label: "FRAMING",      text: "The alarm meets an audience already taking sides" },
+      { x:  8, y: 31,   label: "FOREGROUND",   text: "My favorite player benefits, and that shapes my reaction" },
+      { x:  8, y: 48,   label: "TECHNIQUE",    text: "Four sponsors visible inside the footage before anyone sells me anything" },
+      { x:  8, y: 59,   label: "MEASUREMENT",  text: "204K views, 1.8K likes, 196 reposts, 39 replies" },
+      { x: 68, y: 63.4, label: "SURROUNDINGS", text: "The paid slot is political today, and addressed to Texans" }
+    ],
+
+    record: "On October 6, 2026, at 11:02 a.m., I took this screenshot in the hotel " +
+            "room after another night seeing Phish. I was waiting for room service " +
+            "and opened X to see what appeared. I do not follow any of the accounts " +
+            "shown.",
+
+    remark: "I read this as another Medvedev controversy, with the added benefit of " +
+            "my favorite player advancing. My loyalty to Djokovic makes me receptive " +
+            "to an outcome that the post packages as a scandal. Across earlier " +
+            "captures, Kalshi repeatedly appeared beneath something I wanted to see. " +
+            "Here its tennis account supplies the thing I am interested in, at the " +
+            "top of the screen, with no Ad label and nothing to buy. The company " +
+            "whose advertisements I have been documenting for six weeks is now my " +
+            "news source. The clip it posted is not short of selling either: a fund " +
+            "manager, a watchmaker, a liquor brand and the tournament's own sponsors " +
+            "are all visible in the footage before anyone addresses me directly. " +
+            "Below it, the paid slot has changed character. Every previous occupant " +
+            "offered me a product; today it is a political advertisement telling " +
+            "Texans to make a plan to vote. There was no live banner at the top at " +
+            "all. All of this complicates my focus on the second slot: my " +
+            "relationship with this recurring name also develops outside its " +
+            "advertisements."
+  },
+     ,{
+    id:    "042",
+    week:  7,
+    date:  "2026-10-07",
+    time:  "18:07",
+    title: "The Promise of More",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-043.png",
+    alt:   "An X feed shows Kalshi FC sharing a video of an emotional Lionel Messi seen through a vehicle window, with a purple live listening-room banner above and a Kalshi advertisement offering odds on the 2027 NFL champion below.",
+    tags:  ["messi", "argentina", "kalshi", "kalshi-fc", "the-second-item", "brand-as-peer", "always-live", "borrowed-frame", "thread"],
+    demand:   "provoke",
+    followed: true,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "For over half my life, whenever Messi wore blue and white, I was " +
+             "Argentinian. His tears started before mine.",
+
+    pins: [
+      { x: 81, y: 25.7, label: "SOURCE",       text: "A betting company again, the day after it brought me tennis" },
+      { x:  8, y: 30,   label: "FRAMING",      text: "Three sirens and the word NEW, for a man crying" },
+      { x:  8, y: 42,   label: "FOREGROUND",   text: "I bring half my life to this moment" },
+      { x:  8, y: 56,   label: "TECHNIQUE",    text: "Footage from somewhere else, carrying another account's name" },
+      { x:  8, y: 63,   label: "MEASUREMENT",  text: "16K views, 1.2K likes, 92 reposts, 5 replies. Posted twenty-six minutes before I saw it" },
+      { x: 65, y: 67.6, label: "SURROUNDINGS", text: "The same company above and below. One labeled, one not" },
+      { x: 76, y: 89,   label: "EVIDENCE",     text: "My team, priced at eight percent" }
+    ],
+
+    record: "On October 7, 2026, at 6:07 p.m., I took this screenshot while " +
+            "preparing to watch Argentina play. At the time, I understood this to " +
+            "be Messi's final game for Argentina. I had watched him represent the " +
+            "team for more than half of my twenty-nine years. I follow Kalshi FC.",
+
+    remark: "This post catches me preparing for a goodbye that feels personal, " +
+            "despite never having met the person leaving. I bring years of watching " +
+            "Messi to a short clip: the international title in 2021, the World Cup " +
+            "in 2022, and the places and people that surround those memories. The " +
+            "post itself arrives dressed as breaking news, three siren emojis and the " +
+            "word NEW, for footage of a man crying that belongs to another account " +
+            "entirely. Yesterday Kalshi supplied tennis news I wanted; today it's" +
+            "football account supplies a moment that reaches much further into my " +
+            "life, with its own betting advertisement directly underneath. The same " +
+            "company occupies both halves of my screen, and only the lower half is " +
+            "labeled as advertising. The repeated branding becomes especially " +
+            "noticeable when the feeling attached to the post is something no " +
+            "betting offer can account for. Every moment of Messi magic came with " +
+            "the promise of more; that evening, I was trying to imagine being left " +
+            "with only my memory."
+  },
+     ,{
+    id:    "043",
+    week:  7,
+    date:  "2026-10-08",
+    time:  "11:10",
+    title: "There Goes My Paycheck",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-044.png",
+    alt:   "An X feed shows a parody account pairing a joke about generational wealth and rent with a video of older people dancing, followed by a partially visible Kalshi advertisement for a leveraged perpetuals exchange.",
+    tags:  ["housing", "wages", "kalshi", "the-second-item", "borrowed-frame", "thread"],
+    demand:   "amuse",
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I am on the clock laughing about how little of my paycheck feels like " +
+             "mine. Kalshi has a suggestion for whatever is left.",
+
+    pins: [
+      { x: 65, y: 20.7, label: "SOURCE",       text: "Labeled a parody account. I read past it, as I did three weeks ago" },
+      { x: 87, y: 25,   label: "FOREGROUND",   text: "I read this while earning the money" },
+      { x:  8, y: 32,   label: "FRAMING",      text: "The caption assigns these people a role the footage cannot support" },
+      { x:  8, y: 61.5, label: "MEASUREMENT",  text: "808K views, 42K likes, 3.1K reposts, 263 replies" },
+      { x: 65, y: 66,   label: "SURROUNDINGS", text: "A joke about rent, and then somewhere to put what is left" },
+      { x:  8, y: 70.6, label: "EVIDENCE",     text: "No longer sports. Leveraged trading, on the first US perpetuals exchange" },
+      { x:  8, y: 85,   label: "TECHNIQUE",    text: "More exposure starts with one slider. The example shown is bitcoin at six times" }
+    ],
+
+    record: "On October 8, 2026, at 11:10 a.m., I took this screenshot during my " +
+            "first break at work. I was still on the clock when I opened X. The post " +
+            "made me chuckle.",
+
+    remark: "The joke about rent lands while I am at work earning money to support " +
+            "myself, which makes it difficult to leave at just a laugh. Its " +
+            "exaggerated generational contrast gives a familiar frustration a " +
+            "recognizable target, without establishing anything about the people in " +
+            "the video, who are simply dancing. X labels the account as a parody and " +
+            "I read past that too. Then Kalshi occupies the next slot, and what it " +
+            "is selling has changed. The earlier placements offered sports " +
+            "predictions, then fifty-five dollars with a code, then two thousand, " +
+            "then odds on a football champion. This one offers the first United " +
+            "States perpetuals exchange, with the line more exposure starts with one " +
+            "slider and bitcoin shown at six times. Earlier gambling ads often sat " +
+            "beneath sports I enjoyed; this one sits beneath anxiety about having " +
+            "enough, and asks for more than any of them. The placement does not " +
+            "establish deliberate coordination, but it changes how I read the " +
+            "invitation: apparently, my paycheck still has somewhere else to go."
+  },
+     ,{
+    id:    "044",
+    week:  7,
+    date:  "2026-10-09",
+    time:  "21:01",
+    title: "Loyalty Has a Jersey",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-045.png",
+    alt:   "An X feed shows NBA Centel, labeled as a parody account, claiming Embiid injured Jaylen Brown above a basketball clip carrying another account's watermark, with live sports scores overhead and a partially visible Kalshi trading advertisement below.",
+    tags:  ["celtics-sixers", "rivalry", "parody", "kalshi", "the-second-item", "borrowed-frame", "always-live", "thread"],
+    demand:   "amuse",
+    followed: true,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "Apparently, years of rooting for someone come with a jersey " +
+             "requirement. Let's go Celtics.",
+
+    pins: [
+      { x: 65, y: 28,   label: "SOURCE",       text: "I follow this account, and it is labeled parody. This time I noticed before I believed it" },
+      { x:  8, y: 32,   label: "FRAMING",      text: "My rivalry makes this version easy to enjoy" },
+      { x:  8, y: 50,   label: "FOREGROUND",   text: "My attachment to a player meets its team limit" },
+      { x:  8, y: 70,   label: "TECHNIQUE",    text: "A parody account posting another aggregator's clip" },
+      { x:  8, y: 76,   label: "MEASUREMENT",  text: "273K views, 8.7K likes, 469 reposts, 141 replies" },
+      { x: 65, y: 80.5, label: "SURROUNDINGS", text: "The same leveraged-trading advertisement as yesterday, word for word" }
+    ],
+
+    record: "On October 9, 2026, at 9:01 p.m., I took this screenshot while relaxing " +
+            "in bed. I follow NBA Centel. I had supported Jaylen Brown for years and " +
+            "encountered this post as a Celtics fan who dislikes the 76ers.",
+
+    remark: "I read this through the sting of believing one of my favorite players " +
+            "had joined my least favorite team. The joke about Embiid gave that " +
+            "frustration somewhere to go, and my Celtics loyalty made me willing to " +
+            "laugh along. But the account is visibly labeled parody, so this capture " +
+            "preserves my reaction without establishing that the trade or injury " +
+            "happened as described. That distinction matters because a story that " +
+            "fits my rivalry can feel satisfying before I question it. It is the " +
+            "third parody account to open my feed in three weeks, and the first one " +
+            "I noticed before I reacted. The clip is not the account's either; it " +
+            "carries another aggregator's name across the bottom. Underneath, Kalshi " +
+            "repeats yesterday's trading invitation word for word, the first time " +
+            "the same advertisement has run on consecutive days in this collection. " +
+            "The subject changes, but the commercial follow-up stays familiar."
+  },
+     ,{
+    id:    "045",
+    week:  7,
+    date:  "2026-10-10",
+    time:  "08:45",
+    title: "Same Hate, Different Messenger",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-046.png",
+    alt:   "An X feed shows Green Machine commenting on a quoted NBA Centel post and basketball video, with no parody label visible on the quoted account, followed by a partially visible discussion of a Star Wars game.",
+    tags:  ["celtics-sixers", "fandom", "parody", "borrowed-frame", "star-wars", "thread"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "Apparently, yesterday's Sixers slander needs a second opinion. A fellow " +
+             "Celtics fan will do nicely.",
+
+    pins: [
+      { x: 55, y: 23,   label: "FOREGROUND",   text: "A stranger supplies the agreement I already want" },
+      { x: 87, y: 27.5, label: "ABSENCE",      text: "Yesterday this account carried a parody label. Quoted here, it does not" },
+      { x:  8, y: 33,   label: "SOURCE",       text: "Yesterday's first post returns inside someone else's reaction" },
+      { x:  8, y: 69,   label: "TECHNIQUE",    text: "Three layers: an aggregator's clip, a parody account's claim, a fan's reaction" },
+      { x:  8, y: 75,   label: "MEASUREMENT",  text: "15K views, 263 likes, 4 reposts. Yesterday's original reached 273K" },
+      { x: 76, y: 79.6, label: "SURROUNDINGS", text: "Another interest takes the usual advertiser's place" }
+    ],
+
+    record: "On October 10, 2026, at 8:45 a.m., I took this screenshot while sitting " +
+            "in my recliner with my morning coffee. I recognized the NBA Centel post " +
+            "from the previous day's capture. I do not follow any of the accounts " +
+            "shown.",
+
+    remark: "I do not have much new to say about the Sixers, and this capture does " +
+            "not need me to manufacture another argument. The same post returns with " +
+            "a Celtics fan's reaction attached, giving me another opportunity to " +
+            "enjoy an opinion I already share. What changes is the packaging, and " +
+            "the change matters more than the joke. Yesterday NBA Centel appeared " +
+            "with a parody label under its name, which is the only reason I stopped " +
+            "short of believing it. Today the identical post reaches me quoted " +
+            "inside somebody else's, and that label is gone. Same account, same " +
+            "words, same video, two mornings apart, and the disclosure only survives " +
+            "in the version nobody passed along. The quote reached fifteen thousand " +
+            "people; the original reached two hundred and seventy-three thousand. " +
+            "Below it, Star Wars gaming replaces the gambling invitation, putting " +
+            "two of my interests together without a visible paid advertisement. " +
+            "Sometimes the feed holds my attention simply by giving me more of what " +
+            "I already like, and sometimes it quietly removes the part that told me " +
+            "not to trust it."
+  },
+     ,{
+    id:    "046",
+    week:  7,
+    date:  "2026-10-11",
+    time:  "19:21",
+    title: "My Completely Unbiased Opinion",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-047.png",
+    alt:   "An X feed shows Kalshi FC quoting Real Madrid TV's complaints about refereeing above a broadcast clip carrying a rival fan account's badge, followed by a partially visible Kalshi advertisement displaying NFL championship markets.",
+    tags:  ["real-madrid", "rivalry", "kalshi", "kalshi-fc", "the-second-item", "brand-as-peer", "borrowed-frame", "thread"],
+    demand:   "amuse",
+    followed: true,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "In my completely unbiased opinion, Madrid's complaints are excellent " +
+             "entertainment. Kalshi supplies the material and then offers somewhere " +
+             "to put my money.",
+
+    pins: [
+      { x: 78, y: 18.5, label: "FRAMING",      text: "Two sirens and BREAKING, for a club channel's opinion" },
+      { x:  8, y: 27,   label: "FOREGROUND",   text: "Their frustration becomes my entertainment" },
+      { x:  8, y: 34,   label: "ABSENCE",      text: "The dispute it invokes cannot be settled by this screenshot" },
+      { x:  8, y: 57,   label: "SOURCE",       text: "Real Madrid's own channel, clipped by a rival's fan account, posted by a betting company" },
+      { x:  8, y: 63,   label: "MEASUREMENT",  text: "301K views, 3.9K likes, 482 reposts, 172 replies" },
+      { x: 65, y: 67.3, label: "SURROUNDINGS", text: "The same company supplies the story and the offer, for the second time" }
+    ],
+
+    record: "On October 11, 2026, at 7:21 p.m., I took this screenshot while hanging " +
+            "out at my girlfriend's house with her and her roommate. I read the post " +
+            "as a Barcelona supporter and found Madrid's complaints funny. I follow " +
+            "Kalshi FC.",
+
+    remark: "I see this as Madrid blaming referees for its problems, and I am very " +
+            "willing to enjoy that interpretation. After two captures built around " +
+            "disliking the Sixers, the target changes while my role stays familiar: " +
+            "a rival fan finding satisfaction in another team's frustration. The " +
+            "Negreira reference brings an existing dispute into the post, but this " +
+            "screenshot cannot settle the allegations behind it. What it can show is " +
+            "how the complaint reached me. The footage is Real Madrid's own channel. " +
+            "The clip carries the badge of a Barcelona fan account. Then a betting " +
+            "company posted it with two sirens and the word BREAKING, as though a " +
+            "club channel's opinion were news. Every hand it passed through pushed " +
+            "it the same way I was already leaning. Underneath, Kalshi occupies the " +
+            "second position too, back to selling sports after two days of leveraged " +
+            "trading. I do not need to bet for the first part to work on me."
+  },
+     ,{
+    id:    "047",
+    week:  7,
+    date:  "2026-10-11",
+    time:  "11:40",
+    title: "Greatness Gets Graded Differently",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-047.png",
+    alt:   "An X feed shows Dray contrasting reactions to Griezmann and Messi above a quoted Kalshi FC free-kick highlight carrying Major League Soccer's badge, with a live football score above and a partially visible Kalshi crypto-market advertisement below.",
+    tags:  ["messi", "griezmann", "football", "kalshi", "kalshi-fc", "the-second-item", "brand-as-peer", "borrowed-frame", "always-live", "thread"],
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "Even a highlight of someone else scoring gives me a reason to defend " +
+             "Messi. Being this good for this long apparently raises the price of " +
+             "getting any credit.",
+
+    pins: [
+      { x: 82, y: 32.3, label: "FRAMING",      text: "Another player's highlight becomes a defense of my favorite" },
+      { x:  8, y: 38,   label: "SOURCE",       text: "A betting company's post, carried inside somebody's criticism of it" },
+      { x:  8, y: 46,   label: "FOREGROUND",   text: "I arrive already convinced the standard is unfair" },
+      { x:  8, y: 66,   label: "TECHNIQUE",    text: "The league's own clip, with a broadcaster and four sponsors already in it" },
+      { x:  8, y: 72.4, label: "MEASUREMENT",  text: "4.6K views, 295 likes, 20 reposts, 1 reply" },
+      { x: 65, y: 76.8, label: "SURROUNDINGS", text: "Back to crypto, the same words it opened with in September" }
+    ],
+
+    record: "On October 11, 2026, I took this screenshot at home while relaxing " +
+            "before going to play drums. I follow Kalshi FC but do not follow Dray, " +
+            "the account quoting it. I remembered taking this in the afternoon; the " +
+            "screenshot clock reads 11:40, and I have kept the displayed time " +
+            "without resolving the difference.",
+
+    remark: "This is a Griezmann highlight that I end up reading as a conversation " +
+            "about Messi. The quote post names a double standard I already believe " +
+            "exists: exceptional performances become so familiar that people find " +
+            "reasons to dismiss them. That makes the post satisfying to agree with, " +
+            "although this frame alone cannot establish how consistently different " +
+            "players receive different treatment. Kalshi's role shifts again, and " +
+            "this time it arrives by being argued with. Its football post is the " +
+            "thing Dray is objecting to, and it reaches me anyway, in full, inside " +
+            "the objection. Underneath, its paid advertisement is back to crypto " +
+            "markets, which is exactly what it was selling in my capture from " +
+            "September 8. Five weeks, seven different offers, and the slot has " +
+            "returned to where it started. Even when the commentary challenges its " +
+            "framing, the brand remains visible in both parts of my feed."
+  },
+     ,{
+    id:    "048",
+    week:  8,
+    date:  "2026-10-12",
+    time:  "10:10",
+    title: "Business as Usual",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-048.png",
+    alt:   "An X feed shows a text post criticizing a reported DHS raid on a member of Congress's home, followed by a large Kalshi cryptocurrency advertisement occupying most of the screen, showing a leveraged Ethereum position and an install button.",
+    tags:  ["politics", "dhs", "congress", "kalshi", "the-second-item", "thread"],
+    demand:   "alarm",
+    obscured: false,
+    cutOff:   false,
+
+    preview: "My coffee comes with a reminder of what frightens me about this " +
+             "country. Most of the screen is still available for a trading offer.",
+
+    pins: [
+      { x:  8, y: 23,   label: "ABSENCE",      text: "No source, no article, and no name. I supplied the name myself" },
+      { x: 70, y: 27.3, label: "FOREGROUND",   text: "Being unsurprised does not make this less frightening" },
+      { x:  8, y: 30.1, label: "MEASUREMENT",  text: "64K views, 3.8K likes, 772 reposts, 156 replies" },
+      { x: 65, y: 34.7, label: "SURROUNDINGS", text: "My greatest concern gets a fifth of the space this does" },
+      { x:  8, y: 60,   label: "TECHNIQUE",    text: "Ethereum at 4.8 times, a live chat beside the chart, and an Install button with five stars" },
+      { x:  8, y: 85,   label: "EVIDENCE",     text: "Plus ten, plus two hundred, plus five hundred, plus a thousand" }
+    ],
+
+    record: "On October 12, 2026, at 10:10 a.m., I took this screenshot while " +
+            "sitting in my recliner with my morning coffee. I read the post as " +
+            "referring to a specific member of Congress; the post itself names no " +
+            "one, links to nothing, and shows no evidence that the raid happened as " +
+            "described. I found it frightening and unsurprising.",
+
+    remark: "After several captures centered on sports, this post returns me to " +
+            "political fears that feel much harder to put down. I encounter the " +
+            "reported raid through a commentator whose interpretation matches my " +
+            "alarm, with no supporting article or source visible in the frame, and " +
+            "with the person involved identified only by my own assumption. What " +
+            "the frame does show clearly is how little room the thing that " +
+            "frightened me was given. The post is four lines of text. The " +
+            "advertisement beneath it is roughly five times as tall, and it has " +
+            "become an app install: Ethereum at nearly five times leverage, a live " +
+            "chat running beside the chart, five stars, half a million reviews, and " +
+            "a column of gains stacking up from ten dollars to a thousand. The same " +
+            "brand that accompanied football arguments now sits beneath something I " +
+            "understand as a threat to democratic life. To me, the transition feels " +
+            "absurdly indifferent: whatever is happening in the country, there is " +
+            "still an invitation to trade."
   }
   /* Add the next capture below, after a comma:
 

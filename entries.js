@@ -2458,6 +2458,50 @@ var CAPTURES = [
             "that the country is moving meaningfully in a better direction. Maybe I " +
             "am becoming cynical, and this is a reminder that my feed can appeal to " +
             "that part of me just as easily as it appeals to my enthusiasm."
+  },
+     ,{
+    id:         "054a",
+    supplement: true,
+    date:  "2026-10-18",
+    time:  "22:46",
+    title: "Second Comes First",
+    dek:   "An exception, kept outside the count.",
+    image: "images/capture-NA.png",
+    alt:   "An X feed shows a DraftKings advertisement with a diner video, a gambling helpline in fine print and an install button, appearing as the first item beneath a football banner, followed by a partially visible entertainment-news post.",
+    tags:  ["gambling", "draftkings", "the-second-item"],
+    demand:   "sell",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I became accustomed to finding gambling beneath the first post. This " +
+             "time, gambling is the first post.",
+
+    pins: [
+      { x: 72, y: 25.7, label: "FRAMING",      text: "The exception that changes how I read the pattern" },
+      { x:  8, y: 30,   label: "FOREGROUND",   text: "Ignoring the offers does not stop their arrival" },
+      { x:  8, y: 50,   label: "TECHNIQUE",    text: "An install button, five stars and 1.3 million reviews, inside the first item" },
+      { x:  8, y: 71,   label: "EVIDENCE",     text: "The helpline sits in the smallest type, over the video, as it did in September" },
+      { x:  8, y: 81,   label: "MEASUREMENT",  text: "11M views, 1.1K likes, 50 replies. The furthest-reaching thing in the archive" },
+      { x: 60, y: 86,   label: "SURROUNDINGS", text: "The ordinary post now waits below the sales pitch" }
+    ],
+
+    record: "FILL THIS IN",
+
+    remark: "This was the first time during the project that I noticed an " +
+            "advertisement occupying the first feed position, and it was a gambling " +
+            "advertisement. After repeatedly documenting these offers beneath other " +
+            "posts, I found the change significant enough to preserve outside my " +
+            "numbered daily captures. My continued lack of interaction made it feel " +
+            "as though the pitch had become more insistent, although I cannot tell " +
+            "whether that influenced its placement. Two details connect it to what " +
+            "I have already recorded. The gambling helpline is set in the smallest " +
+            "type on the screen, over the video, exactly as DraftKings set it in " +
+            "September. And it reports eleven million views, more than anything " +
+            "else in this collection, against eleven hundred likes. The observable " +
+            "change is simpler than any explanation: the commercial invitation no " +
+            "longer follows something selected to interest me. It gets the first " +
+            "word."
   }
   /* Add the next capture below, after a comma:
 

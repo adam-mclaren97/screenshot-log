@@ -54,6 +54,16 @@ var TAG_NOTES = {
            "reposted by a betting brand. By the time it arrives the material has " +
            "passed through two or three hands, and each one has added a line " +
            "telling me what it means."
+  },
+   "parody": {
+    title: "The Label",
+    ask:   "Does a parody or commentary labeled account appear in your feed today? Is the label still there when someone quotes it?",
+    note:  "X marks some accounts as parody or commentary, in small grey type " +
+           "beneath the name. Twice I read straight past it. The third time I " +
+           "caught it before I reacted. The fourth time the same post reached me " +
+           "quoted inside somebody else's, and the label was not there at all. " +
+           "The disclosure survives in the original and disappears in the " +
+           "repost, which is the version that travels."
   }
 };
 var CAPTURES = [

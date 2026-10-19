@@ -27,10 +27,13 @@ var TAG_NOTES = {
   "the-second-item": {
     title: "The Second Item",
     ask:   "Open X right now. What is the item directly under the first post?",
-    note:  "Kalshi, + FanDuel, DraftKings, NYRA, Novig. The subject above the slot changes " +
-           "every day — a murder trial, a trailcam, a tennis loss, a Zelda joke. " +
-           "What sits below it is a category rather than a company, and over five " +
-           "weeks the offers have climbed from a brand name to two thousand dollars."
+    note:  "The item directly beneath the first post is an invitation to place " +
+           "a bet. Kalshi, FanDuel, DraftKings, NYRA, Novig. The subject above " +
+           "the slot changes every day — a murder trial, a trailcam, a tennis " +
+           "loss, a Zelda joke. What sits below it is a category rather than a " +
+           "company, and over seven weeks the offers have climbed from a brand " +
+           "name to two thousand dollars, and from sports predictions to " +
+           "leveraged trading with a clock running."
   },
   "always-live": {
     title: "Always Live",

@@ -2351,6 +2351,105 @@ var CAPTURES = [
             "reaction before the story, except this time I cannot even say I fully " +
             "got the joke. Kalshi returns underneath after a one-day absence, " +
             "offering the most familiar part of an otherwise confusing frame."
+  },
+     ,{
+    id:    "053",
+    week:  8,
+    date:  "2026-10-17",
+    time:  "21:11",
+    title: "Room for What Matters",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-053.png",
+    alt:   "An X post proposing that congressional pay be withheld after school shootings, beneath a baseball score banner and above a large Kalshi advertisement showing a fifteen-minute Solana market with a countdown timer.",
+    tags:  ["school-shootings", "politics", "kalshi", "the-second-item", "always-live", "thread"],
+    demand:   "provoke",
+    followed: true,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "Yesterday I investigated a warning and learned it was a false alarm. " +
+             "Tonight I encounter a response to children being killed, with most of " +
+             "the screen already devoted to trading.",
+
+    pins: [
+      { x: 88, y: 25.7, label: "SOURCE",       text: "I choose to follow this voice" },
+      { x: 65, y: 34.4, label: "FOREGROUND",   text: "This deserves more attention than its footprint suggests" },
+      { x:  8, y: 37.3, label: "MEASUREMENT",  text: "170 views and six likes. The quietest thing my feed has ever opened with" },
+      { x: 65, y: 42,   label: "SURROUNDINGS", text: "Four lines of text, then nine hundred pixels of advertisement" },
+      { x:  8, y: 61,   label: "EVIDENCE",     text: "A fifteen-minute market, where September offered odds on next year's champion" },
+      { x:  8, y: 85,   label: "TECHNIQUE",    text: "A clock counting down inside the advertisement" }
+    ],
+
+    record: "On October 17, 2026, at 9:11 p.m., I took this screenshot during a " +
+            "break at work. I follow the doogfather. I encountered the post after " +
+            "learning about a school shooting in which children were killed; the " +
+            "post itself does not identify any particular incident.",
+
+    remark: "The post makes me consider whether lawmakers would respond differently " +
+            "to school shootings if inaction carried a personal financial cost. I " +
+            "find that argument worth sitting with, especially after the previous " +
+            "capture's warning turned out to be a false alarm. My understanding that " +
+            "children had died gives the criticism a weight the screenshot alone " +
+            "cannot supply. Two things about the frame are worth recording plainly. " +
+            "The post had a hundred and seventy views and six likes when it reached " +
+            "me, which makes it the quietest thing my feed has ever opened with, " +
+            "against a capture in September that had been seen three point eight " +
+            "million times. And directly below an argument about making politicians " +
+            "feel a financial consequence, Kalshi invites me to take on financial " +
+            "risk myself, now in a fifteen-minute market with a clock counting down " +
+            "inside the advertisement. The second card shows the app's own " +
+            "categories, and one of them is Politics. The short post and oversized " +
+            "advertisement leave most of the frame selling something while I am " +
+            "still thinking about what came before it."
+  },
+     ,{
+    id:    "054",
+    week:  8,
+    date:  "2026-10-18",
+    time:  "11:35",
+    title: "Doubt Finds Company",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-054.png",
+    alt:   "An X post from an account labeled Commentary shows a caricature of protesters covered in slogans and badges, above a quoted video of demonstrators dancing dated a year earlier, with a partially visible Kalshi crypto advertisement below.",
+    tags:  ["no-kings", "politics", "protest", "parody", "kalshi", "the-second-item", "borrowed-frame", "thread"],
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I already wondered how much the protests were changing. My feed " +
+             "supplies a caricature that makes agreeing with my own doubts easy.",
+
+    pins: [
+      { x: 76, y: 20.7, label: "SOURCE",       text: "X labels this a commentary account. A third kind of label in my archive" },
+      { x:  8, y: 28,   label: "FRAMING",      text: "The ridicule reaches me before the reporting" },
+      { x:  8, y: 45,   label: "FOREGROUND",   text: "I bring my own disappointment to this image" },
+      { x:  8, y: 66.5, label: "EVIDENCE",     text: "The footage is dated a year ago today, and its caption still says today" },
+      { x:  8, y: 74,   label: "ABSENCE",      text: "One scene is asked to stand for a whole movement" },
+      { x:  8, y: 83.2, label: "MEASUREMENT",  text: "56K views, 4.8K likes, 465 reposts, 16 replies" },
+      { x: 50, y: 87.4, label: "SURROUNDINGS", text: "Doubting collective action comes with another individual offer" }
+    ],
+
+    record: "On October 18, 2026, at 11:35 a.m., I took this screenshot before " +
+            "leaving for a fall festival with my girlfriend. I had recently seen " +
+            "posts about unrest in France. I do not follow any of the accounts " +
+            "shown.",
+
+    remark: "The post mocks protest as a performance, and it meets me at a moment " +
+            "when I am questioning how much these demonstrations achieve. After " +
+            "seeing posts about unrest in France, the No Kings footage felt " +
+            "comparatively tame to me, though the intensity of footage cannot tell " +
+            "me which actions produce change. The meme turns that uncertainty into " +
+            "an easy judgment about the people participating. The detail that " +
+            "unsettles me most is in small grey type: the quoted video is dated " +
+            "October 18, 2025, exactly a year before I captured this, and its " +
+            "caption still says today. A year-old scene is doing the work of " +
+            "describing what is happening now, and nothing in the frame draws " +
+            "attention to that except the date itself. I find myself receptive " +
+            "because I have watched years of political opposition without feeling " +
+            "that the country is moving meaningfully in a better direction. Maybe I " +
+            "am becoming cynical, and this is a reminder that my feed can appeal to " +
+            "that part of me just as easily as it appeals to my enthusiasm."
   }
   /* Add the next capture below, after a comma:
 

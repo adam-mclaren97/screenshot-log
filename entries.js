@@ -2158,6 +2158,199 @@ var CAPTURES = [
             "understand as a threat to democratic life. To me, the transition feels " +
             "absurdly indifferent: whatever is happening in the country, there is " +
             "still an invitation to trade."
+  },
+     ,{
+    id:    "049",
+    week:  8,
+    date:  "2026-10-13",
+    time:  "19:26",
+    title: "Good News, Same Offer",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-049.png",
+    alt:   "An X feed shows a post announcing an end to New York City's horse-carriage industry above a large Kalshi baseball trading advertisement with a worked example, a promotional code and small-print risk warnings, beneath an Al Jazeera live banner.",
+    tags:  ["horse-carriages", "politics", "mamdani", "kalshi", "the-second-item", "always-live", "thread"],
+    demand:   "sell",
+    followed: true,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "Yesterday I was frightened. Today I feel encouraged. Kalshi has an " +
+             "offer for either occasion.",
+
+    pins: [
+      { x: 88, y: 25.7, label: "SOURCE",       text: "I chose to hear from this account" },
+      { x:  8, y: 30,   label: "FOREGROUND",   text: "I welcome a change I have wanted for years" },
+      { x:  8, y: 39.5, label: "MEASUREMENT",  text: "237K views, 12K likes, 947 reposts, 685 replies" },
+      { x: 65, y: 44,   label: "SURROUNDINGS", text: "Yesterday under fear, today under relief. The same advertiser, the same size" },
+      { x:  8, y: 61,   label: "EVIDENCE",     text: "Trade twenty-five, get fifty-five, with the same code I captured in September" },
+      { x:  8, y: 80,   label: "TECHNIQUE",    text: "The example stakes a thousand dollars. Cash out anytime, it says" },
+      { x:  8, y: 92,   label: "FRAMING",      text: "The risk warning is the smallest type on the screen, as the helpline was in September" }
+    ],
+
+    record: "On October 13, 2026, at 7:26 p.m., I took this screenshot during a " +
+            "break at work. I follow Mamdani and have wanted horse-drawn carriages " +
+            "in the city to end for a long time.",
+
+    remark: "Mamdani's announcement gives me something I do not always get from " +
+            "political posts: a reason to feel encouraged. I already oppose " +
+            "horse-drawn carriages, so I read this as another instance of his " +
+            "administration delivering on something that matters to me. Beside " +
+            "yesterday's capture the difference in my reaction is substantial, while " +
+            "the advertising arrangement barely changes. Yesterday a few lines of " +
+            "text frightened me and Kalshi took roughly five times the space " +
+            "underneath. Today a few lines of text encouraged me and Kalshi takes " +
+            "more space still. The offer has shifted again, from fifty-five dollars " +
+            "to twenty-five traded for fifty-five, using the same code I first " +
+            "recorded on September 21, and the worked example stakes a thousand " +
+            "dollars. Underneath all of it, in the smallest type on the screen, sits " +
+            "the warning that trading leveraged products involves significant risk " +
+            "and is not appropriate for everyone. DraftKings did the same thing in " +
+            "September, setting a gambling helpline a fraction the size of its " +
+            "offer. Apparently, good news also comes with an opportunity to place a " +
+            "bet."
+  },
+     ,{
+    id:    "050",
+    week:  8,
+    date:  "2026-10-14",
+    time:  "09:01",
+    title: "Funny Until I Remember",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-050.png",
+    alt:   "An X post pairs a mocking caption with a television clip of a White House briefing filmed off a screen, followed by a large Kalshi advertisement for leveraged crypto trading showing a cost, a leveraged size and a slider.",
+    tags:  ["white-house", "politics", "press-briefing", "kalshi", "the-second-item", "borrowed-frame", "thread"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "My morning paper comes with a punchline and a reason to worry. Kalshi " +
+             "is on its fifth consecutive day of offering me something else to do " +
+             "with that attention.",
+
+    pins: [
+      { x: 48, y: 6,    label: "RECORD",       text: "A timer running while I lie in bed before work" },
+      { x: 65, y: 23,   label: "FRAMING",      text: "The caption points me at the reporters, not the speaker" },
+      { x:  8, y: 28,   label: "SOURCE",       text: "A television broadcast, filmed off a screen, posted by someone else" },
+      { x:  8, y: 42,   label: "FOREGROUND",   text: "My laughter does not mean I feel reassured" },
+      { x:  8, y: 49.8, label: "MEASUREMENT",  text: "123K views, 722 likes, 39 reposts, 25 replies" },
+      { x: 65, y: 54.4, label: "SURROUNDINGS", text: "The fifth consecutive day this company has held the slot" },
+      { x:  8, y: 90,   label: "TECHNIQUE",    text: "A thousand dollars becomes nineteen hundred with one drag of the slider" }
+    ],
+
+    record: "On October 14, 2026, at 9:01 a.m., I took this screenshot in bed before " +
+            "getting up to prepare for work, with a timer running on the phone. This " +
+            "was the fifth consecutive day Kalshi appeared in my captures.",
+
+    remark: "The clip struck me as a fitting image of the current state of affairs, " +
+            "and the caption tells me where to look: at the reporters, not at the " +
+            "person speaking. The post gives me permission to laugh, and I do, but " +
+            "it also reinforces a political judgment I already bring to the screen. " +
+            "Yesterday's announcement from Mamdani gave me some encouragement; this " +
+            "morning I am back to finding something funny because taking it " +
+            "seriously feels worse. The footage has traveled a long way to reach " +
+            "me: a live briefing, broadcast by a news channel, filmed off a " +
+            "television screen, and posted with a caption telling me what to find " +
+            "amusing. Kalshi remains underneath through all of these reactions, now " +
+            "advertising leveraged crypto rather than yesterday's baseball offer. I " +
+            "captured this same advertisement six days ago and the crop cut off " +
+            "before the figures; today they are readable. A thousand dollars becomes " +
+            "nineteen hundred and sixty-four with one drag of a slider. The " +
+            "political mood changes more readily than the commercial company I keep."
+  },
+     ,{
+    id:    "051",
+    week:  8,
+    date:  "2026-10-15",
+    time:  "19:40",
+    title: "Already Sold, Somehow Sold Again",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-051.png",
+    alt:   "An X post uses a reaction image to praise a guitar riff above a quoted Rockstar Games trailer announcement, with a Seahawks pregame banner overhead and a partially visible Starlink advertisement below.",
+    tags:  ["gta-6", "music", "fandom", "rockstar", "starlink", "always-live", "borrowed-frame", "thread"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "GTA 6 already had my attention. Adding one of my favorite bands feels " +
+             "like continuing a sales pitch after I have handed over my wallet.",
+
+    pins: [
+      { x: 52, y: 20,   label: "INTERRUPTION", text: "The live slot is showing my team, for the first time" },
+      { x: 72, y: 25.7, label: "SOURCE",       text: "Someone else's enthusiasm, with the company's announcement inside it" },
+      { x:  8, y: 35,   label: "FOREGROUND",   text: "Someone else supplies the face for my reaction" },
+      { x:  8, y: 66,   label: "FRAMING",      text: "My music taste meets my anticipation for this game" },
+      { x:  8, y: 74,   label: "ABSENCE",      text: "The caption names three artists and cuts off. The one I got excited about is not in the frame" },
+      { x:  8, y: 80,   label: "MEASUREMENT",  text: "7.9K views, 163 likes, 5 reposts, 2 replies" },
+      { x: 70, y: 84.5, label: "SURROUNDINGS", text: "After five days, the slot changes hands" }
+    ],
+
+    record: "On October 15, 2026, at 7:40 p.m., I was in the kitchen making dinner " +
+            "with my girlfriend when I opened X to get my daily capture. I do not " +
+            "follow denye, the account that posted the first item. I do follow " +
+            "Rockstar Games, whose announcement appears quoted inside it.",
+
+    remark: "I expected a GTA 6 trailer to command my attention, but the music " +
+            "gave me another reason to be excited, and the song was a banger. The " +
+            "visible caption names Justice, Tame Impala and SZA before it cuts off, " +
+            "so the frame itself does not establish everything I was excited about. " +
+            "The recommendation brings me someone else's enthusiasm wrapped around a " +
+            "company announcement, letting me encounter the promotion as a shared " +
+            "reaction rather than as a pitch. I am already sold on the game, so this " +
+            "mostly gives me another reason to enjoy anticipating it. Underneath, " +
+            "Starlink takes the slot that Kalshi had held for five consecutive days. " +
+            "Above everything, the live banner is showing my own team for the first " +
+            "time in fifty-one captures. After several political captures, it is " +
+            "welcome to recognize myself in the feed through something I love."
+  },
+     ,{
+    id:    "052",
+    week:  8,
+    date:  "2026-10-16",
+    time:  "08:38",
+    title: "Missing the Setup",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-052.png",
+    alt:   "An X post pairs a joke and a reaction video with a quoted and truncated Miami University emergency alert, beneath live banners and above a partially visible Kalshi sports advertisement.",
+    tags:  ["miami-university", "emergency-alert", "kalshi", "the-second-item", "always-live", "borrowed-frame", "thread"],
+    demand:   "amuse",
+    followed: true,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I follow the account, but I am missing the context. The joke reaches me " +
+             "before the explanation that this was a false alarm.",
+
+    pins: [
+      { x: 50, y: 16.5, label: "INTERRUPTION", text: "The live slot is a football press conference today" },
+      { x: 84, y: 25.7, label: "SOURCE",       text: "I follow this account. That did not give me the context" },
+      { x:  8, y: 30,   label: "FRAMING",      text: "An emergency instruction arrives as the setup for a joke" },
+      { x:  8, y: 45,   label: "FOREGROUND",   text: "I did not watch it, and I did not get the reference" },
+      { x:  8, y: 73,   label: "ABSENCE",      text: "The university's own instruction is cut off mid-sentence" },
+      { x:  8, y: 80.9, label: "MEASUREMENT",  text: "403K views, 22K likes, 478 reposts, 11 replies" },
+      { x: 65, y: 85.4, label: "SURROUNDINGS", text: "One day away, and the slot is back" }
+    ],
+
+    record: "On October 16, 2026, at 8:38 a.m., I took this screenshot in my " +
+            "recliner with my usual coffee. I follow Pilgrim. I did not watch the " +
+            "video. I looked into the context after capturing and came away " +
+            "understanding that the alert had been a false alarm; nothing in the " +
+            "screenshot establishes that.",
+
+    remark: "A campus emergency reaches me as a joke about how the university " +
+            "addresses its students. I recognize the account delivering it, but that " +
+            "familiarity does not mean I understand the reference or what actually " +
+            "happened. The quoted material is the university's own instruction to " +
+            "run, hide or fight, and even that is cut off mid-sentence in the frame. " +
+            "Looking into it afterward changes my understanding, while the " +
+            "screenshot retains the unresolved warning that first appeared in my " +
+            "feed. The counts are worth noting beside it: twenty-two thousand likes " +
+            "against eleven replies, which is the shape of something passed along " +
+            "rather than discussed. This is another version of encountering the " +
+            "reaction before the story, except this time I cannot even say I fully " +
+            "got the joke. Kalshi returns underneath after a one-day absence, " +
+            "offering the most familiar part of an otherwise confusing frame."
   }
   /* Add the next capture below, after a comma:
 

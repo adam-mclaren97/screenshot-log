@@ -27,9 +27,7 @@ var TAG_NOTES = {
   "the-second-item": {
     title: "The Second Item",
     ask:   "Open X right now. What is the item directly under the first post?",
-    note:  "Thirteen times in the first thirty-seven captures, the item directly " +
-           "beneath the first post was an invitation to place a bet. Kalshi, " +
-           "FanDuel, DraftKings, NYRA, Novig. The subject above the slot changes " +
+    note:  "Kalshi, + FanDuel, DraftKings, NYRA, Novig. The subject above the slot changes " +
            "every day — a murder trial, a trailcam, a tennis loss, a Zelda joke. " +
            "What sits below it is a category rather than a company, and over five " +
            "weeks the offers have climbed from a brand name to two thousand dollars."
@@ -59,10 +57,7 @@ var TAG_NOTES = {
     title: "The Label",
     ask:   "Does a parody or commentary labeled account appear in your feed today? Is the label still there when someone quotes it?",
     note:  "X marks some accounts as parody or commentary, in small grey type " +
-           "beneath the name. Twice I read straight past it. The third time I " +
-           "caught it before I reacted. The fourth time the same post reached me " +
-           "quoted inside somebody else's, and the label was not there at all. " +
-           "The disclosure survives in the original and disappears in the " +
+           "beneath the name. The disclosure survives in the original and disappears in the " +
            "repost, which is the version that travels."
   }
 };
@@ -1349,7 +1344,7 @@ var CAPTURES = [
     dek:   "A single scroll. A larger story.",
     image: "images/capture-032.png",
     alt:   "An X feed shows a parody account's translated post praising Barcelona's contribution to Spain above a player-rating lineup graphic, with an active phone timer at the top and a partially visible Novig betting advertisement below.",
-    tags:  ["barcelona", "international-football", "novig", "the-second-item", "always-live", "borrowed-frame", "thread"],
+    tags:  ["barcelona", "international-football", "novig", "the-second-item", "always-live", "borrowed-frame", "thread", "parody"],
     demand:   "amuse",
     followed: false,
     obscured: false,
@@ -2035,7 +2030,7 @@ var CAPTURES = [
     dek:   "A single scroll. A larger story.",
     image: "images/capture-047.png",
     alt:   "An X feed shows Kalshi FC quoting Real Madrid TV's complaints about refereeing above a broadcast clip carrying a rival fan account's badge, followed by a partially visible Kalshi advertisement displaying NFL championship markets.",
-    tags:  ["real-madrid", "rivalry", "kalshi", "kalshi-fc", "the-second-item", "brand-as-peer", "borrowed-frame", "thread"],
+    tags:  ["real-madrid", "rivalry", "kalshi", "kalshi-fc", "the-second-item", "brand-as-peer", "borrowed-frame", "thread", "parody"],
     demand:   "amuse",
     followed: true,
     obscured: false,

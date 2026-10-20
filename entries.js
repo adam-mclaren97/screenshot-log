@@ -2486,22 +2486,30 @@ var CAPTURES = [
       { x: 60, y: 86,   label: "SURROUNDINGS", text: "The ordinary post now waits below the sales pitch" }
     ],
 
-    record: "FILL THIS IN",
+    record: "On October 18, 2026, at 10:46 p.m., I was in bed getting ready to " +
+            "sleep and opened X for no particular reason. I had already taken my " +
+            "capture that morning. An advertisement was the first thing in the " +
+            "feed, and a gambling advertisement at that, which made me stop. I " +
+            "took the screenshot because I knew the feeling was worth logging.",
 
     remark: "This was the first time during the project that I noticed an " +
-            "advertisement occupying the first feed position, and it was a gambling " +
-            "advertisement. After repeatedly documenting these offers beneath other " +
-            "posts, I found the change significant enough to preserve outside my " +
-            "numbered daily captures. My continued lack of interaction made it feel " +
-            "as though the pitch had become more insistent, although I cannot tell " +
-            "whether that influenced its placement. Two details connect it to what " +
-            "I have already recorded. The gambling helpline is set in the smallest " +
-            "type on the screen, over the video, exactly as DraftKings set it in " +
-            "September. And it reports eleven million views, more than anything " +
-            "else in this collection, against eleven hundred likes. The observable " +
-            "change is simpler than any explanation: the commercial invitation no " +
-            "longer follows something selected to interest me. It gets the first " +
-            "word."
+            "advertisement occupying the first feed position, and it was a " +
+            "gambling advertisement. After repeatedly documenting these offers " +
+            "beneath other posts, I found the change significant enough to " +
+            "preserve outside my numbered daily captures. My continued lack of " +
+            "interaction made it feel as though the pitch had become more " +
+            "insistent, although I cannot tell whether that influenced its " +
+            "placement. Two details connect it to what I have already recorded. " +
+            "The gambling helpline is set in the smallest type on the screen, " +
+            "over the video, exactly as DraftKings set it in September. And it " +
+            "reports eleven million views, more than anything else in this " +
+            "collection, against eleven hundred likes. I was not collecting " +
+            "anything when it appeared. I had taken my capture that morning and " +
+            "opened the app out of habit, which means the only reason this is in " +
+            "the archive is that eight weeks of looking had taught me to stop at " +
+            "it. The observable change is simpler than any explanation: the " +
+            "commercial invitation no longer follows something selected to " +
+            "interest me. It gets the first word."
   }
   /* Add the next capture below, after a comma:
 

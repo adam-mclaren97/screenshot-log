@@ -2027,7 +2027,7 @@ var CAPTURES = [
      ,{
     id:    "046",
     week:  7,
-    date:  "2026-10-11",
+    date:  "2026-10-10",
     time:  "19:21",
     title: "My Completely Unbiased Opinion",
     dek:   "A single scroll. A larger story.",

@@ -28,7 +28,10 @@
     return MONTHS[parseInt(p[1], 10) - 1] + " " + parseInt(p[2], 10) + ", " + p[0];
   }
 
-  function isGap(c) { return c.kind === "gap"; }
+  function isGap(c)  { return c.kind === "gap"; }
+  // a supplement documents an exception. It is shown, but never counted
+  // among the daily captures.
+  function isSupp(c) { return c.supplement === true; }
 
   function demandLabel(key) {
     for (var i = 0; i < DEMANDS.length; i++) {
@@ -134,7 +137,7 @@
   /* ---------- the filter menus ---------- */
 
   function realList() {
-    return CAPTURES.filter(function (c) { return !isGap(c); });
+    return CAPTURES.filter(function (c) { return !isGap(c) && !isSupp(c); });
   }
 
   function weeksAvailable() {
@@ -265,6 +268,10 @@
   function renderGrid(demand, week, tag) {
     var list = sorted().filter(function (c) {
       if (isGap(c)) return !demand && !week && !tag;
+      if (isSupp(c)) {
+        if (demand || week) return false;
+        return !tag || hasTag(c, tag);
+      }
       if (demand && c.demand !== demand) return false;
       if (week && String(c.week) !== String(week)) return false;
       if (tag && !hasTag(c, tag)) return false;
@@ -276,7 +283,7 @@
       return '<a class="card" href="#capture-' + esc(c.id) + '">' +
                phone(c, false) +
                '<div class="card-body">' +
-                 '<p class="meta">Capture ' + esc(c.id) +
+                 '<p class="meta">' + (isSupp(c) ? '<span class="supp">Supplement</span>' : "Capture " + esc(c.id)) +
                    (c.date ? " &middot; " + esc(prettyDate(c.date)) : "") +
                    (c.demand ? ' &middot; <span class="demand">' +
                                esc(demandLabel(c.demand)) + "</span>" : "") + "</p>" +
@@ -309,7 +316,8 @@
       heading =
         '<div class="set-note">' +
           '<p class="filter-note">Showing ' + what.join(" in ") + " &mdash; " +
-            list.length + " of " + realList().length +
+            list.filter(function (c) { return !isGap(c) && !isSupp(c); }).length +
+            " of " + realList().length +
             ' captures. <a href="#">Show all</a></p>' +
           (note ? '<p class="set-text">' + esc(note) + "</p>" : "") +
           voicesHtml(set) +
@@ -412,6 +420,7 @@
     if (c.followed === true)  facts.push("Account followed");
     if (c.followed === false) facts.push("Account not followed");
     if (c.cutOff)             facts.push("Item continued past the frame");
+    if (isSupp(c))            facts.unshift("Not part of the daily sample");
 
     var hasPins   = !!(c.pins && c.pins.length);
     var savedLook = hasPins ? readLook(c.id) : null;
@@ -430,7 +439,7 @@
                         "obscured. Nothing else in the frame was altered.</p>" : "") +
         "</div>" +
         '<div class="capture-text">' +
-          '<p class="eyebrow">Capture ' + esc(c.id) +
+          '<p class="eyebrow">' + (isSupp(c) ? '<span class="supp">Supplement</span>' : "Capture " + esc(c.id)) +
             (c.date ? " &middot; " + esc(prettyDate(c.date)) : "") +
             (c.time ? " &middot; " + esc(c.time) : "") + "</p>" +
           "<h1>" + esc(c.title) + "</h1>" +

@@ -2510,6 +2510,57 @@ var CAPTURES = [
             "it. The observable change is simpler than any explanation: the " +
             "commercial invitation no longer follows something selected to " +
             "interest me. It gets the first word."
+  },
+     ,{
+    id:    "055",
+    week:  9,
+    date:  "2026-10-19",
+    time:  "11:57",
+    title: "New Reason, Same Replay",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-055.png",
+    alt:   "An X post comments on a trainer's interaction with a player above a quoted football post dated September 26 containing the same incident captured earlier in this archive, beneath an Al Jazeera live banner and above a partial Kalshi advertisement.",
+    tags:  ["college-football", "kalshi", "the-second-item", "always-live", "borrowed-frame", "thread"],
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I have already been upset by this footage once. Nearly a month later, " +
+             "it returns with a different reason to be angry.",
+
+    pins: [
+      { x: 48, y: 6,    label: "RECORD",       text: "Music playing, on a break from drums" },
+      { x: 65, y: 32.3, label: "FRAMING",      text: "A new argument gives old footage another job" },
+      { x:  8, y: 37,   label: "EVIDENCE",     text: "Dated September 26. I captured this same incident the next day" },
+      { x:  8, y: 47,   label: "ABSENCE",      text: "The comparison depends on an incident that is not in this frame" },
+      { x:  8, y: 60,   label: "FOREGROUND",   text: "I bring my earlier reaction back into this encounter" },
+      { x:  8, y: 74.5, label: "MEASUREMENT",  text: "28K views, 1.7K likes, 89 reposts, 46 replies" },
+      { x: 65, y: 79,   label: "SURROUNDINGS", text: "The controversy gets repurposed; the invitation persists" }
+    ],
+
+    record: "On October 19, 2026, at 11:57 a.m., I took this screenshot during a " +
+            "break from playing drums, with music still going on the phone. I had " +
+            "captured this same football incident on September 27. I do not follow " +
+            "any of the accounts shown.",
+
+    remark: "When this football footage first appeared in my collection, I was " +
+            "disturbed by the hit and the celebration afterward. This time the " +
+            "commentary directs attention toward a trainer helping an injured " +
+            "player, which I understood as a comparison with a more recent " +
+            "controversy that is not named or shown here. The same video now " +
+            "supplies an example of how a player should respond to someone " +
+            "administering aid. The quoted post is dated September 26, and I " +
+            "captured the incident the following day, so I can put the two frames " +
+            "side by side: identical footage, twenty-three days apart, carrying two " +
+            "unrelated arguments. In the first one I noted that the person I was " +
+            "worried about was outside the frame; today's argument turns on a " +
+            "detail that was inside it all along. What the clip means depends on " +
+            "where I am told to look. My feed does not need an entirely new " +
+            "incident to provoke me; someone can give familiar footage a new " +
+            "purpose, and I arrive carrying my earlier reaction. This complicates " +
+            "my original question about how long a controversy stays in the feed: " +
+            "it can return as supporting material for the next one."
   }
   /* Add the next capture below, after a comma:
 

@@ -1586,7 +1586,7 @@ var CAPTURES = [
      ,{
     id:    "037",
     week:  6,
-    date:  "2026-10-02",
+    date:  "2026-10-01",
     time:  "18:24",
     title: "At Least I Know Him",
     dek:   "A single scroll. A larger story.",
@@ -1611,7 +1611,7 @@ var CAPTURES = [
       { x:  8, y: 90.4, label: "MEASUREMENT",  text: "The ad: 7.5M views, 2.6K likes. The post above it: 152K views, 3.6K likes. Forty-nine times the reach, fewer likes" }
     ],
 
-    record: "On October 2, 2026, at 6:24 p.m., I took this screenshot at my " +
+    record: "On October 1, 2026, at 6:24 p.m., I took this screenshot at my " +
             "girlfriend's house while she was packing for our trip to Atlantic City " +
             "to see Phish. I had previously shown interest in seeing Digger. I do " +
             "not follow any of the accounts shown.",
@@ -1637,7 +1637,7 @@ var CAPTURES = [
      ,{
     id:    "038",
     week:  6,
-    date:  "2026-10-03",
+    date:  "2026-10-02",
     time:  "11:05",
     title: "There's Always Time for This",
     dek:   "A single scroll. A larger story.",
@@ -1662,7 +1662,7 @@ var CAPTURES = [
       { x: 50, y: 88.5, label: "SURROUNDINGS", text: "Yesterday this slot knew exactly what I wanted. Today it is selling enterprise networking" }
     ],
 
-    record: "On October 3, 2026, at 11:05 a.m., I took this screenshot just before " +
+    record: "On October 2, 2026, at 11:05 a.m., I took this screenshot just before " +
             "getting on the road to Atlantic City. I had remembered I needed my " +
             "daily capture and expected to spend the next four hours driving. I do " +
             "not follow any of the accounts shown.",
@@ -1686,7 +1686,7 @@ var CAPTURES = [
      ,{
     id:    "039",
     week:  6,
-    date:  "2026-10-04",
+    date:  "2026-10-03",
     time:  "19:01",
     title: "Back in Another World",
     dek:   "A single scroll. A larger story.",
@@ -1711,7 +1711,7 @@ var CAPTURES = [
       { x: 76, y: 90,   label: "EVIDENCE",     text: "The wager it offers me includes my own team" }
     ],
 
-    record: "On October 4, 2026, at 7:01 p.m., I took this screenshot inside the " +
+    record: "On October 3, 2026, at 7:01 p.m., I took this screenshot inside the " +
             "venue in Atlantic City while waiting for Phish to take the stage. I was " +
             "staying at Harrah's casino that weekend. Red Dead Redemption 2 is my " +
             "favorite game.",
@@ -1737,7 +1737,7 @@ var CAPTURES = [
      ,{
     id:    "040",
     week:  7,
-    date:  "2026-10-05",
+    date:  "2026-10-04",
     time:  "11:07",
     title: "Someone Check on Domino's",
     dek:   "A single scroll. A larger story.",
@@ -1762,7 +1762,7 @@ var CAPTURES = [
       { x:  8, y: 90,   label: "TECHNIQUE",    text: "This one does not ask me to buy. It asks me to sell, for a hundred dollars a head" }
     ],
 
-    record: "On October 5, 2026, at 11:07 a.m., I took this screenshot while relaxing " +
+    record: "On October 4, 2026, at 11:07 a.m., I took this screenshot while relaxing " +
             "in the hotel room after another late night seeing Phish. My girlfriend " +
             "and I were about to head down for brunch, and I opened X to get my " +
             "daily capture. I do not follow any of the accounts shown.",
@@ -1787,7 +1787,7 @@ var CAPTURES = [
      ,{
     id:    "041",
     week:  7,
-    date:  "2026-10-06",
+    date:  "2026-10-05",
     time:  "11:02",
     title: "Fine, You Have My Attention",
     dek:   "A single scroll. A larger story.",
@@ -1812,7 +1812,7 @@ var CAPTURES = [
       { x: 68, y: 63.4, label: "SURROUNDINGS", text: "The paid slot is political today, and addressed to Texans" }
     ],
 
-    record: "On October 6, 2026, at 11:02 a.m., I took this screenshot in the hotel " +
+    record: "On October 5, 2026, at 11:02 a.m., I took this screenshot in the hotel " +
             "room after another night seeing Phish. I was waiting for room service " +
             "and opened X to see what appeared. I do not follow any of the accounts " +
             "shown.",
@@ -1837,7 +1837,7 @@ var CAPTURES = [
      ,{
     id:    "042",
     week:  7,
-    date:  "2026-10-07",
+    date:  "2026-10-06",
     time:  "18:07",
     title: "The Promise of More",
     dek:   "A single scroll. A larger story.",
@@ -1862,7 +1862,7 @@ var CAPTURES = [
       { x: 76, y: 89,   label: "EVIDENCE",     text: "My team, priced at eight percent" }
     ],
 
-    record: "On October 7, 2026, at 6:07 p.m., I took this screenshot while " +
+    record: "On October 6, 2026, at 6:07 p.m., I took this screenshot while " +
             "preparing to watch Argentina play. At the time, I understood this to " +
             "be Messi's final game for Argentina. I had watched him represent the " +
             "team for more than half of my twenty-nine years. I follow Kalshi FC.",
@@ -1886,7 +1886,7 @@ var CAPTURES = [
      ,{
     id:    "043",
     week:  7,
-    date:  "2026-10-08",
+    date:  "2026-10-07",
     time:  "11:10",
     title: "There Goes My Paycheck",
     dek:   "A single scroll. A larger story.",
@@ -1910,7 +1910,7 @@ var CAPTURES = [
       { x:  8, y: 85,   label: "TECHNIQUE",    text: "More exposure starts with one slider. The example shown is bitcoin at six times" }
     ],
 
-    record: "On October 8, 2026, at 11:10 a.m., I took this screenshot during my " +
+    record: "On October 7, 2026, at 11:10 a.m., I took this screenshot during my " +
             "first break at work. I was still on the clock when I opened X. The post " +
             "made me chuckle.",
 
@@ -1933,7 +1933,7 @@ var CAPTURES = [
      ,{
     id:    "044",
     week:  7,
-    date:  "2026-10-09",
+    date:  "2026-10-08",
     time:  "21:01",
     title: "Loyalty Has a Jersey",
     dek:   "A single scroll. A larger story.",
@@ -1957,7 +1957,7 @@ var CAPTURES = [
       { x: 65, y: 80.5, label: "SURROUNDINGS", text: "The same leveraged-trading advertisement as yesterday, word for word" }
     ],
 
-    record: "On October 9, 2026, at 9:01 p.m., I took this screenshot while relaxing " +
+    record: "On October 8, 2026, at 9:01 p.m., I took this screenshot while relaxing " +
             "in bed. I follow NBA Centel. I had supported Jaylen Brown for years and " +
             "encountered this post as a Celtics fan who dislikes the 76ers.",
 
@@ -1978,7 +1978,7 @@ var CAPTURES = [
      ,{
     id:    "045",
     week:  7,
-    date:  "2026-10-10",
+    date:  "2026-10-09",
     time:  "08:45",
     title: "Same Hate, Different Messenger",
     dek:   "A single scroll. A larger story.",
@@ -2002,7 +2002,7 @@ var CAPTURES = [
       { x: 76, y: 79.6, label: "SURROUNDINGS", text: "Another interest takes the usual advertiser's place" }
     ],
 
-    record: "On October 10, 2026, at 8:45 a.m., I took this screenshot while sitting " +
+    record: "On October 9, 2026, at 8:45 a.m., I took this screenshot while sitting " +
             "in my recliner with my morning coffee. I recognized the NBA Centel post " +
             "from the previous day's capture. I do not follow any of the accounts " +
             "shown.",
@@ -2052,7 +2052,7 @@ var CAPTURES = [
       { x: 65, y: 67.3, label: "SURROUNDINGS", text: "The same company supplies the story and the offer, for the second time" }
     ],
 
-    record: "On October 11, 2026, at 7:21 p.m., I took this screenshot while hanging " +
+    record: "On October 10, 2026, at 7:21 p.m., I took this screenshot while hanging " +
             "out at my girlfriend's house with her and her roommate. I read the post " +
             "as a Barcelona supporter and found Madrid's complaints funny. I follow " +
             "Kalshi FC.",

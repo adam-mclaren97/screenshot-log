@@ -64,6 +64,42 @@ var TAG_NOTES = {
            "repost, which is the version that travels."
   }
 };
+
+/* ============================================================
+   BEYOND THE FEED — the short guided path.
+   Change the four ids in `steps` to change the sequence.
+   The "Outside the frame" line under each capture is the first
+   sentence of that capture's own record, so there is nothing
+   to keep in step here. To override one, write it as
+   { id: "048", outside: "..." } instead of just "048".
+   ============================================================ */
+var BEYOND = {
+  title: "Beyond the Feed",
+
+  cardText: "Four captures and an ending. A short path through the " +
+            "collection that looks at what was around me, not only what " +
+            "was on the screen.",
+
+  intro: [
+    "This archive records the first thing X put in my feed each day. " +
+    "It also, without meaning to, records where I was standing when it " +
+    "arrived.",
+    "This is a short walk through four of those mornings and evenings. " +
+    "Same captures, same annotations, read in a different order and with " +
+    "the room around them left in."
+  ],
+
+  steps: ["048", "055", "032", "039"],
+
+  closingId:   "009a",
+  closingLine: "The feed kept going. I had somewhere else to be.",
+
+  feedback: {
+    label:  "Leave feedback",
+    prompt: "What stayed with you, and did the ending feel right?"
+  }
+};
+
 var CAPTURES = [
 
   {
@@ -2138,9 +2174,9 @@ var CAPTURES = [
 
     pins: [
       { x:  8, y: 23,   label: "ABSENCE",      text: "No source, no article, and no name. I supplied the name myself" },
-      { x: 70, y: 27.3, label: "FOREGROUND",   text: "Being unsurprised does not make this less frightening" },
+      { x: 70, y: 26.3, label: "FOREGROUND",   text: "Being unsurprised does not make this less frightening" },
       { x:  8, y: 30.1, label: "MEASUREMENT",  text: "64K views, 3.8K likes, 772 reposts, 156 replies" },
-      { x: 65, y: 34.7, label: "SURROUNDINGS", text: "My greatest concern gets a fifth of the space this does" },
+      { x: 72, y: 38,   label: "SURROUNDINGS", text: "My greatest concern gets a fifth of the space this does" },
       { x:  8, y: 60,   label: "TECHNIQUE",    text: "Ethereum at 4.8 times, a live chat beside the chart, and an Install button with five stars" },
       { x:  8, y: 85,   label: "EVIDENCE",     text: "Plus ten, plus two hundred, plus five hundred, plus a thousand" }
     ],

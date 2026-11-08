@@ -918,3 +918,187 @@ a { color: inherit; }
   color: var(--accent);
   letter-spacing: .15em;
 }
+
+/* ======== Beyond the Feed: a short guided path ======== */
+
+.beyond-card {
+  display: block;
+  margin: 0 0 46px;
+  padding: 22px 24px;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color .15s ease;
+}
+
+.beyond-card:hover { border-color: var(--ink); border-left-color: var(--accent); }
+
+.beyond-kicker {
+  display: block;
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.beyond-name {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--display);
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.beyond-blurb {
+  display: block;
+  margin-top: 10px;
+  max-width: 52ch;
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.beyond-go {
+  display: block;
+  margin-top: 14px;
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.beyond { max-width: 640px; margin: 0 auto; padding: 10px 0 80px; }
+
+.beyond h1 {
+  font-family: var(--display);
+  font-variant: small-caps;
+  font-size: 46px;
+  line-height: 1.06;
+  margin: 10px 0 22px;
+  outline: none;
+}
+
+.beyond p { font-size: 17px; line-height: 1.62; margin: 0 0 18px; }
+
+.beyond .beyond-meta {
+  margin-top: 26px;
+  font-size: 12px;
+  letter-spacing: .06em;
+  color: var(--muted);
+}
+
+/* the step view borrows the capture layout wholesale */
+.beyond-step .outside {
+  margin: 26px 0 0;
+  padding: 16px 18px;
+  background: rgba(0, 0, 0, .035);
+  border-left: 2px solid var(--accent);
+}
+
+.beyond-step .outside h3 {
+  margin: 0 0 8px;
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.beyond-step .outside p {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 16.5px;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+/* hidden with the pins until the reader has answered */
+.capture-media.is-asking ~ .capture-text .outside { display: none; }
+
+.beyond .beyond-full,
+.beyond-step .beyond-full { margin: 22px 0 0; font-size: 13px; }
+.beyond-full a { color: var(--muted); }
+.beyond-full a:hover { color: var(--accent); }
+
+.beyond-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 34px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+}
+
+.beyond-nav-start, .beyond-nav-end { border-top: 0; justify-content: flex-start; }
+
+.beyond-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid var(--rule);
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.beyond-btn:hover { border-color: var(--ink); }
+
+.beyond-btn-main { border-color: var(--accent); color: var(--accent); }
+.beyond-btn-main:hover { background: var(--accent); color: #fff; }
+
+.beyond-count {
+  font-size: 11px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* the ending */
+.beyond-end { padding-top: 60px; text-align: left; }
+.beyond-end h1 { font-size: 52px; max-width: 16ch; }
+
+.beyond .beyond-record {
+  max-width: 48ch;
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.beyond-end .beyond-nav { margin-top: 56px; }
+
+.beyond .beyond-feedback {
+  margin-top: 40px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.beyond-feedback a { color: var(--accent); }
+
+/* keyboard users must be able to see where they are */
+.beyond-btn:focus-visible,
+.beyond-card:focus-visible,
+.beyond-full a:focus-visible,
+.beyond-feedback a:focus-visible,
+.masthead-nav a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+  .beyond { padding-bottom: 56px; }
+  .beyond h1 { font-size: 34px; }
+  .beyond-end { padding-top: 30px; }
+  .beyond-end h1 { font-size: 36px; }
+  .beyond-name { font-size: 24px; }
+  .beyond .beyond-record { font-size: 16.5px; }
+  .beyond-nav { gap: 10px; }
+  .beyond-btn { flex: 1 1 auto; text-align: center; }
+  .beyond-count { order: 3; width: 100%; text-align: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .beyond-card, .beyond-btn, .thread-list a { transition: none; }
+}

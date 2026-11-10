@@ -2597,6 +2597,380 @@ var CAPTURES = [
             "purpose, and I arrive carrying my earlier reaction. This complicates " +
             "my original question about how long a controversy stays in the feed: " +
             "it can return as supporting material for the next one."
+  },
+     ,{
+    id:    "056",
+    week:  9,
+    date:  "2026-10-20",
+    time:  "08:28",
+    title: "Captain of the Kart",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-056.png",
+    alt:   "An X For You feed shows an Al Jazeera English live banner above a post by ona describing Lamine asking an older player to play Mario Kart, with a video carrying AMIRI and FC Barcelona branding, above a partially visible FanDuel Sports advertisement.",
+    tags:  ["lamine-yamal", "fandom", "gaming", "fanduel", "the-second-item", "always-live", "borrowed-frame", "thread"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "Apparently leadership at nineteen involves Mario Kart. FanDuel would " +
+             "prefer I play something with financial consequences.",
+
+    pins: [
+      { x: 56, y: 19.2, label: "CONTINUITY",   text: "The live broadcast still sits above a post that has nothing to do with it" },
+      { x: 58, y: 31.4, label: "HUMOR",        text: "The caption, not the clip, says the nineteen-year-old called the older player 'this kid'" },
+      { x: 67, y: 36,   label: "SOURCE",       text: "A branded clip reaches me through someone else's commentary" },
+      { x:  7, y: 67.2, label: "SURROUNDINGS", text: "A playful sports moment leads straight into a commercial invitation" }
+    ],
+
+    record: "On October 20, 2026, at 8:28 a.m., I took this screenshot at home " +
+            "while sitting in my recliner with my morning coffee. The first post " +
+            "was about Lamine Yamal, my favorite footballer apart from Messi, and " +
+            "a caption describing him getting an older player to join him in Mario " +
+            "Kart. A FanDuel Sports advertisement appeared below it. I do not " +
+            "follow any of the accounts shown.",
+
+    remark: "Apparently this is how a nineteen-year-old leads a team: he orders " +
+            "everyone onto Mario Kart and calls the older man 'this kid.' Lamine " +
+            "is my favorite player outside of Messi, so this was an easy way to " +
+            "get my attention. It was also nice to enjoy a sports post without " +
+            "being given another reason to hate a rival or argue about referees. " +
+            "Then FanDuel appeared below, because apparently enjoying sports is " +
+            "never quite enough on its own. I am glad gambling is not something I " +
+            "struggle with, because the invitations barely seem to take a day " +
+            "off. It is worth saying that the caption is doing more work here " +
+            "than the video: the frame shows a cabin and the back of someone's " +
+            "head, and everything I find funny about this arrives in a sentence " +
+            "written above it, over a clip carrying another brand's watermark. " +
+            "The first post offers a welcome change of mood; the second item " +
+            "remains familiar."
+  },
+     ,{
+    id:    "057",
+    week:  9,
+    date:  "2026-10-21",
+    time:  "10:42",
+    title: "Am I Missing Something?",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-057.png",
+    alt:   "An X For You feed shows an Al Jazeera English live banner above Nikki McCann Ramirez's joke about Ron DeSantis's posture. She quotes Justin Barasky's post about Chris Christie and Vivek Ramaswamy, containing a debate video with Christie visible. Below is a partially visible NYRA Bets advertisement offering a $25 free bet and a $200 deposit match for new players.",
+    tags:  ["politics", "humor", "nyra", "the-second-item", "always-live", "borrowed-frame", "thread"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I am not sure what I am supposed to find funny here. At least the " +
+             "betting ad knows what it wants from me.",
+
+    pins: [
+      { x:  7, y: 31,   label: "RESPONSE",     text: "The caption tells me to look for awkwardness" },
+      { x: 65, y: 40.3, label: "SOURCE",       text: "A post about Christie and Ramaswamy becomes a joke about someone else" },
+      { x: 74, y: 46.5, label: "EVIDENCE",     text: "The frame shows Christie; the behavior described above is not in it" },
+      { x:  7, y: 76,   label: "SURROUNDINGS", text: "The second item offers a more familiar invitation" }
+    ],
+
+    record: "On October 21, 2026, at 10:42 a.m., I took this screenshot during my " +
+            "first break at work. I did not really understand the poster's joke " +
+            "about DeSantis. He looked somewhat awkward to me in the video, but " +
+            "mostly appeared to be standing there. A NYRA Bets advertisement " +
+            "appeared beneath the post, and the Al Jazeera English live banner " +
+            "remained above the feed. I do not follow any of the accounts shown.",
+
+    remark: "I honestly did not get much out of this one. DeSantis looked awkward, " +
+            "I guess, but I was not seeing whatever made the poster find it so " +
+            "funny. The quoted post is about Christie and Ramaswamy, while the " +
+            "caption redirects my attention to someone the captured frame does " +
+            "not show. Sometimes my feed feels like it is throwing things at the " +
+            "wall to see what sticks. This one did not particularly stick. The " +
+            "betting ads are consistent, at least. NYRA Bets follows a joke I " +
+            "barely understood with an offer I have become very familiar with: " +
+            "here is an incentive to start gambling."
+  },
+     ,{
+    id:    "058",
+    week:  9,
+    date:  "2026-10-22",
+    time:  "17:41",
+    title: "Close Enough, Apparently",
+    dek:   "An exception to the rule, kept in the record.",
+    image: "images/capture-058.png",
+    alt:   "An X For You feed scrolled between posts. At the top, the bottom of a preceding video and its pink like heart are visible. A post by shru reads 'one original sentence left' and quotes a sexual joke praising a model in a runway video, in which the model wears a white outfit with large white wings. The central post also has a pink like heart. Below, JBT writes 'It's been scary, especially for us,' quoting a post that reads 'ITS GONNA BE SCARY, BUT NOT FOR US.'",
+    tags:  ["rule-break", "liked-before-capture", "humor", "fandom", "borrowed-frame"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   true,
+
+    preview: "I checked that I had a screenshot of X. Apparently checking what was " +
+             "in it was a separate task.",
+
+    pins: [
+      { x: 70, y: 30.3, label: "RESPONSE",     text: "The wording becomes the entertainment" },
+      { x: 45, y: 69.2, label: "SOURCE",       text: "A runway clip arrives through several layers of commentary" },
+      { x: 51, y: 77,   label: "INTERACTION",  text: "This screenshot catches me after I have already participated" },
+      { x: 75, y: 81.2, label: "SURROUNDINGS", text: "Another quoted post supplies another punchline" }
+    ],
+
+    record: "On October 22, 2026, at 5:41 p.m., I took this screenshot farther " +
+            "down my For You feed rather than at the first post. During the " +
+            "project I sometimes checked my camera roll to confirm that I had " +
+            "taken a daily capture, relying on the familiar look of an X " +
+            "screenshot without opening it. That shortcut failed here. I am " +
+            "keeping this image as a documented exception to the capture rule " +
+            "rather than deleting it. The screenshot shows existing likes, and I " +
+            "do not follow any of the accounts shown.",
+
+    remark: "So much for quality control. I had gotten into the habit of checking " +
+            "my camera roll, seeing something that looked like X, and deciding I " +
+            "was covered for the day. Apparently I needed to open the picture. " +
+            "This is clearly not the first thing in my feed, and the pink hearts " +
+            "show that I had already been interacting, so it breaks the rule " +
+            "twice over. I am numbering it anyway and marking the break here, " +
+            "because a quietly dropped day would hide more than a labeled " +
+            "mistake does. When I count how often the second item is a betting " +
+            "offer, this one does not belong in the denominator. I am keeping " +
+            "it because it offers a look farther down than this project " +
+            "usually allows. There is a joke about someone else's joke, followed by " +
+            "football commentary built around another quoted post. The " +
+            "screenshot also records something about my own habits: I was paying " +
+            "enough attention to remember the project, but not enough to verify " +
+            "what I had saved."
+  },
+     ,{
+    id:    "059",
+    week:  9,
+    date:  "2026-10-23",
+    time:  "08:54",
+    title: "Familiar Faces, Unfamiliar Joke",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-059.png",
+    alt:   "An X For You feed shows an Al Jazeera English live banner above a post by anaa, labeled 'Fan account,' joking about Uma and someone named Lucky making Instagram posts. It quotes Nicole's caption, 'She is the funniest person on the planet,' above a video showing Maya Hawke holding a spoon near her mouth. Below is a partially visible Kalshi advertisement promoting 'The next era of trading,' with a graphic reading 'More Exposure Starts With One Slider.'",
+    tags:  ["maya-hawke", "fandom", "account-label", "kalshi", "the-second-item", "always-live", "borrowed-frame", "thread"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "I have served Uma Thurman dinner, and I am still missing the context " +
+             "for this family joke.",
+
+    pins: [
+      { x: 80, y: 26.3, label: "LABEL",        text: "The account states its relationship to the subject" },
+      { x: 65, y: 31.2, label: "RESPONSE",     text: "The joke assumes I know who Lucky is" },
+      { x: 87, y: 38.2, label: "FRAMING",      text: "The verdict arrives before I watch the clip" },
+      { x:  7, y: 74,   label: "SURROUNDINGS", text: "The familiar second item pitches a new era" }
+    ],
+
+    record: "On October 23, 2026, at 8:54 a.m., I took this screenshot at home " +
+            "while having my morning coffee. I recognized Uma Thurman's name and " +
+            "Maya Hawke in the video, but did not understand the reference to " +
+            "Lucky. I watched the clip and was not convinced by the caption " +
+            "calling Maya the funniest person on the planet. I served Uma dinner " +
+            "several times at the restaurant where I worked. I do not follow any " +
+            "of the accounts shown.",
+
+    remark: "Big fan of Uma Thurman. I served her dinner several times at my old " +
+            "restaurant, and she was a class act. I like Maya Hawke as well, but " +
+            "knowing who they are apparently was not enough to get this one. Who " +
+            "is Lucky? What am I missing? After watching the video I was also " +
+            "not ready to award anyone the title of funniest person on the " +
+            "planet. This feels like a conversation between fans that my feed " +
+            "dropped me into halfway through. The account carries a label saying " +
+            "what it is, which is more than most of what reaches me offers, and " +
+            "it still does not supply the part I needed. Familiar names, " +
+            "unfamiliar joke. Kalshi underneath required considerably less " +
+            "context. Morning coffee, a post I do not quite get, and another " +
+            "invitation to trade. Ritualistic."
+  },
+     ,{
+    id:    "060",
+    week:  9,
+    date:  "2026-10-24",
+    time:  "18:42",
+    title: "Finally, Common Ground",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-060.png",
+    alt:   "An X For You feed shows a Miami Heat versus Charlotte Hornets score banner with part of an Al Jazeera live module beside it. PSGINT's text post argues that Mbappe winning the Ballon d'Or would be a 'Dark Moment in football,' citing a lack of achievements and claiming other players deserve it more. Below is a Kalshi advertisement promoting a perpetuals exchange, with a graphic showing a Bitcoin trading position and an exposure slider.",
+    tags:  ["mbappe", "football-rivalry", "ballon-dor", "kalshi", "the-second-item", "always-live", "thread"],
+    demand:   "provoke",
+    followed: false,
+    obscured: false,
+    cutOff:   false,
+
+    preview: "PSGINT and I have found something to agree on. All it took was " +
+             "questioning whether a Real Madrid player deserves an award.",
+
+    pins: [
+      { x: 51, y: 20.3, label: "SURROUNDINGS", text: "More sports compete for attention before the first post" },
+      { x: 65, y: 30.5, label: "FRAMING",      text: "An award prediction becomes a threat to the sport" },
+      { x: 65, y: 42.6, label: "ARGUMENT",     text: "Strong conclusions arrive without supporting comparisons" },
+      { x:  7, y: 55.6, label: "REPETITION",   text: "Yesterday's trading pitch returns beneath a different topic" }
+    ],
+
+    record: "On October 24, 2026, at 6:42 p.m., I took this screenshot while " +
+            "making dinner with my girlfriend. I opened X because I knew it was " +
+            "time for my daily capture. The first post was PSGINT questioning " +
+            "Mbappe's claim to the Ballon d'Or. I agreed with the criticism, " +
+            "which is unusual for me with this account. A Kalshi advertisement " +
+            "appeared directly beneath it. I do not follow any of the accounts " +
+            "shown.",
+
+    remark: "A rare moment of agreement with PSGINT. I am an Mbappe hater on the " +
+            "very simple grounds that he plays for Real Madrid, so I am hardly " +
+            "arriving here without an opinion. Still, I thought the argument " +
+            "about his season deserved consideration beyond my rivalry. The " +
+            "Ballon d'Or is football's biggest individual award, and I was not " +
+            "convinced his season warranted it. The post gives that opinion a " +
+            "much more dramatic delivery: apparently we are facing a dark moment " +
+            "for the entire sport. The live slot is a row again tonight, a " +
+            "basketball score first and Al Jazeera pushed to the edge of the " +
+            "screen. Then Kalshi appears underneath. My first thought was that I " +
+            "could probably put money on the winner, although this particular " +
+            "advertisement is selling crypto trading. Different product, " +
+            "familiar placement. I came to get my capture while making dinner " +
+            "and found another sports argument with a financial invitation " +
+            "attached."
+  },
+     ,{
+    id:    "061",
+    week:  9,
+    date:  "2026-10-25",
+    time:  "11:54",
+    title: "New Face, Same Kalshi",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-061.png",
+    alt:   "An X For You feed shows a Pittsburgh versus New Orleans game banner above Martien's text post listing football players being used outside their usual positions, ending with 'Manchester United Football Club...' Below is a post from Giannis Antetokounmpo labeled 'Ad,' captioned 'New team, same Giannis' and tagging Kalshi. Its video shows four people on a basketball court, followed by a Kalshi app card with an Install button. A CelticsUnite post, labeled 'Fan account,' is partially visible underneath.",
+    tags:  ["manchester-united", "fandom", "giannis-antetokounmpo", "kalshi", "the-second-item", "always-live", "account-label", "thread"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   true,
+
+    preview: "United's players are apparently out of position. Kalshi remains " +
+             "exactly where I expect it, just with Giannis doing the " +
+             "introductions.",
+
+    pins: [
+      { x: 82, y: 40.3, label: "FRAMING",      text: "A list of positional mismatches turns the club's name into a punchline" },
+      { x: 82, y: 50,   label: "MESSENGER",    text: "A familiar athlete briefly obscures the familiar advertiser" },
+      { x:  7, y: 78.5, label: "INVITATION",   text: "The basketball clip leads directly to an app download" },
+      { x: 76, y: 90,   label: "SURROUNDINGS", text: "Sports surround the promotion on both sides" }
+    ],
+
+    record: "On October 25, 2026, at 11:54 a.m., I took this screenshot just " +
+            "before making lunch. The first post mocked Manchester United's use " +
+            "of players in unfamiliar positions. My brother supports United, " +
+            "which gives me a soft spot for them despite finding the post funny " +
+            "as a Barcelona fan. The second item was a Kalshi advertisement " +
+            "posted through Giannis Antetokounmpo's account. I almost did not " +
+            "recognize it as a Kalshi advertisement at first.",
+
+    remark: "It is easy to laugh at Manchester United, but I do feel a little bad " +
+            "for them. A club I grew up knowing as one of England's most " +
+            "prestigious has become a recurring punchline. They are also my " +
+            "brother's favorite team, so there is some sympathy involved. " +
+            "Unfortunately for him, I am still a Barcelona fan, and this made me " +
+            "laugh. Kalshi was more interesting this time. Giannis's name and " +
+            "the basketball video caught my attention before I registered the " +
+            "advertiser. After so many appearances from the brand itself, a " +
+            "different messenger made the same second slot feel less familiar. " +
+            "Maybe they are trying a new approach after so many failed attempts " +
+            "to get my money. I cannot know that from this screenshot, but I can " +
+            "say the change briefly got past my usual recognition."
+  },
+     ,{
+    id:    "062",
+    week:  10,
+    date:  "2026-10-26",
+    time:  "08:24",
+    title: "Not Before Coffee",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-062.png",
+    alt:   "An X For You feed shows an Al Jazeera English live banner above Maxwell's request to watch a blonde woman at 0:16 in a video. Maxwell quotes a Popstonox post about Trump mentioning Hasan Piker, whose text includes the phrase 'communist agitator' and ends in an ellipsis. The embedded video frame shows Trump speaking at a podium before a crowd and carries an Acyn attribution. Below is a partially visible advertisement from Giannis Antetokounmpo tagging Kalshi.",
+    tags:  ["politics", "borrowed-frame", "giannis-antetokounmpo", "kalshi", "the-second-item", "always-live", "thread"],
+    demand:   "amuse",
+    followed: false,
+    obscured: false,
+    cutOff:   true,
+
+    preview: "'PLEASE look,' the caption asks. On a Monday morning, I politely " +
+             "decline.",
+
+    pins: [
+      { x: 60, y: 31.2, label: "DIRECTION",  text: "The poster specifies exactly where and when to look" },
+      { x: 60, y: 40.9, label: "FRAMING",    text: "One familiar political label is enough to lose my interest" },
+      { x: 48, y: 65.5, label: "SOURCE",     text: "The video reaches me through multiple accounts" },
+      { x: 82, y: 77.2, label: "REPETITION", text: "Yesterday's new messenger is already familiar" }
+    ],
+
+    record: "On October 26, 2026, at 8:24 a.m., I took this screenshot at home " +
+            "while having my coffee. I read the captions but did not watch the " +
+            "video. The reference to a communist agitator put me off, and the " +
+            "invitation to watch a woman's reaction did not make me curious " +
+            "enough to stay. I took the screenshot and left X. A Giannis " +
+            "Antetokounmpo advertisement for Kalshi appeared below. I do not " +
+            "follow any of the accounts shown.",
+
+    remark: "Politics was not the move on Monday morning. Reading the word " +
+            "communist, a favorite buzzword, was enough for me to decide I did " +
+            "not need to hear the rest. The poster even supplied a timestamp and " +
+            "someone else to look at, and I still was not interested in working " +
+            "my way through the clip for a reaction. I took my screenshot and " +
+            "got out of there. Some days this kind of post pulls me in; this " +
+            "time the familiar language helped me leave. Everything I am " +
+            "reacting to here is caption, not footage, which is worth saying " +
+            "plainly: I never pressed play. Giannis and Kalshi were back " +
+            "underneath for a second day. Yesterday the different presentation " +
+            "briefly caught me off guard. Today I recognized the invitation " +
+            "immediately."
+  },
+     ,{
+    id:    "063",
+    week:  10,
+    date:  "2026-10-27",
+    time:  "22:27",
+    title: "Am I Just a Hater?",
+    dek:   "A single scroll. A larger story.",
+    image: "images/capture-063.png",
+    alt:   "An X For You feed shows a Brooklyn versus Boston game banner beside a partially visible Brewers versus Rays tile. CBS Sports Golazo asks whether a displayed result is the biggest upset in English football history. Its graphic shows players in red celebrating and a full-time score of FLE 1-1 ARS with penalty figures of 5 and 3, above a table contrasting the two clubs' leagues, standings, stadium capacities, squad values and trophy totals. Below is a partially visible A.J. Corcoran post labeled 'Boosted.'",
+    tags:  ["arsenal", "football-rivalry", "fandom", "sports", "boosted", "always-live", "thread"],
+    demand:   "amuse",
+    followed: true,
+    obscured: false,
+    cutOff:   true,
+
+    preview: "Arsenal lose, the Celtics win, and the World Series is on. A " +
+             "productive evening of watching other people play sports.",
+
+    pins: [
+      { x: 53, y: 20.6, label: "SURROUNDINGS", text: "My other sports interests stay visible around the post" },
+      { x: 93, y: 28.4, label: "FRAMING",      text: "One result becomes a claim to historical significance" },
+      { x:  7, y: 68,   label: "COMPARISON",   text: "The distance between the two clubs becomes the story" },
+      { x: 40, y: 84,   label: "LABEL",        text: "A different kind of promotion occupies the next slot" }
+    ],
+
+    record: "On October 27, 2026, at 10:27 p.m., I took this screenshot at home " +
+            "while streaming the World Series between the Brewers and the Rays. " +
+            "The Celtics had just finished a win against the Nets. I had not " +
+            "watched the Arsenal match live. I also read comments from Arsenal " +
+            "fans, which are not visible in this screenshot. I follow CBS Sports " +
+            "Golazo.",
+
+    remark: "Between Arsenal, Real Madrid and the 76ers, I am starting to wonder " +
+            "if I am just a hater. I may be. This was a treat to find before the " +
+            "night was over. The graphic presents a proper David and Goliath " +
+            "story, lining up the differences between the clubs so the " +
+            "embarrassment gets its own supporting table. Those figures are the " +
+            "graphic's, not mine, and I have not checked any of them. My only " +
+            "regret was missing it live. The comments supplied some extra " +
+            "entertainment: plenty of Arsenal fans trying to make peace with " +
+            "what had happened, and I enjoyed reading it. Sports had pretty much " +
+            "taken over my screen. I had the World Series streaming, a Celtics " +
+            "win to enjoy, and now this. The feed did not have to work " +
+            "particularly hard to hold my attention. For once the next visible " +
+            "item was not a gambling invitation, although the Boosted label " +
+            "means promotion was still part of the frame."
   }
   /* Add the next capture below, after a comma:
 

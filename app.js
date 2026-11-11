@@ -748,12 +748,26 @@
     if (link) { e.preventDefault(); link.click(); }
   });
 
+  /* the line above the nameplate: how much is in here, counted live */
+  function setDateline() {
+    var el = document.querySelector(".masthead-dateline");
+    if (!el) return;
+    var n  = realList().length;
+    var ws = weeksAvailable();
+    var span = ws.length
+      ? (ws.length === 1 ? "Week " + ws[0]
+                         : "Weeks " + ws[0] + "&ndash;" + ws[ws.length - 1]) + " &middot; "
+      : "";
+    el.innerHTML = span + n + " capture" + (n === 1 ? "" : "s");
+  }
+
   /* ---------- which view to show ---------- */
 
   function route() {
     document.querySelector(".wordmark").textContent = SITE.name || "";
     document.querySelector(".masthead-sub").textContent = SITE.sub || "";
     document.querySelector(".masthead-tagline").textContent = SITE.tagline || "";
+    setDateline();
     document.querySelector(".footer-left").textContent = SITE.footerLeft || "";
     document.querySelector(".footer-right").textContent = SITE.footerRight || "";
     document.title = SITE.name || "Captures";

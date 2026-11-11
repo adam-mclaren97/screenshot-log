@@ -328,6 +328,7 @@
     view.innerHTML =
       ((demand || week || tag) ? ""
         : ((SITE.blurb ? '<div class="intro"><p>' + esc(SITE.blurb) + "</p></div>" : "") +
+           beyondCard() +
            renderThreads())) +
       heading +
       (list.length ? '<div class="grid">' + cards + "</div>"
@@ -372,24 +373,28 @@
       "</article>";
   }
 
+  // the numbered notes beside a capture. Shared by the archive and the
+  // guided path, so there is only ever one copy of this markup.
+  function notesHtml(c) {
+    if (!c.pins || !c.pins.length) return "";
+    return '<ul class="notes">' + c.pins.map(function (p, n) {
+      return '<li data-pin="' + (n + 1) + '">' +
+               '<span class="num">' + pad(n + 1) + "</span>" +
+               "<span>" +
+                 (p.label ? '<span class="label">' + esc(p.label) + "</span>" : "") +
+                 '<span class="text">' + esc(p.text) + "</span>" +
+               "</span>" +
+             "</li>";
+    }).join("") + "</ul>";
+  }
+
   function renderDetail(c) {
     var list = sorted().filter(function (x) { return !isGap(x); });
     var i = list.indexOf(c);
     var newer = list[i - 1];
     var older = list[i + 1];
 
-    var notes = "";
-    if (c.pins && c.pins.length) {
-      notes = '<ul class="notes">' + c.pins.map(function (p, n) {
-        return '<li data-pin="' + (n + 1) + '">' +
-                 '<span class="num">' + pad(n + 1) + "</span>" +
-                 "<span>" +
-                   (p.label ? '<span class="label">' + esc(p.label) + "</span>" : "") +
-                   '<span class="text">' + esc(p.text) + "</span>" +
-                 "</span>" +
-               "</li>";
-      }).join("") + "</ul>";
-    }
+    var notes = notesHtml(c);
 
     var cols = "";
     if (c.record || c.remark) {
@@ -583,17 +588,202 @@
     Array.prototype.forEach.call(dots, wire);
   }
 
+
+  /* ---------- Beyond the Feed: a short guided path ----------
+     The sequence is configured in entries.js, under BEYOND. */
+
+  function beyondOn() {
+    return typeof BEYOND !== "undefined" && BEYOND && BEYOND.steps && BEYOND.steps.length;
+  }
+
+  function beyondSteps() {
+    if (!beyondOn()) return [];
+    return BEYOND.steps.map(function (ref) {
+      var id = typeof ref === "string" ? ref : ref.id;
+      var c  = CAPTURES.filter(function (x) { return String(x.id) === String(id); })[0];
+      if (!c) return null;
+      return { capture: c, outside: (typeof ref === "object" && ref.outside) || "" };
+    }).filter(Boolean);
+  }
+
+  function beyondCard() {
+    if (!beyondOn()) return "";
+    return '<a class="beyond-card" href="#beyond">' +
+             '<span class="beyond-kicker">A guided path</span>' +
+             "<span class=\"beyond-name\">" + esc(BEYOND.title || "Beyond the Feed") + "</span>" +
+             '<span class="beyond-blurb">' +
+               esc(BEYOND.cardText || "") + "</span>" +
+             '<span class="beyond-go">Begin &rarr;</span>' +
+           "</a>";
+  }
+
+  function beyondNav(i, total) {
+    var prev = i > 0
+      ? '<a class="beyond-btn" href="#beyond-' + i + '" rel="prev">&larr; Previous</a>'
+      : '<a class="beyond-btn" href="#beyond" rel="prev">&larr; Start</a>';
+    var next = i < total - 1
+      ? '<a class="beyond-btn beyond-btn-main" href="#beyond-' + (i + 2) + '" rel="next">Next &rarr;</a>'
+      : '<a class="beyond-btn beyond-btn-main" href="#beyond-end" rel="next">Finish &rarr;</a>';
+    return '<nav class="beyond-nav" aria-label="Guided path">' + prev +
+             '<span class="beyond-count" aria-live="polite">' +
+               (i + 1) + " of " + total + "</span>" +
+             next +
+           "</nav>";
+  }
+
+  function renderBeyondIntro() {
+    var steps = beyondSteps();
+    document.title = (BEYOND.title || "Beyond the Feed") + " — " + (SITE.name || "");
+    view.innerHTML =
+      '<a class="back" href="#">&larr; All captures</a>' +
+      '<article class="beyond beyond-intro">' +
+        '<p class="eyebrow">A guided path</p>' +
+        "<h1 tabindex=\"-1\">" + esc(BEYOND.title || "Beyond the Feed") + "</h1>" +
+        (BEYOND.intro || []).map(function (para) {
+          return "<p>" + esc(para) + "</p>";
+        }).join("") +
+        '<p class="beyond-meta">' + steps.length +
+          " captures, then an ending. The archive stays where it is.</p>" +
+        '<nav class="beyond-nav beyond-nav-start" aria-label="Guided path">' +
+          '<a class="beyond-btn beyond-btn-main" href="#beyond-1">Begin &rarr;</a>' +
+        "</nav>" +
+      "</article>";
+    focusHeading();
+  }
+
+  function renderBeyondStep(n) {
+    var steps = beyondSteps();
+    var i = n - 1;
+    if (i < 0 || i >= steps.length) { location.hash = "#beyond"; return; }
+
+    var c       = steps[i].capture;
+    var outside = steps[i].outside || firstSentence(c.record || "");
+    var hasPins = !!(c.pins && c.pins.length);
+    var saved   = hasPins ? readLook(c.id) : null;
+    var state   = hasPins ? (saved ? " has-looked" : " is-asking") : "";
+
+    document.title = (BEYOND.title || "Beyond the Feed") + " " + (i + 1) +
+                     " of " + steps.length + " — " + (SITE.name || "");
+
+    view.innerHTML =
+      '<a class="back" href="#beyond">&larr; ' + esc(BEYOND.title || "Beyond the Feed") + "</a>" +
+      '<article class="capture beyond-step">' +
+        '<div class="capture-media' + state + '">' +
+          (hasPins ? '<p class="look-ask">Before you read on &mdash; where did your eye ' +
+                     'go first? Click the screenshot. ' +
+                     '<button type="button" class="look-skip">Skip this</button></p>' : "") +
+          phone(c, true) +
+          (hasPins ? '<p class="look-result"></p>' : "") +
+          '<a class="fullsize" href="' + esc(c.image) + '" target="_blank">View full size &nearr;</a>' +
+        "</div>" +
+        '<div class="capture-text">' +
+          '<p class="eyebrow">' + esc(BEYOND.title || "Beyond the Feed") +
+            " &middot; " + (c.date ? esc(prettyDate(c.date)) : "") + "</p>" +
+          "<h1 tabindex=\"-1\">" + esc(c.title) + "</h1>" +
+          (c.dek ? '<p class="dek">' + esc(c.dek) + "</p>" : "") +
+          notesHtml(c) +
+          (outside
+            ? '<section class="outside"><h3>Outside the frame</h3><p>' +
+              esc(outside) + "</p></section>"
+            : "") +
+          '<p class="beyond-full"><a href="#capture-' + esc(c.id) +
+            '">Read the full entry &nearr;</a></p>' +
+          beyondNav(i, steps.length) +
+        "</div>" +
+      "</article>";
+
+    linkPins();
+    wireLook(c);
+    focusHeading();
+  }
+
+  function renderBeyondEnd() {
+    var gap = CAPTURES.filter(function (x) {
+      return String(x.id) === String(BEYOND.closingId);
+    })[0];
+
+    document.title = "An ending — " + (SITE.name || "");
+
+    view.innerHTML =
+      '<article class="beyond beyond-end">' +
+        '<p class="eyebrow">' + (gap && gap.date ? esc(prettyDate(gap.date)) : "") +
+          " &middot; No capture</p>" +
+        "<h1 tabindex=\"-1\">" + esc(BEYOND.closingLine || "") + "</h1>" +
+        (gap && gap.record ? "<p class=\"beyond-record\">" + esc(gap.record) + "</p>" : "") +
+        (gap ? '<p class="beyond-full"><a href="#capture-' + esc(gap.id) +
+               '">Read this entry &nearr;</a></p>' : "") +
+        '<nav class="beyond-nav beyond-nav-end" aria-label="Guided path">' +
+          '<a class="beyond-btn" href="#beyond-' + beyondSteps().length + '">&larr; Previous</a>' +
+          '<a class="beyond-btn" href="#">Return to the archive</a>' +
+        "</nav>" +
+        (SITE.formUrl
+          ? '<p class="beyond-feedback"><a href="' + esc(SITE.formUrl) +
+            '" target="_blank" rel="noopener">' +
+            esc((BEYOND.feedback && BEYOND.feedback.label) || "Leave feedback") +
+            "</a>" +
+            ((BEYOND.feedback && BEYOND.feedback.prompt)
+              ? " &mdash; " + esc(BEYOND.feedback.prompt) : "") +
+            "</p>"
+          : "") +
+      "</article>";
+    focusHeading();
+  }
+
+  function focusHeading() {
+    var h = view.querySelector("h1");
+    if (h && h.focus) { try { h.focus({ preventScroll: true }); } catch (e) { h.focus(); } }
+  }
+
+  // left and right arrows move through the path
+  document.addEventListener("keydown", function (e) {
+    if (!/^#beyond/.test(location.hash)) return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target;
+    if (t && /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName)) return;
+    var sel = e.key === "ArrowRight" ? '.beyond-nav [rel="next"], .beyond-nav .beyond-btn-main'
+            : e.key === "ArrowLeft"  ? '.beyond-nav [rel="prev"]'
+            : null;
+    if (!sel) return;
+    var link = view.querySelector(sel);
+    if (link) { e.preventDefault(); link.click(); }
+  });
+
+  /* the line above the nameplate: how much is in here, counted live */
+  function setDateline() {
+    var el = document.querySelector(".masthead-dateline");
+    if (!el) return;
+    var n  = realList().length;
+    var ws = weeksAvailable();
+    var span = ws.length
+      ? (ws.length === 1 ? "Week " + ws[0]
+                         : "Weeks " + ws[0] + "&ndash;" + ws[ws.length - 1]) + " &middot; "
+      : "";
+    el.innerHTML = span + n + " capture" + (n === 1 ? "" : "s");
+  }
+
   /* ---------- which view to show ---------- */
 
   function route() {
     document.querySelector(".wordmark").textContent = SITE.name || "";
     document.querySelector(".masthead-sub").textContent = SITE.sub || "";
     document.querySelector(".masthead-tagline").textContent = SITE.tagline || "";
+    setDateline();
     document.querySelector(".footer-left").textContent = SITE.footerLeft || "";
     document.querySelector(".footer-right").textContent = SITE.footerRight || "";
     document.title = SITE.name || "Captures";
 
     var hash = location.hash;
+
+    if (beyondOn() && /^#beyond/.test(hash)) {
+      buildFilters("", "", "");
+      var mStep = hash.match(/^#beyond-(\d+)$/);
+      if (hash === "#beyond-end")      { renderBeyondEnd(); }
+      else if (mStep)                  { renderBeyondStep(parseInt(mStep[1], 10)); }
+      else                             { renderBeyondIntro(); }
+      window.scrollTo(0, 0);
+      return;
+    }
+
     var mCap = hash.match(/^#capture-(.+)$/);
 
     var demand = "", week = "", tag = "";
